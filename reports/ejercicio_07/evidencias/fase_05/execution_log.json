@@ -1,5 +1,6 @@
 {
   "starting_commit": "002aede052044f65a347b292f3480237412055a7",
+  "resume_starting_commit": "89478dda567c90c45f6bb9a4f2db953a4e1703f6",
   "branch": "codex/ejercicio-07",
   "commands": [
     {
@@ -41,10 +42,118 @@
         "PYTHONIOENCODING": "utf-8"
       },
       "label": "02_draft_verification"
+    },
+    {
+      "command": [
+        ".\\.venv\\Scripts\\ruff.exe",
+        "check",
+        "reports/ejercicio_07/evidencias/fase_05/verify_framework.py"
+      ],
+      "started_at_utc": "2026-10-31T18:40:14.502996+00:00",
+      "elapsed_seconds": 0.04415770000196062,
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "03_framework_style"
+    },
+    {
+      "command": [
+        ".\\.venv\\Scripts\\python.exe",
+        "-B",
+        "reports\\ejercicio_07\\evidencias\\fase_05\\verify_framework.py"
+      ],
+      "started_at_utc": "2026-10-31T18:40:18.345987+00:00",
+      "elapsed_seconds": 0.35689910000292,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\reports\\ejercicio_07\\evidencias\\fase_05\\verify_framework.py\", line 175, in <module>\n    main()\n  File \"C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\reports\\ejercicio_07\\evidencias\\fase_05\\verify_framework.py\", line 135, in main\n    assert \"no determina por sí solo su estado posterior\" in report\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "04_framework_verification"
+    },
+    {
+      "command": [
+        ".\\.venv\\Scripts\\python.exe",
+        "-B",
+        "reports\\ejercicio_07\\evidencias\\fase_05\\verify_framework.py"
+      ],
+      "started_at_utc": "2026-10-31T18:40:45.252512+00:00",
+      "elapsed_seconds": 0.31771739999749116,
+      "exit_code": 0,
+      "stdout": "{\"validation_status\": \"passed\", \"phase5_status\": \"completed_for_documented_academic_scope\", \"jurisdiction\": \"República Dominicana\", \"starting_commit\": \"002aede052044f65a347b292f3480237412055a7\", \"previous_files_unchanged\": 144, \"historical_draft_files_preserved\": 7, \"official_source_records\": 11, \"legal_assessments\": 10, \"ethical_topics\": 9, \"risk_ids_covered\": [\"R01\", \"R02\", \"R03\", \"R04\", \"R05\", \"R06\", \"R07\", \"R08\", \"R09\"], \"ethical_evidence_path_references_checked\": 24, \"legal_evidence_path_references_checked\": 20, \"total_local_path_references_checked\": 49, \"citation_urls_match_source_register\": true, \"scoped_legal_analysis_documented\": true, \"legal_compliance_certified\": false, \"conditional_sectoral_vigency_verified\": false, \"required_user_input_for_current_phase\": [], \"new_model_fits\": 0, \"new_pytest_executions\": 0, \"phase6_started\": false, \"ethical_recommendations_approval\": \"pending\", \"limitation\": \"Checks validate traceability, structure and preservation; legal interpretation is documented research and is not certified by this script.\"}\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "05_framework_verification_final"
+    },
+    {
+      "command": [
+        ".\\.venv\\Scripts\\ruff.exe",
+        "check",
+        "reports/ejercicio_07/evidencias/fase_05/verify_framework.py"
+      ],
+      "started_at_utc": "2026-10-31T18:41:29.586676+00:00",
+      "elapsed_seconds": 0.037749500002973946,
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "06_final_style"
+    },
+    {
+      "command": [
+        ".\\.venv\\Scripts\\python.exe",
+        "-B",
+        "reports\\ejercicio_07\\evidencias\\fase_05\\verify_framework.py"
+      ],
+      "started_at_utc": "2026-10-31T18:41:29.850175+00:00",
+      "elapsed_seconds": 0.2609529000001203,
+      "exit_code": 0,
+      "stdout": "{\"validation_status\": \"passed\", \"phase5_status\": \"completed_for_documented_academic_scope\", \"jurisdiction\": \"República Dominicana\", \"starting_commit\": \"002aede052044f65a347b292f3480237412055a7\", \"previous_files_unchanged\": 144, \"historical_draft_files_preserved\": 7, \"official_source_records\": 11, \"legal_assessments\": 10, \"ethical_topics\": 9, \"risk_ids_covered\": [\"R01\", \"R02\", \"R03\", \"R04\", \"R05\", \"R06\", \"R07\", \"R08\", \"R09\"], \"ethical_evidence_path_references_checked\": 24, \"legal_evidence_path_references_checked\": 20, \"total_local_path_references_checked\": 49, \"citation_urls_match_source_register\": true, \"scoped_legal_analysis_documented\": true, \"legal_compliance_certified\": false, \"conditional_sectoral_vigency_verified\": false, \"required_user_input_for_current_phase\": [], \"new_model_fits\": 0, \"new_pytest_executions\": 0, \"phase6_started\": false, \"ethical_recommendations_approval\": \"pending\", \"limitation\": \"Checks validate traceability, structure and preservation; legal interpretation is documented research and is not certified by this script.\"}\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "07_final_document_verification"
     }
   ],
-  "phase5_status": "partial_pending_user_context",
+  "phase5_status": "completed_for_documented_academic_scope",
+  "jurisdiction": "República Dominicana",
+  "historical_draft_snapshot": "draft_snapshot/index.json",
+  "final_verification": "07_final_document_verification.json",
+  "previous_files_unchanged": 144,
+  "official_source_records": 11,
+  "legal_assessments": 10,
+  "ethical_topics": 9,
+  "failed_commands_preserved": [
+    "04_framework_verification"
+  ],
+  "failure_resolution": "Corrected the validator literal from no determina to ni determina; subsequent validations passed.",
   "new_model_fits": 0,
   "new_pytest_executions": 0,
+  "legal_compliance_certified": false,
+  "phase6_started": false,
   "push_performed": false
 }

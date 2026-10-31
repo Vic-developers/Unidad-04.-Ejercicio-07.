@@ -1,9 +1,12 @@
 {
   "validation_status": "passed",
-  "phase5_status": "partial_pending_user_context",
+  "phase5_status": "completed_for_documented_academic_scope",
+  "jurisdiction": "República Dominicana",
   "starting_commit": "002aede052044f65a347b292f3480237412055a7",
   "previous_files_unchanged": 144,
-  "official_source_records": 5,
+  "historical_draft_files_preserved": 7,
+  "official_source_records": 11,
+  "legal_assessments": 10,
   "ethical_topics": 9,
   "risk_ids_covered": [
     "R01",
@@ -16,16 +19,17 @@
     "R08",
     "R09"
   ],
-  "evidence_path_references_checked": 24,
+  "ethical_evidence_path_references_checked": 24,
+  "legal_evidence_path_references_checked": 20,
+  "total_local_path_references_checked": 49,
   "citation_urls_match_source_register": true,
-  "binding_legal_applicability_determined": false,
-  "required_input": [
-    "jurisdiction",
-    "confirmation_of_scope"
-  ],
+  "scoped_legal_analysis_documented": true,
+  "legal_compliance_certified": false,
+  "conditional_sectoral_vigency_verified": false,
+  "required_user_input_for_current_phase": [],
   "new_model_fits": 0,
   "new_pytest_executions": 0,
   "phase6_started": false,
-  "human_approval": "pending",
-  "limitation": "Checks validate draft structure and local evidence; they do not determine legal applicability or certify compliance."
+  "ethical_recommendations_approval": "pending",
+  "limitation": "Checks validate traceability, structure and preservation; legal interpretation is documented research and is not certified by this script."
 }

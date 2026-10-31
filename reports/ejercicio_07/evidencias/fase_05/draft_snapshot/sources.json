@@ -1,0 +1,62 @@
+[
+  {
+    "id": "F01",
+    "organization": "NIST",
+    "title": "AI Risk Management Framework",
+    "official_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "version_or_date": "AI RMF 1.0, 26-01-2023; la página informa revisión en curso",
+    "consulted_on": "2026-10-31",
+    "location": "Overview of the AI RMF y aviso de revisión",
+    "verified_support": "Naturaleza voluntaria; edición 1.0 y estado de revisión informado por NIST.",
+    "nature": "marco_voluntario",
+    "access": "contenido oficial leído"
+  },
+  {
+    "id": "F02",
+    "organization": "NIST AIRC",
+    "title": "AI RMF Core",
+    "official_url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+    "version_or_date": "AI RMF 1.0 (2023), sección 5",
+    "consulted_on": "2026-10-31",
+    "location": "Secciones 5.1–5.4",
+    "verified_support": "Funciones GOVERN, MAP, MEASURE y MANAGE; uso adaptado al contexto.",
+    "nature": "marco_voluntario",
+    "access": "contenido oficial consultado durante el trabajo de LAB11 e integración; referencia reutilizada"
+  },
+  {
+    "id": "F03",
+    "organization": "OECD",
+    "title": "Recommendation of the Council on Artificial Intelligence, OECD/LEGAL/0449",
+    "official_url": "https://legalinstruments.oecd.org/api/print?ids=648",
+    "version_or_date": "Adoptada 22-05-2019; revisiones 08-11-2023 y 03-05-2024; copia oficial consultada con copyright 2026",
+    "consulted_on": "2026-10-31",
+    "location": "PDF: Background Information; sección 1, principios 1.1–1.5; última página OECD Legal Instruments",
+    "verified_support": "Principios de IA y carácter no jurídicamente vinculante de las Recommendations; compromiso político de adherentes.",
+    "nature": "recomendacion_intergubernamental_no_vinculante",
+    "access": "PDF oficial leído; la interfaz HTML principal requirió JavaScript y una copia alternativa PDF agotó el tiempo"
+  },
+  {
+    "id": "F04",
+    "organization": "UNESCO",
+    "title": "Recommendation on the Ethics of Artificial Intelligence",
+    "official_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+    "version_or_date": "Adoptada en noviembre de 2021; síntesis institucional de principios",
+    "consulted_on": "2026-10-31",
+    "location": "Core values y Core principles: A human rights approach to AI",
+    "verified_support": "Principios de proporcionalidad, privacidad, transparencia, supervisión, equidad y responsabilidad.",
+    "nature": "recomendacion_etica_internacional",
+    "access": "contenido oficial leído"
+  },
+  {
+    "id": "F05",
+    "organization": "UNESCO, Legal Affairs",
+    "title": "UNESCO’s standard-setting. An Overview",
+    "official_url": "https://www.unesco.org/en/legal-affairs/standard-setting/overview?hub=66535",
+    "version_or_date": "Actualización indicada: 19-06-2024",
+    "consulted_on": "2026-10-31",
+    "location": "UNESCO’s standard-setting instruments, Recommendations",
+    "verified_support": "Las recomendaciones no son vinculantes como convenciones; la página distingue compromisos procedimentales de los Estados miembros.",
+    "nature": "explicacion_oficial_de_naturaleza_del_instrumento",
+    "access": "contenido oficial leído"
+  }
+]

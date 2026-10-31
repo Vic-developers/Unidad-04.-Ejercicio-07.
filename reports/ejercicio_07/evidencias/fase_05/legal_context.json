@@ -1,13 +1,25 @@
 {
-  "status": "pending_user_confirmation",
+  "status": "jurisdiction_confirmed_analysis_completed_for_documented_scope",
   "documented_current_scope": "Demostración académica con datos sintéticos, conforme a README, DATASET_CARD y formulario de impacto.",
-  "jurisdiction": null,
+  "jurisdiction": "República Dominicana",
+  "jurisdiction_provenance": {
+    "type": "direct_user_message",
+    "verbatim": "Republica Dominicana",
+    "received_on": "2026-10-31"
+  },
   "user_confirmed_future_scope": null,
+  "scope_basis": "Se conserva el alcance académico sintético acreditado por los archivos del proyecto. La respuesta del usuario confirma el país; no confirma una futura operación con personas.",
+  "scope_evidence": ["README.md", "docs/DATASET_CARD.md", "student_inputs/lab11_impact.yml"],
+  "real_deployment_authorized": false,
   "user_question_issued": true,
   "question": "¿Qué país o jurisdicción corresponde al supuesto de uso y seguirá siendo exclusivamente académico con datos sintéticos?",
-  "legal_obligations_determined": false,
-  "binding_sources_selected": [],
-  "phase_status": "partial",
+  "legal_obligations_determined": true,
+  "determination_scope": "Se identifican normas vinculantes y sus condiciones para el supuesto académico documentado; no se certifica cumplimiento integral ni un uso real no definido.",
+  "binding_sources_selected": ["L01", "L02"],
+  "conditional_sectoral_source": "L05",
+  "sectoral_source_limit": "No se acredita una inversión del Poder Ejecutivo; la entrada en vigor del Decreto 714-26 depende de su publicación en Gaceta Oficial, no verificada en esta consulta.",
+  "legal_compliance_certified": false,
+  "phase_status": "completed_for_documented_academic_scope",
   "phase6_authorized": false,
-  "reason": "La parte 5.1 del texto adjunto exige identificar la jurisdicción y solicitarla si no se puede determinar. No se infiere de timezone, idioma o etiquetas del dataset."
+  "reason": "La jurisdicción ya fue proporcionada directamente por el usuario. No queda una pregunta necesaria para analizar el alcance académico existente. Cualquier adaptación real requiere un nuevo análisis con sus sujetos, datos, finalidad e institución."
 }

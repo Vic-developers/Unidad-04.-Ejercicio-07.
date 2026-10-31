@@ -1,0 +1,18 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-B",
+    "reports\\ejercicio_07\\evidencias\\fase_05\\verify_framework.py"
+  ],
+  "started_at_utc": "2026-10-31T18:40:18.345987+00:00",
+  "elapsed_seconds": 0.35689910000292,
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\reports\\ejercicio_07\\evidencias\\fase_05\\verify_framework.py\", line 175, in <module>\n    main()\n  File \"C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\reports\\ejercicio_07\\evidencias\\fase_05\\verify_framework.py\", line 135, in main\n    assert \"no determina por sí solo su estado posterior\" in report\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-B",
+    "reports\\ejercicio_07\\evidencias\\fase_05\\verify_framework.py"
+  ],
+  "started_at_utc": "2026-10-31T18:41:29.850175+00:00",
+  "elapsed_seconds": 0.2609529000001203,
+  "exit_code": 0,
+  "stdout": "{\"validation_status\": \"passed\", \"phase5_status\": \"completed_for_documented_academic_scope\", \"jurisdiction\": \"República Dominicana\", \"starting_commit\": \"002aede052044f65a347b292f3480237412055a7\", \"previous_files_unchanged\": 144, \"historical_draft_files_preserved\": 7, \"official_source_records\": 11, \"legal_assessments\": 10, \"ethical_topics\": 9, \"risk_ids_covered\": [\"R01\", \"R02\", \"R03\", \"R04\", \"R05\", \"R06\", \"R07\", \"R08\", \"R09\"], \"ethical_evidence_path_references_checked\": 24, \"legal_evidence_path_references_checked\": 20, \"total_local_path_references_checked\": 49, \"citation_urls_match_source_register\": true, \"scoped_legal_analysis_documented\": true, \"legal_compliance_certified\": false, \"conditional_sectoral_vigency_verified\": false, \"required_user_input_for_current_phase\": [], \"new_model_fits\": 0, \"new_pytest_executions\": 0, \"phase6_started\": false, \"ethical_recommendations_approval\": \"pending\", \"limitation\": \"Checks validate traceability, structure and preservation; legal interpretation is documented research and is not certified by this script.\"}\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

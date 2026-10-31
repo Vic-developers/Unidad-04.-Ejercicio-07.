@@ -1,0 +1,42 @@
+{
+  "source_commit": "89478dd",
+  "status": "historical_partial_draft",
+  "reason": "Preservar el borrador anterior a la confirmación de República Dominicana.",
+  "files": [
+    {
+      "original_path": "reports/ejercicio_07/MARCO_LEGAL_VOLUNTARIO_ETICO.md",
+      "snapshot_path": "reports/ejercicio_07/evidencias/fase_05/draft_snapshot/MARCO_LEGAL_VOLUNTARIO_ETICO.md",
+      "sha256": "26942c1b58d1994de4634cf7013cbd672f048554a8365db3aecf5ecdb5ddfbe7"
+    },
+    {
+      "original_path": "reports/ejercicio_07/evidencias/fase_05/legal_context.json",
+      "snapshot_path": "reports/ejercicio_07/evidencias/fase_05/draft_snapshot/legal_context.json",
+      "sha256": "905ab379c69452f138e0826c88f3379fed62854c9c06e169d271ea99e8e0cc39"
+    },
+    {
+      "original_path": "reports/ejercicio_07/evidencias/fase_05/sources.json",
+      "snapshot_path": "reports/ejercicio_07/evidencias/fase_05/draft_snapshot/sources.json",
+      "sha256": "a6337c586e45f48b9a79f17166cf47b268304f498ae2120718aa12ea1b05487e"
+    },
+    {
+      "original_path": "reports/ejercicio_07/evidencias/fase_05/verification.json",
+      "snapshot_path": "reports/ejercicio_07/evidencias/fase_05/draft_snapshot/verification.json",
+      "sha256": "ca730b87094a34f0ed956f2b8a439c0b5ae4c5da4c75aba8ae9c9b570150633a"
+    },
+    {
+      "original_path": "reports/ejercicio_07/evidencias/fase_05/execution_log.json",
+      "snapshot_path": "reports/ejercicio_07/evidencias/fase_05/draft_snapshot/execution_log.json",
+      "sha256": "06c286029d8a04546acf76dce8e05ffec77bfd1e81a4dc1fe2a9f0659263192d"
+    },
+    {
+      "original_path": "reports/ejercicio_07/evidencias/fase_05/artifact_manifest.json",
+      "snapshot_path": "reports/ejercicio_07/evidencias/fase_05/draft_snapshot/artifact_manifest.json",
+      "sha256": "ea0af8814da7fcdb73301e49097d884746b9ae8be1e72ee4a8d823fafb24542e"
+    },
+    {
+      "original_path": "reports/ejercicio_07/evidencias/fase_05/estado_git.txt",
+      "snapshot_path": "reports/ejercicio_07/evidencias/fase_05/draft_snapshot/estado_git.txt",
+      "sha256": "26585bb9ea2242d3fca3c5f313a56b407cbfcf9a6ba56eb496b15c4f81472410"
+    }
+  ]
+}

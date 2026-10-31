@@ -1,7 +1,7 @@
 {
-  "captured_at_utc": "2026-10-31T18:31:15.282761+00:00",
+  "captured_at_utc": "2026-10-31T18:42:00.710197+00:00",
   "algorithm": "SHA-256",
-  "phase_status": "partial_pending_user_context",
+  "phase_status": "completed_for_documented_academic_scope",
   "scope": "Working-tree bytes including prior local ignored models; excludes .gitkeep and this manifest.",
   "files": [
     {
@@ -114,8 +114,14 @@
     },
     {
       "path": "reports/ejercicio_07/MARCO_LEGAL_VOLUNTARIO_ETICO.md",
-      "bytes": 14878,
-      "sha256": "26942c1b58d1994de4634cf7013cbd672f048554a8365db3aecf5ecdb5ddfbe7",
+      "bytes": 19599,
+      "sha256": "5f208f505815af3433eeaeabef29972b36f7c259945c329fffda645aa7caa304",
+      "local_ignored_model": false
+    },
+    {
+      "path": "reports/ejercicio_07/MATRIZ_APLICABILIDAD_LEGAL.csv",
+      "bytes": 4643,
+      "sha256": "d7b79121a4dd6797383676c4d1e88a1b4d3590a1e462ad2a2fe5babc6881c35c",
       "local_ignored_model": false
     },
     {
@@ -503,15 +509,93 @@
       "local_ignored_model": false
     },
     {
-      "path": "reports/ejercicio_07/evidencias/fase_05/estado_git.txt",
+      "path": "reports/ejercicio_07/evidencias/fase_05/03_framework_style.json",
+      "bytes": 457,
+      "sha256": "91acf1da8631997ab232ad1ba9796519795a5ef0830071c59f1cc956f7a2e01d",
+      "local_ignored_model": false
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_05/04_framework_verification.json",
+      "bytes": 1000,
+      "sha256": "3deac270e9a33a8e2e1fd533a5f6c6abde5a33486c237f872879848a506c9b3b",
+      "local_ignored_model": false
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_05/05_framework_verification_final.json",
+      "bytes": 1578,
+      "sha256": "b7bfdeca74e058f5efa670657eb72bdf0725f3d871f840fae85419ca2c59d66d",
+      "local_ignored_model": false
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_05/06_final_style.json",
+      "bytes": 458,
+      "sha256": "841c1ef0b206c203dbc6ca7665a2d14bde2c5e21263f9dcdd07bc6823a0e956e",
+      "local_ignored_model": false
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_05/07_final_document_verification.json",
+      "bytes": 1577,
+      "sha256": "e387ef41217a69ed7e99d1716b24d147a5b87bc049d91d722bae194ec1c202e7",
+      "local_ignored_model": false
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_05/draft_snapshot/MARCO_LEGAL_VOLUNTARIO_ETICO.md",
+      "bytes": 14878,
+      "sha256": "26942c1b58d1994de4634cf7013cbd672f048554a8365db3aecf5ecdb5ddfbe7",
+      "local_ignored_model": false
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_05/draft_snapshot/artifact_manifest.json",
+      "bytes": 34055,
+      "sha256": "ea0af8814da7fcdb73301e49097d884746b9ae8be1e72ee4a8d823fafb24542e",
+      "local_ignored_model": false
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_05/draft_snapshot/estado_git.txt",
       "bytes": 1356,
       "sha256": "26585bb9ea2242d3fca3c5f313a56b407cbfcf9a6ba56eb496b15c4f81472410",
       "local_ignored_model": false
     },
     {
-      "path": "reports/ejercicio_07/evidencias/fase_05/execution_log.json",
+      "path": "reports/ejercicio_07/evidencias/fase_05/draft_snapshot/execution_log.json",
       "bytes": 2290,
       "sha256": "06c286029d8a04546acf76dce8e05ffec77bfd1e81a4dc1fe2a9f0659263192d",
+      "local_ignored_model": false
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_05/draft_snapshot/index.json",
+      "bytes": 2183,
+      "sha256": "9d5556af40d685264f3003f83a9db41cf037af6b64abad03b770792aff0fa077",
+      "local_ignored_model": false
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_05/draft_snapshot/legal_context.json",
+      "bytes": 736,
+      "sha256": "905ab379c69452f138e0826c88f3379fed62854c9c06e169d271ea99e8e0cc39",
+      "local_ignored_model": false
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_05/draft_snapshot/sources.json",
+      "bytes": 3235,
+      "sha256": "a6337c586e45f48b9a79f17166cf47b268304f498ae2120718aa12ea1b05487e",
+      "local_ignored_model": false
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_05/draft_snapshot/verification.json",
+      "bytes": 862,
+      "sha256": "ca730b87094a34f0ed956f2b8a439c0b5ae4c5da4c75aba8ae9c9b570150633a",
+      "local_ignored_model": false
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_05/estado_git.txt",
+      "bytes": 1037,
+      "sha256": "fdc68b53f343563a1c1a6c29079865d264c85ea634ec02d4d99bf47684f862ee",
+      "local_ignored_model": false
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_05/execution_log.json",
+      "bytes": 8585,
+      "sha256": "1ccc007c532dcbf8a67189d14efc7cd49ec33acdf3966615fe9d84a2e71f4adc",
       "local_ignored_model": false
     },
     {
@@ -522,8 +606,8 @@
     },
     {
       "path": "reports/ejercicio_07/evidencias/fase_05/legal_context.json",
-      "bytes": 736,
-      "sha256": "905ab379c69452f138e0826c88f3379fed62854c9c06e169d271ea99e8e0cc39",
+      "bytes": 1859,
+      "sha256": "d4a10c077ac9fa9be3eb3960dada9e2328d1fcf75c92ef08f5c150497dd37a79",
       "local_ignored_model": false
     },
     {
@@ -534,20 +618,26 @@
     },
     {
       "path": "reports/ejercicio_07/evidencias/fase_05/sources.json",
-      "bytes": 3235,
-      "sha256": "a6337c586e45f48b9a79f17166cf47b268304f498ae2120718aa12ea1b05487e",
+      "bytes": 8324,
+      "sha256": "7f2eae681a52d97f591efc891a03e82f92f10c181e8f4cc10c716cfacda9c7a8",
       "local_ignored_model": false
     },
     {
       "path": "reports/ejercicio_07/evidencias/fase_05/verification.json",
-      "bytes": 862,
-      "sha256": "ca730b87094a34f0ed956f2b8a439c0b5ae4c5da4c75aba8ae9c9b570150633a",
+      "bytes": 1184,
+      "sha256": "a0a5486dd5afeff9bc6c3a2ce8f07fe60b419ccdf403b2eb6a6b87d9f3378b08",
       "local_ignored_model": false
     },
     {
       "path": "reports/ejercicio_07/evidencias/fase_05/verify_draft.py",
       "bytes": 4494,
       "sha256": "a903959365d116a5712136fc18561e34c128493b661f681367e1d2cc13944a05",
+      "local_ignored_model": false
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_05/verify_framework.py",
+      "bytes": 8561,
+      "sha256": "851251956793f06a28395569c15e8372138ad95018ef0beaf4ed3c92027352dd",
       "local_ignored_model": false
     },
     {

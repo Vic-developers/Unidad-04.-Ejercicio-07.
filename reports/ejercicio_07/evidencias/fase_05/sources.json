@@ -58,5 +58,77 @@
     "verified_support": "Las recomendaciones no son vinculantes como convenciones; la página distingue compromisos procedimentales de los Estados miembros.",
     "nature": "explicacion_oficial_de_naturaleza_del_instrumento",
     "access": "contenido oficial leído"
+  },
+  {
+    "id": "L01",
+    "organization": "Asamblea Nacional; copia del Tribunal Constitucional dominicano",
+    "title": "Constitución de la República Dominicana 2024",
+    "official_url": "https://tribunalsitestorage.blob.core.windows.net/media/61583/constitucion-6-x-9-de-lujo-web-portad-nea.pdf",
+    "version_or_date": "Proclamación: 27-10-2024; edición institucional enlazada por el Tribunal Constitucional",
+    "consulted_on": "2026-10-31",
+    "location": "Arts. 6, 39, 44.2, 70 y disposición final; páginas impresas 6, 19–20, 23–24, 42 y 134",
+    "verified_support": "Supremacía constitucional; igualdad, privacidad y garantía de hábeas data; entrada en vigencia desde proclamación.",
+    "nature": "norma_constitucional",
+    "access": "PDF leído desde el enlace Descargar de la publicación Constitución 2024 del Tribunal Constitucional; no se usó el enlace 404 de Consultoría Jurídica"
+  },
+  {
+    "id": "L02",
+    "organization": "Congreso Nacional; copia de la Superintendencia de Bancos",
+    "title": "Ley 172-13 sobre protección integral de datos personales",
+    "official_url": "https://sb.gob.do/media/4i1ploou/ley17213.pdf",
+    "version_or_date": "Gaceta Oficial 10737, 15-12-2013",
+    "consulted_on": "2026-10-31",
+    "location": "Arts. 1–6, 7–10, 13–17, 75–76; páginas PDF 2–7, 10–13 y 27–28",
+    "verified_support": "Texto de los artículos identificados en RD04–RD09; su aplicación al proyecto se analiza por separado.",
+    "nature": "ley_nacional",
+    "access": "PDF oficial de 33 páginas leído; selección de artículos generales separada de disposiciones crediticias específicas"
+  },
+  {
+    "id": "L03",
+    "organization": "Superintendencia de Bancos de la República Dominicana",
+    "title": "Ficha oficial de la Ley No. 172-13 Protección de los Datos",
+    "official_url": "https://www.sb.gob.do/regulacion/leyes/ley-no-172-13-proteccion-de-los-datos/",
+    "version_or_date": "Publicación indicada: 15-12-2013; estatus mostrado al consultar: Vigente",
+    "consulted_on": "2026-10-31",
+    "location": "Ficha de Regulación/Leyes: estatus y descarga",
+    "verified_support": "La institución presenta la ley como vigente en la consulta realizada; no es una certificación exhaustiva de cambios normativos.",
+    "nature": "ficha_institucional_de_vigencia",
+    "access": "Página oficial leída"
+  },
+  {
+    "id": "L04",
+    "organization": "Cámara de Diputados, Secretaría General",
+    "title": "Orden del día conocido por el pleno, sesión 00008 del 24-03-2026",
+    "official_url": "https://camaradediputados.gob.do/download/1936/2026-plo-ordenes-del-dia-conocidos-por-el-pleno/27776/sesion-08-del-martes-24-de-marzo-de-2026.pdf",
+    "version_or_date": "24-03-2026; antecedente legislativo, sin atribuirle estado posterior",
+    "consulted_on": "2026-10-31",
+    "location": "Puntos 10.59 y 10.68; páginas impresas 23 y 25",
+    "verified_support": "Remisión a comisiones de las iniciativas 05389-2024-2028-CD (IA) y 05407-2024-2028-CD (datos); ese trámite no acredita promulgación.",
+    "nature": "antecedente_legislativo_no_norma_promulgada",
+    "access": "PDF oficial de 38 páginas leído; el portal SIL devuelve una pantalla de carga al abrirlo"
+  },
+  {
+    "id": "L05",
+    "organization": "Poder Ejecutivo; copia del Ministerio de Administración Pública",
+    "title": "Decreto 714-26, infraestructura digital del Estado",
+    "official_url": "https://map.gob.do/transparencia/download/105/decretos/22808/decreto-714-26-reglamento-de-coordinacion-e-interes-estrategico-de-la-infraestructura-digital-del-estado.pdf",
+    "version_or_date": "Dado el 09-10-2026; art. 15 condiciona vigencia a publicación en Gaceta Oficial, fecha no verificada aquí",
+    "consulted_on": "2026-10-31",
+    "location": "Arts. 3, 9–13 y 15; páginas PDF 6 y 10–13",
+    "verified_support": "Ámbito sectorial y coordinación estatal identificados para RD10; no se acredita el supuesto en la práctica académica.",
+    "nature": "norma_sectorial_con_vigencia_condicionada_no_verificada",
+    "access": "PDF oficial leído; número 714-26 confirmado en su primera página, frente a etiqueta de enlace 716-26 en la noticia"
+  },
+  {
+    "id": "L06",
+    "organization": "Ministerio de Administración Pública",
+    "title": "Gobierno emite por decreto reglamento de coordinación e interés estratégico de la infraestructura digital del Estado",
+    "official_url": "https://map.gob.do/2026/10/12/gobierno-emite-por-decreto-reglamento-de-coordinacion-e-interes-estrategico-de-la-infraestructura-digital-del-estado/",
+    "version_or_date": "12-10-2026",
+    "consulted_on": "2026-10-31",
+    "location": "Cuerpo de noticia, lista de novedades y enlace final al PDF",
+    "verified_support": "La noticia contiene diferencias con el texto enlazado; se utiliza el PDF para atribuir contenido normativo, sin elevar la noticia a ley.",
+    "nature": "comunicacion_institucional_no_texto_normativo",
+    "access": "Página leída y contrastada con el PDF descargable, sin publicar comentarios"
   }
 ]
