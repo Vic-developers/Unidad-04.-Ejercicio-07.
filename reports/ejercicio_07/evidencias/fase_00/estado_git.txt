@@ -1,0 +1,45 @@
+Consulta local al cierre del diagnostico
+UTC: 2026-10-31T17:04:07.160250+00:00
+
+COMMAND: git status --short --branch --untracked-files=all
+EXIT_CODE: 0
+STDOUT:
+## No commits yet on main...origin/main [gone]
+?? reports/ejercicio_07/DIAGNOSTICO_INICIAL.md
+?? reports/ejercicio_07/evidencias/fase_00/acceso_y_entorno.json
+?? reports/ejercicio_07/evidencias/fase_00/diagnostico_estatico.json
+?? reports/ejercicio_07/evidencias/fase_00/diagnostico_estatico.py
+?? reports/ejercicio_07/evidencias/fase_00/estado_git.txt
+?? reports/ejercicio_07/evidencias/fase_00/integridad_fuente.json
+STDERR:
+
+
+COMMAND: git remote -v
+EXIT_CODE: 0
+STDOUT:
+origin	https://github.com/Vic-developers/Unidad-04.-Ejercicio-07..git (fetch)
+origin	https://github.com/Vic-developers/Unidad-04.-Ejercicio-07..git (push)
+STDERR:
+
+
+COMMAND: git show-ref
+EXIT_CODE: 1
+STDOUT:
+
+STDERR:
+
+
+COMMAND: git ls-files
+EXIT_CODE: 0
+STDOUT:
+
+STDERR:
+
+
+COMMAND: git diff --stat
+EXIT_CODE: 0
+STDOUT:
+
+STDERR:
+
+

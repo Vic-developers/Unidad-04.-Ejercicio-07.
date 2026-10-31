@@ -1,0 +1,465 @@
+{
+  "generated_at": "2026-10-31T13:00:46.185536-04:00",
+  "source_root": "C:\\Users\\reyti\\Downloads\\INF8239_U04_Gobernanza_DSS_Proyecto_Base_uv\\INF8239_U04_Gobernanza_DSS_Proyecto_Base_uv",
+  "execution_python": "3.12.13 (main, Jun 11 2026, 04:05:29) [MSC v.1944 64 bit (AMD64)]",
+  "execution_executable": "C:\\Users\\reyti\\AppData\\Roaming\\uv\\python\\cpython-3.12.13-windows-x86_64-none\\python.exe",
+  "source_has_git_directory": false,
+  "source_has_project_venv": false,
+  "file_count": 42,
+  "inventory": [
+    {
+      "path": ".gitignore",
+      "bytes": 105,
+      "sha256": "2db2d2fabf4c6f0093adb8d31298d23c702365e822c629e622ccd5d37a3e9ecf"
+    },
+    {
+      "path": ".python-version",
+      "bytes": 5,
+      "sha256": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d"
+    },
+    {
+      "path": "app.py",
+      "bytes": 1071,
+      "sha256": "2105a3a9f6f125253cdd7a2f7fc927ccd7fa3fea8d2abce9918efcfb32f2d7ba"
+    },
+    {
+      "path": "configs/governance.yml",
+      "bytes": 414,
+      "sha256": "05037b0170ad7c4047d41b263dca1c21c298e06ba5a43d5eacf2eb3edb75b113"
+    },
+    {
+      "path": "data/territorial_risk_synthetic.csv",
+      "bytes": 34284,
+      "sha256": "2af1858fe874f3914b0f9bfe068fd876cb716186694a6ece9a16e8c929128a01"
+    },
+    {
+      "path": "docs/AI_USE_DECLARATION.md",
+      "bytes": 143,
+      "sha256": "b3bfa081add372a57af53d15be91102ec1e5cc462d57169bddcda182ef77c345"
+    },
+    {
+      "path": "docs/DATASET_CARD.md",
+      "bytes": 344,
+      "sha256": "a93637edaaa3f8be060636d1519126d039faf55be1baf4b0ad97ca3eb7a3252e"
+    },
+    {
+      "path": "docs/MODEL_CARD.md",
+      "bytes": 272,
+      "sha256": "b12d603e0df039e69563b80377995acddfc46644a94ecc17b15c43e5dc9ea9b8"
+    },
+    {
+      "path": "docs/RUNBOOK.md",
+      "bytes": 289,
+      "sha256": "bd8b24cc70ed3616fbb96508db4520dfad7110c662d5e8ad5e1445b66be1901d"
+    },
+    {
+      "path": "models/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 631,
+      "sha256": "99f02ee8aadeca173ac1a1e59e47897c103cc2ca1f08b77ac2cd84dcccd67ad2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 632,
+      "sha256": "c70645b4d166a45799bcdfc54d4dad1019e25184906b023a359ebaae05682f84"
+    },
+    {
+      "path": "reports/lab11/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/lab12/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/lab13/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "scripts/check_environment.py",
+      "bytes": 152,
+      "sha256": "17538c5905abd28664efda550d10236de7cb9135918ab8c45dbbde40dffabb83"
+    },
+    {
+      "path": "scripts/describe_dataset.py",
+      "bytes": 438,
+      "sha256": "f4bab95aeeb1c4c8c474add556aa18ffbdcdf9a1732614ab5ce0b15b8ad64f22"
+    },
+    {
+      "path": "scripts/lab11_impact.py",
+      "bytes": 1079,
+      "sha256": "216cb663a38935969388afc0d76a358bd092e93c0c8c8e85824ad79ba014ea64"
+    },
+    {
+      "path": "scripts/lab12_audit.py",
+      "bytes": 1076,
+      "sha256": "25b9463b800c4dfda202811453e6b692003b32b5055a0ec0a065b7c418bfdb5a"
+    },
+    {
+      "path": "scripts/lab13_governance.py",
+      "bytes": 649,
+      "sha256": "325223926fb09d6d3536ccce51897e29ec43e9a32d4b96a89b8d10fe234fc5ce"
+    },
+    {
+      "path": "scripts/simulate_incident.py",
+      "bytes": 492,
+      "sha256": "6d0d47a9dea44e8c881f09ba304c75f96f510ed476f2d212e36d3798704ca238"
+    },
+    {
+      "path": "scripts/validate_lab12_decision.py",
+      "bytes": 285,
+      "sha256": "f552f44d2d9a4afbe917f3d072c3a39abf31d6f768b15a2796776ed7c831ace1"
+    },
+    {
+      "path": "src/inf8239_u04/__init__.py",
+      "bytes": 22,
+      "sha256": "20c8e430ededc2143396e553a3c67aac4ec483ef54efdfcb18a31cb162ca0646"
+    },
+    {
+      "path": "src/inf8239_u04/data.py",
+      "bytes": 1094,
+      "sha256": "aa267f996c8304abec0e4c0224e5481a25bed5747ee52c089c28d3d231e08354"
+    },
+    {
+      "path": "src/inf8239_u04/fairness.py",
+      "bytes": 860,
+      "sha256": "5663801032c3414a0f6c48e3484546ae15ed83a60cf4489e0e8e8a867d44b4f7"
+    },
+    {
+      "path": "src/inf8239_u04/governance.py",
+      "bytes": 1049,
+      "sha256": "c17706d2f9d8f196a3731e13c14200af899049aa60b72c99c970ddaa527fea97"
+    },
+    {
+      "path": "src/inf8239_u04/impact.py",
+      "bytes": 1079,
+      "sha256": "4e970e4ef346f10cb0602f2d1f753410d6a0f22a196e0256be7ae7bc7c6c07cf"
+    },
+    {
+      "path": "src/inf8239_u04/model.py",
+      "bytes": 1099,
+      "sha256": "6c18d68af664ae513221bcc18520970350d1aacc047cb6fd1e6d14da28dab9cc"
+    },
+    {
+      "path": "src/inf8239_u04/pipeline.py",
+      "bytes": 1020,
+      "sha256": "5e55fc6187c840e1b84d5cdf525ce1a82ab093533e9336e9786c4bfac87cdaec"
+    },
+    {
+      "path": "student_inputs/lab11_impact.yml",
+      "bytes": 221,
+      "sha256": "3438e6178cf9eb85f0d1874030f8794fa2a2b5c21d49834d1276e55a1e1c7092"
+    },
+    {
+      "path": "student_inputs/lab12_decision.yml",
+      "bytes": 128,
+      "sha256": "a44151d600b34aece26d12c8a7f79037fb0e1f50168436c154e0895c32853bb5"
+    },
+    {
+      "path": "student_inputs/raci.csv",
+      "bytes": 341,
+      "sha256": "4ac4b977965ee5fb6b8d5ce828d55f1ab94b60b0610f282ac76f684f5f2a84df"
+    },
+    {
+      "path": "student_inputs/risk_register.csv",
+      "bytes": 509,
+      "sha256": "b52fb773d51c7c774899ec3d7013b81c0cece521e7a6ab92c6980c03b2e1bb61"
+    },
+    {
+      "path": "student_inputs/stakeholders.csv",
+      "bytes": 219,
+      "sha256": "54d8a7296d793b0a27d5f123c17ea58a4c840e6ccbee55410fc9d5d3bf661263"
+    },
+    {
+      "path": "tests/test_app.py",
+      "bytes": 294,
+      "sha256": "9968363486d3fe2dcb56fa7bed12ec3328b8b54c068ed4e2f4fb92f04b42648e"
+    },
+    {
+      "path": "tests/test_data.py",
+      "bytes": 352,
+      "sha256": "cf18efd4e270e3dbe4d092992d7409473a5ae24a632db20a9bdeda9e38b060a1"
+    },
+    {
+      "path": "tests/test_fairness.py",
+      "bytes": 406,
+      "sha256": "012edb562c1d3f661677bad0157bbdd3ef891506a31fcde642ca77841601c8e7"
+    },
+    {
+      "path": "tests/test_governance.py",
+      "bytes": 526,
+      "sha256": "7874f1405314a894db49e2390fd1aaf67561e1490a155531e2242d067ec207e4"
+    },
+    {
+      "path": "tests/test_impact.py",
+      "bytes": 601,
+      "sha256": "bed3f1ab6d9d874c4d37f6f58284738b9543d2a41edcb4a599f64465a54b2ef3"
+    },
+    {
+      "path": "tests/test_model.py",
+      "bytes": 267,
+      "sha256": "5de6406ab9f9bc098537c43848450eb1ffdcf2b9a48fdcf27b6a2b6b8305c062"
+    },
+    {
+      "path": "tests/test_privacy.py",
+      "bytes": 188,
+      "sha256": "3721bdbcf8a668ef638246e23a99433036d6240864da6315e7f1a7554fda0c75"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 99086,
+      "sha256": "9d645049178d308bb585a9d246211bea8dac5e2e2c6b2c7b57a298ec31db2042"
+    }
+  ],
+  "syntax": {
+    "python_files_checked": 22,
+    "errors": [
+      {
+        "file": "scripts/lab11_impact.py",
+        "line": 11,
+        "column": 39,
+        "message": "unterminated string literal (detected at line 11)"
+      },
+      {
+        "file": "scripts/simulate_incident.py",
+        "line": 3,
+        "column": 6,
+        "message": "unterminated f-string literal (detected at line 3)"
+      }
+    ]
+  },
+  "placeholder_lines": {
+    "docs/AI_USE_DECLARATION.md": [
+      3
+    ],
+    "docs/MODEL_CARD.md": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16
+    ],
+    "docs/RUNBOOK.md": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "scripts/lab11_impact.py": [
+      8,
+      13
+    ],
+    "scripts/simulate_incident.py": [
+      9,
+      10
+    ],
+    "scripts/validate_lab12_decision.py": [
+      3
+    ],
+    "src/inf8239_u04/impact.py": [
+      8,
+      15
+    ],
+    "student_inputs/lab11_impact.yml": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "student_inputs/lab12_decision.yml": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "student_inputs/risk_register.csv": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "student_inputs/stakeholders.csv": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "tests/test_impact.py": [
+      7
+    ]
+  },
+  "static_test_inventory": {
+    "tests/test_app.py": [
+      "test_app_starts_and_discloses_synthetic_case"
+    ],
+    "tests/test_data.py": [
+      "test_dataset_contract",
+      "test_direct_identifier_rejected"
+    ],
+    "tests/test_fairness.py": [
+      "test_fairness_metrics_are_bounded"
+    ],
+    "tests/test_governance.py": [
+      "test_failed_gate_requires_review",
+      "test_raci_requires_accountable"
+    ],
+    "tests/test_impact.py": [
+      "test_complete_risk_is_scored",
+      "test_placeholder_is_rejected"
+    ],
+    "tests/test_model.py": [
+      "test_predictions_are_binary"
+    ],
+    "tests/test_privacy.py": [
+      "test_prohibited_name_rejected"
+    ]
+  },
+  "static_test_count": 10,
+  "pytest_executed": false,
+  "models_trained": false,
+  "dataset": {
+    "rows": 640,
+    "column_count": 9,
+    "columns": [
+      "case_id",
+      "received_date",
+      "zone",
+      "protected_group",
+      "age_band",
+      "previous_incidents",
+      "infrastructure_score",
+      "exposure",
+      "target"
+    ],
+    "unique_case_ids": 640,
+    "blank_fields": {
+      "case_id": 0,
+      "received_date": 0,
+      "zone": 0,
+      "protected_group": 0,
+      "age_band": 0,
+      "previous_incidents": 0,
+      "infrastructure_score": 0,
+      "exposure": 0,
+      "target": 0
+    },
+    "target_counts": {
+      "0": 287,
+      "1": 353
+    },
+    "protected_group_counts": {
+      "G2": 244,
+      "G1": 396
+    },
+    "date_min": "2026-01-01",
+    "date_max": "2026-12-27",
+    "temporal_split_from_source_default": {
+      "train_n": 480,
+      "test_n": 160,
+      "train_end": "2026-09-24",
+      "test_start": "2026-09-25",
+      "shared_dates": []
+    },
+    "sha256": "2af1858fe874f3914b0f9bfe068fd876cb716186694a6ece9a16e8c929128a01"
+  },
+  "project_metadata": {
+    "project": {
+      "name": "inf8239-u04-governance-dss",
+      "version": "0.1.0",
+      "description": "Laboratorios de impacto, equidad y DSS gobernado",
+      "requires-python": ">=3.12,<3.13",
+      "dependencies": [
+        "fairlearn>=0.12,<0.13",
+        "joblib>=1.5,<2",
+        "numpy>=2.0,<3",
+        "pandas>=2.2,<3",
+        "plotly>=6,<7",
+        "pyyaml>=6,<7",
+        "scikit-learn>=1.7,<2",
+        "streamlit>=1.49,<2"
+      ]
+    },
+    "dependency-groups": {
+      "dev": [
+        "pytest>=8.4,<9",
+        "pytest-cov>=6,<7",
+        "ruff>=0.13,<1"
+      ]
+    },
+    "build-system": {
+      "requires": [
+        "hatchling"
+      ],
+      "build-backend": "hatchling.build"
+    },
+    "tool": {
+      "hatch": {
+        "build": {
+          "targets": {
+            "wheel": {
+              "packages": [
+                "src/inf8239_u04"
+              ]
+            }
+          }
+        }
+      },
+      "pytest": {
+        "ini_options": {
+          "pythonpath": [
+            "src"
+          ],
+          "testpaths": [
+            "tests"
+          ]
+        }
+      }
+    }
+  },
+  "lock_requires_python": "==3.12.*",
+  "locked_dependencies": {
+    "fairlearn": "0.12.0",
+    "joblib": "1.6.0",
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "plotly": "6.9.0",
+    "pytest": "8.4.2",
+    "pytest-cov": "6.3.0",
+    "pyyaml": "6.0.3",
+    "ruff": "0.16.8",
+    "scikit-learn": "1.9.1",
+    "streamlit": "1.64.0"
+  },
+  "execution_python_package_availability": {
+    "pandas": false,
+    "numpy": false,
+    "sklearn": false,
+    "fairlearn": false,
+    "yaml": false,
+    "joblib": false,
+    "streamlit": false,
+    "pytest": false
+  }
+}
