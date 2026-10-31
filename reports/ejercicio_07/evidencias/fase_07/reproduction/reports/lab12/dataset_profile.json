@@ -1,0 +1,175 @@
+{
+  "synthetic_only": true,
+  "dataset_sha256": "2af1858fe874f3914b0f9bfe068fd876cb716186694a6ece9a16e8c929128a01",
+  "rows": 640,
+  "column_count": 9,
+  "dtypes": {
+    "case_id": "object",
+    "received_date": "datetime64[ns]",
+    "zone": "object",
+    "protected_group": "object",
+    "age_band": "object",
+    "previous_incidents": "int64",
+    "infrastructure_score": "float64",
+    "exposure": "float64",
+    "target": "int64"
+  },
+  "missing_counts": {
+    "case_id": 0,
+    "received_date": 0,
+    "zone": 0,
+    "protected_group": 0,
+    "age_band": 0,
+    "previous_incidents": 0,
+    "infrastructure_score": 0,
+    "exposure": 0,
+    "target": 0
+  },
+  "duplicate_ids": 0,
+  "duplicate_full_rows": 0,
+  "duplicate_predictor_rows": 0,
+  "numeric_values_finite": true,
+  "previous_incidents_nonnegative_integer": true,
+  "numeric_summary": {
+    "previous_incidents": {
+      "count": 640.0,
+      "mean": 3.284375,
+      "std": 1.6493199385749595,
+      "min": 0.0,
+      "25%": 2.0,
+      "50%": 3.0,
+      "75%": 4.0,
+      "max": 9.0
+    },
+    "infrastructure_score": {
+      "count": 640.0,
+      "mean": 0.51923671875,
+      "std": 0.18201185444853743,
+      "min": 0.0316,
+      "25%": 0.39732500000000004,
+      "50%": 0.5136000000000001,
+      "75%": 0.645475,
+      "max": 0.9835
+    },
+    "exposure": {
+      "count": 640.0,
+      "mean": 0.50316296875,
+      "std": 0.19252963299491607,
+      "min": 0.0,
+      "25%": 0.3641,
+      "50%": 0.5129999999999999,
+      "75%": 0.633925,
+      "max": 1.0
+    }
+  },
+  "categories": {
+    "zone": {
+      "Este": 164,
+      "Norte": 155,
+      "Oeste": 157,
+      "Sur": 164
+    },
+    "protected_group": {
+      "G1": 396,
+      "G2": 244
+    },
+    "age_band": {
+      "18-29": 148,
+      "30-44": 163,
+      "45-59": 150,
+      "60+": 179
+    }
+  },
+  "raw_dates_already_sorted": false,
+  "unique_dates": 324,
+  "predictors": [
+    "zone",
+    "age_band",
+    "previous_incidents",
+    "infrastructure_score",
+    "exposure"
+  ],
+  "excluded_from_predictors": [
+    "case_id",
+    "received_date",
+    "protected_group",
+    "target"
+  ],
+  "split": {
+    "all": {
+      "n": 640,
+      "start": "2026-01-01",
+      "end": "2026-12-27",
+      "target": {
+        "0": 287,
+        "1": 353
+      },
+      "protected_group": {
+        "G1": 396,
+        "G2": 244
+      },
+      "group_target": {
+        "G1": {
+          "0": 199,
+          "1": 197
+        },
+        "G2": {
+          "0": 88,
+          "1": 156
+        }
+      }
+    },
+    "train": {
+      "n": 480,
+      "start": "2026-01-01",
+      "end": "2026-09-24",
+      "target": {
+        "0": 219,
+        "1": 261
+      },
+      "protected_group": {
+        "G1": 295,
+        "G2": 185
+      },
+      "group_target": {
+        "G1": {
+          "0": 147,
+          "1": 148
+        },
+        "G2": {
+          "0": 72,
+          "1": 113
+        }
+      }
+    },
+    "test": {
+      "n": 160,
+      "start": "2026-09-25",
+      "end": "2026-12-27",
+      "target": {
+        "0": 68,
+        "1": 92
+      },
+      "protected_group": {
+        "G1": 101,
+        "G2": 59
+      },
+      "group_target": {
+        "G1": {
+          "0": 52,
+          "1": 49
+        },
+        "G2": {
+          "0": 16,
+          "1": 43
+        }
+      }
+    }
+  },
+  "test_categories_absent_from_training": {
+    "zone": [],
+    "age_band": []
+  },
+  "cross_split_duplicate_predictor_rows": 0,
+  "limitation": "Observed quality checks do not establish label validity, pre-event availability or validity for real populations."
+}

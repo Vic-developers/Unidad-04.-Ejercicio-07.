@@ -1,0 +1,47 @@
+{
+  "validation_status": "passed",
+  "phase7_status": "completed_local_tests_reproduction_and_ai_disclosure",
+  "starting_commit": "136068306f66d2fa4037c35db2039cd7a72dc3e1",
+  "previous_files_reviewed": 185,
+  "previous_files_unchanged": 184,
+  "changed_previous_files": [
+    "scripts/simulate_incident.py"
+  ],
+  "unique_tests_passed": 15,
+  "final_test_failures": 0,
+  "final_test_errors": 0,
+  "final_tests_skipped": 0,
+  "test_group_counts": [
+    3,
+    4,
+    7,
+    1
+  ],
+  "python_files_syntax_checked": 46,
+  "installed_distributions_checked": 55,
+  "reproduction_source_files": 42,
+  "reproduced_models": 2,
+  "reproduced_prediction_rows": 320,
+  "models_predictions_probabilities_and_primary_metrics_equal": true,
+  "model_binary_hashes_equal_in_this_run": true,
+  "lab11_outputs_byte_equal": true,
+  "source_snapshot_differences_after_reproduction": [
+    "scripts/simulate_incident.py"
+  ],
+  "source_snapshot_difference_reason": "UTC alias style fix in a LAB13 template that was never executed; all executed source and test files unchanged.",
+  "local_path_references_checked": 84,
+  "preserved_non_successful_attempts": [
+    "01_dependency_check",
+    "03_initial_syntax",
+    "06_interruption_record",
+    "07_reproduction_resume",
+    "reproduction/commands/04b_app_test",
+    "11_style_check"
+  ],
+  "ai_declaration_and_prompt_provenance_checked": true,
+  "independent_human_review": false,
+  "clean_environment_installed": false,
+  "real_deployment_authorized": false,
+  "phase8_started": false,
+  "limitation": "Local reproduction in the same environment; test success is not mitigation effectiveness, legal compliance, fairness or human approval."
+}

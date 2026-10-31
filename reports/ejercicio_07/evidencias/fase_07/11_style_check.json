@@ -1,0 +1,23 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\ruff.exe",
+    "check",
+    "scripts/simulate_incident.py",
+    "reports/ejercicio_07/evidencias/fase_07/record_command.py",
+    "reports/ejercicio_07/evidencias/fase_07/capture_environment.py",
+    "reports/ejercicio_07/evidencias/fase_07/check_syntax.py",
+    "reports/ejercicio_07/evidencias/fase_07/reproduce.py",
+    "reports/ejercicio_07/evidencias/fase_07/verify_phase.py"
+  ],
+  "started_at_utc": "2026-10-31T19:25:15.569779+00:00",
+  "elapsed_seconds": 0.06461459999991348,
+  "exit_code": 1,
+  "stdout": "UP017 [*] Use `datetime.UTC` alias\n --> scripts\\simulate_incident.py:6:30\n  |\n4 | text = f\"\"\"# Incident simulation\n5 |\n6 | - detected_at: {datetime.now(timezone.utc).isoformat()}\n  |                              ^^^^^^^^^^^^\n7 | - signal: recall gap exceeded\n8 | - containment: REVIEW and safe baseline\n  |\nhelp: Convert to `datetime.UTC` alias\n  |\n  - from datetime import datetime, timezone\n1 + from datetime import datetime, timezone, UTC\n2 | from pathlib import Path\n3 |\n4 | text = f\"\"\"# Incident simulation\n5 |\n  - - detected_at: {datetime.now(timezone.utc).isoformat()}\n6 + - detected_at: {datetime.now(UTC).isoformat()}\n7 | - signal: recall gap exceeded\n  |\n\nFound 1 error.\n[*] 1 fixable with the `--fix` option.\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

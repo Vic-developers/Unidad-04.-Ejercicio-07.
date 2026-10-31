@@ -1,0 +1,18 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-B",
+    "reports\\ejercicio_07\\evidencias\\fase_07\\check_syntax.py"
+  ],
+  "started_at_utc": "2026-10-31T19:25:15.088296+00:00",
+  "elapsed_seconds": 0.2752885999980208,
+  "exit_code": 0,
+  "stdout": "{\"python_files_parsed\": 46, \"errors\": [], \"scripts_executed\": 0, \"method\": \"ast.parse; no bytecode output\"}\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

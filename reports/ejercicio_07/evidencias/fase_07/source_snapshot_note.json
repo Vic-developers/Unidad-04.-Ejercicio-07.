@@ -1,0 +1,10 @@
+{
+  "differences": [
+    {
+      "path": "scripts/simulate_incident.py",
+      "copied_sha256": "8d118f92f8379db9bc69670f626821736a312733ddb7bc618039fcded6c33570",
+      "current_sha256": "e7e711355fe432f815193cb3e0f5fa6538af7ce5df95074206649b29c3e784ca",
+      "reason": "Final UTC-alias style adjustment in the unexecuted incident template; all executed code and tests unchanged."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\ruff.exe",
+    "check",
+    "--fix",
+    "scripts/simulate_incident.py",
+    "reports/ejercicio_07/evidencias/fase_07/record_command.py",
+    "reports/ejercicio_07/evidencias/fase_07/capture_environment.py",
+    "reports/ejercicio_07/evidencias/fase_07/check_syntax.py",
+    "reports/ejercicio_07/evidencias/fase_07/reproduce.py",
+    "reports/ejercicio_07/evidencias/fase_07/verify_phase.py"
+  ],
+  "started_at_utc": "2026-10-31T19:26:36.690951+00:00",
+  "elapsed_seconds": 0.04689249999864842,
+  "exit_code": 0,
+  "stdout": "Found 3 errors (3 fixed, 0 remaining).\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

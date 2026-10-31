@@ -1,0 +1,20 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-B",
+    "reports\\ejercicio_07\\evidencias\\fase_07\\reproduce.py",
+    "--resume-existing",
+    "--app-test-only"
+  ],
+  "started_at_utc": "2026-10-31T19:19:34.340559+00:00",
+  "elapsed_seconds": 6.21391389999917,
+  "exit_code": 0,
+  "stdout": "{\"command\": \"01_import_origin\", \"preserved_passed_execution_reused\": true}\n{\"command\": \"04c_app_test_loopback\", \"exit_code\": 0, \"elapsed_seconds\": 5.953311900000699}\n{\"app_retry\": \"passed\", \"tests\": [{\"tests\": 1, \"failures\": 0, \"errors\": 0, \"skipped\": 0, \"label\": \"04c_app_test_loopback\", \"junit\": \"reports/ejercicio_07/evidencias/fase_07/reproduction/04c_app_test_loopback.xml\"}]}\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "command": [
+    "uv",
+    "--no-cache",
+    "pip",
+    "check",
+    "--python",
+    ".venv/Scripts/python.exe"
+  ],
+  "started_at_utc": "2026-10-31T19:09:07.218018+00:00",
+  "elapsed_seconds": 10.836431800002174,
+  "exit_code": 2,
+  "stdout": "",
+  "stderr": "WARN Retrying to persist temporary file to C:\\Users\\reyti\\AppData\\Local\\Packages\\sandbox.{969d3fb2-e475-4e59-9d1a-e32e2e4dcd96}\\AC\\Temp\\.tmp4P1lOo\\interpreter-v4\\954fdd23a91ab595\\9446617210332765.msgpack: failed to persist temporary file: Acceso denegado. (os error 5)\nWARN Retrying to persist temporary file to C:\\Users\\reyti\\AppData\\Local\\Packages\\sandbox.{969d3fb2-e475-4e59-9d1a-e32e2e4dcd96}\\AC\\Temp\\.tmp4P1lOo\\interpreter-v4\\954fdd23a91ab595\\9446617210332765.msgpack: failed to persist temporary file: Acceso denegado. (os error 5)\nWARN Retrying to persist temporary file to C:\\Users\\reyti\\AppData\\Local\\Packages\\sandbox.{969d3fb2-e475-4e59-9d1a-e32e2e4dcd96}\\AC\\Temp\\.tmp4P1lOo\\interpreter-v4\\954fdd23a91ab595\\9446617210332765.msgpack: failed to persist temporary file: Acceso denegado. (os error 5)\nWARN Retrying to persist temporary file to C:\\Users\\reyti\\AppData\\Local\\Packages\\sandbox.{969d3fb2-e475-4e59-9d1a-e32e2e4dcd96}\\AC\\Temp\\.tmp4P1lOo\\interpreter-v4\\954fdd23a91ab595\\9446617210332765.msgpack: failed to persist temporary file: Acceso denegado. (os error 5)\nWARN Retrying to persist temporary file to C:\\Users\\reyti\\AppData\\Local\\Packages\\sandbox.{969d3fb2-e475-4e59-9d1a-e32e2e4dcd96}\\AC\\Temp\\.tmp4P1lOo\\interpreter-v4\\954fdd23a91ab595\\9446617210332765.msgpack: failed to persist temporary file: Acceso denegado. (os error 5)\nWARN Retrying to persist temporary file to C:\\Users\\reyti\\AppData\\Local\\Packages\\sandbox.{969d3fb2-e475-4e59-9d1a-e32e2e4dcd96}\\AC\\Temp\\.tmp4P1lOo\\interpreter-v4\\954fdd23a91ab595\\9446617210332765.msgpack: failed to persist temporary file: Acceso denegado. (os error 5)\nWARN Retrying to persist temporary file to C:\\Users\\reyti\\AppData\\Local\\Packages\\sandbox.{969d3fb2-e475-4e59-9d1a-e32e2e4dcd96}\\AC\\Temp\\.tmp4P1lOo\\interpreter-v4\\954fdd23a91ab595\\9446617210332765.msgpack: failed to persist temporary file: Acceso denegado. (os error 5)\nWARN Retrying to persist temporary file to C:\\Users\\reyti\\AppData\\Local\\Packages\\sandbox.{969d3fb2-e475-4e59-9d1a-e32e2e4dcd96}\\AC\\Temp\\.tmp4P1lOo\\interpreter-v4\\954fdd23a91ab595\\9446617210332765.msgpack: failed to persist temporary file: Acceso denegado. (os error 5)\nWARN Retrying to persist temporary file to C:\\Users\\reyti\\AppData\\Local\\Packages\\sandbox.{969d3fb2-e475-4e59-9d1a-e32e2e4dcd96}\\AC\\Temp\\.tmp4P1lOo\\interpreter-v4\\954fdd23a91ab595\\9446617210332765.msgpack: failed to persist temporary file: Acceso denegado. (os error 5)\nWARN Retrying to persist temporary file to C:\\Users\\reyti\\AppData\\Local\\Packages\\sandbox.{969d3fb2-e475-4e59-9d1a-e32e2e4dcd96}\\AC\\Temp\\.tmp4P1lOo\\interpreter-v4\\954fdd23a91ab595\\9446617210332765.msgpack: failed to persist temporary file: Acceso denegado. (os error 5)\nerror: Failed to inspect Python interpreter from provided path at `.venv/Scripts/python.exe`\n  Caused by: Failed to query Python interpreter\n  Caused by: Failed to persist temporary file to C:\\Users\\reyti\\AppData\\Local\\Packages\\sandbox.{969d3fb2-e475-4e59-9d1a-e32e2e4dcd96}\\AC\\Temp\\.tmp4P1lOo\\interpreter-v4\\954fdd23a91ab595\\9446617210332765.msgpack: failed to persist temporary file: Acceso denegado. (os error 5)\n",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

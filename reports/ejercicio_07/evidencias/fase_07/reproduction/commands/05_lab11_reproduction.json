@@ -1,0 +1,21 @@
+{
+  "label": "05_lab11_reproduction",
+  "command": [
+    "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\.venv\\Scripts\\python.exe",
+    "-B",
+    "scripts/lab11_impact.py"
+  ],
+  "cwd": "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\reports\\ejercicio_07\\evidencias\\fase_07\\.runtime\\reproduction_01",
+  "started_at_utc": "2026-10-31T19:19:58.875933+00:00",
+  "elapsed_seconds": 1.1734144000001834,
+  "exit_code": 0,
+  "stdout": " id  priority                                     owner\nR01        12 Equipo de datos y modelos (rol propuesto)\nR03         9       Operador revisor de la demostración\nR05         9 Equipo de datos y modelos (rol propuesto)\nLAB11: 9 risks; 6 stakeholders; decision record preserved.\n",
+  "stderr": "",
+  "environment_overrides": {
+    "PYTHONPATH": "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\reports\\ejercicio_07\\evidencias\\fase_07\\.runtime\\reproduction_01\\src",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "STREAMLIT_BROWSER_GATHER_USAGE_STATS": "false"
+  }
+}

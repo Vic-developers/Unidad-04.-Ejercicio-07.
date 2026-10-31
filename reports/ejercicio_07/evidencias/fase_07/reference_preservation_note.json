@@ -1,0 +1,11 @@
+{
+  "source": "Observed tool results and staged-byte verification",
+  "initial_git_whitespace_check_exit_code": 2,
+  "reason": "Original reference prompt contains intentional Markdown line-break spaces.",
+  "exception_path": "reports/ejercicio_07/evidencias/fase_07/prompt_maestro_referencia.txt",
+  "other_staged_paths_checked": true,
+  "raw_copy_index_initially_normalized": true,
+  "normalization_corrected_for_only_two_reference_copies": true,
+  "copied_source_blobs_match_working_bytes": true,
+  "final_check_record": "17_git_whitespace_check.json"
+}

@@ -1,0 +1,72 @@
+{
+  "group": {
+    "accuracy": {
+      "max_minus_min": 0.04279241483470386,
+      "min_group": "G1",
+      "max_group": "G2",
+      "G2_minus_G1": 0.04279241483470386
+    },
+    "recall": {
+      "max_minus_min": 0.13763644992880875,
+      "min_group": "G1",
+      "max_group": "G2",
+      "G2_minus_G1": 0.13763644992880875
+    },
+    "fpr": {
+      "max_minus_min": 0.125,
+      "min_group": "G1",
+      "max_group": "G2",
+      "G2_minus_G1": 0.125
+    },
+    "selection_rate": {
+      "max_minus_min": 0.23242154723946967,
+      "min_group": "G1",
+      "max_group": "G2",
+      "G2_minus_G1": 0.23242154723946967
+    },
+    "precision": {
+      "max_minus_min": 0.13888888888888884,
+      "min_group": "G1",
+      "max_group": "G2",
+      "G2_minus_G1": 0.13888888888888884
+    },
+    "fnr": {
+      "max_minus_min": 0.13763644992880872,
+      "min_group": "G2",
+      "max_group": "G1",
+      "G2_minus_G1": -0.13763644992880872
+    }
+  },
+  "intersection": {
+    "accuracy": {
+      "max_minus_min": 0.4,
+      "min_group": "G1 | 45-59",
+      "max_group": "G2 | 45-59"
+    },
+    "recall": {
+      "max_minus_min": 0.4375,
+      "min_group": "G1 | 30-44",
+      "max_group": "G2 | 45-59"
+    },
+    "fpr": {
+      "max_minus_min": 0.5555555555555556,
+      "min_group": "G2 | 18-29",
+      "max_group": "G2 | 60+"
+    },
+    "selection_rate": {
+      "max_minus_min": 0.4722222222222222,
+      "min_group": "G1 | 18-29",
+      "max_group": "G2 | 45-59"
+    },
+    "precision": {
+      "max_minus_min": 0.4117647058823529,
+      "min_group": "G1 | 45-59",
+      "max_group": "G2 | 18-29"
+    },
+    "fnr": {
+      "max_minus_min": 0.4375,
+      "min_group": "G2 | 45-59",
+      "max_group": "G1 | 30-44"
+    }
+  }
+}

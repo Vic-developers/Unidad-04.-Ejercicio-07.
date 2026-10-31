@@ -1,0 +1,9 @@
+{
+  "observed_tool_permission_override": "require_escalated",
+  "override_scope": "AppTest-only retry in the isolated source copy",
+  "reason": "Default sandbox blocked the local socketpair used to initialize the Streamlit event loop",
+  "retry_record": "08_app_test_with_loopback.json",
+  "retry_exit_code": 0,
+  "full_lab13_cli_executed": false,
+  "incident_template_executed": false
+}

@@ -1,0 +1,22 @@
+{
+  "label": "01_import_origin",
+  "command": [
+    "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-c",
+    "import json; from pathlib import Path; import inf8239_u04.data as d; import inf8239_u04.model as m; base=Path.cwd().resolve(); paths=[Path(x.__file__).resolve() for x in (d,m)]; assert all(p.is_relative_to(base) for p in paths); print(json.dumps({'module_paths':[str(p) for p in paths]}))"
+  ],
+  "cwd": "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\reports\\ejercicio_07\\evidencias\\fase_07\\.runtime\\reproduction_01",
+  "started_at_utc": "2026-10-31T19:12:23.458054+00:00",
+  "elapsed_seconds": 4.094703800001298,
+  "exit_code": 0,
+  "stdout": "{\"module_paths\": [\"C:\\\\Users\\\\reyti\\\\OneDrive\\\\Documentos\\\\ChatGPT\\\\Tareas\\\\Unidad-04.-Ejercicio-07\\\\reports\\\\ejercicio_07\\\\evidencias\\\\fase_07\\\\.runtime\\\\reproduction_01\\\\src\\\\inf8239_u04\\\\data.py\", \"C:\\\\Users\\\\reyti\\\\OneDrive\\\\Documentos\\\\ChatGPT\\\\Tareas\\\\Unidad-04.-Ejercicio-07\\\\reports\\\\ejercicio_07\\\\evidencias\\\\fase_07\\\\.runtime\\\\reproduction_01\\\\src\\\\inf8239_u04\\\\model.py\"]}\n",
+  "stderr": "",
+  "environment_overrides": {
+    "PYTHONPATH": "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\reports\\ejercicio_07\\evidencias\\fase_07\\.runtime\\reproduction_01\\src",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "STREAMLIT_BROWSER_GATHER_USAGE_STATS": "false"
+  }
+}

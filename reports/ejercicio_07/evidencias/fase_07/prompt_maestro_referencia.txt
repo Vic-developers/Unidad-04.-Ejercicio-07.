@@ -1,0 +1,1108 @@
+# PROMPT MAESTRO PARA OPENCODE
+## Ejercicio 07 · Evaluación de impacto y auditoría de equidad
+### Integración de U04.LAB11 y U04.LAB12
+
+---
+
+# 1. INFORMACIÓN DEL PROYECTO
+
+**Actividad:** Ejercicio 07 · Evaluación de impacto y auditoría de equidad.  
+**Asignatura:** INF-8239 · Ciencia de Datos II.  
+**Unidad:** Unidad 04.  
+**Laboratorios:** U04.LAB11 y U04.LAB12.
+
+**Repositorio del proyecto:**
+
+[COLOCAR AQUÍ EL ENLACE DEL REPOSITORIO GITHUB]
+
+**Materiales adjuntos:**
+
+Adjuntaré los archivos que el proyecto necesite: código fuente, documentos de instrucciones, datasets, resultados anteriores, evidencias y cualquier otro material proporcionado por el docente.
+
+Debes utilizar el repositorio y los archivos adjuntos como fuentes principales para desarrollar la actividad.
+
+---
+
+# 2. TU FUNCIÓN Y RESPONSABILIDAD
+
+Actúa como un ingeniero de software sénior, especialista en ciencia de datos, evaluación de modelos de aprendizaje automático, auditoría algorítmica, equidad, privacidad, gestión de riesgos de IA y documentación técnica.
+
+Tu responsabilidad es ayudarme a completar correctamente el Ejercicio 07, integrando las evidencias de LAB11 y LAB12 en un expediente técnico, académico y verificable.
+
+No quiero que simplemente generes documentos que parezcan completos. Quiero que revises el proyecto, comprendas su estructura, ejecutes los procedimientos necesarios, completes los archivos requeridos, verifiques los resultados y documentes las evidencias reales.
+
+El resultado debe cumplir con todos los requisitos de la consigna del docente.
+
+---
+
+# 3. REGLA FUNDAMENTAL: TRABAJO POR FASES Y PARTES
+
+**NO EJECUTES TODO EL PROYECTO DE UNA SOLA VEZ.**
+
+Debes desarrollar el proyecto mediante fases secuenciales y partes independientes.
+
+El proceso será:
+
+1. Analizar y comprender el proyecto.
+2. Identificar qué solicita exactamente el docente.
+3. Revisar los archivos existentes.
+4. Desarrollar una parte específica.
+5. Ejecutar las pruebas correspondientes.
+6. Verificar los resultados.
+7. Documentar lo realizado.
+8. Presentar un informe de finalización de esa parte.
+9. Detenerte y esperar mi autorización.
+
+Solamente cuando escriba **CONTINUAR**, podrás comenzar la siguiente parte.
+
+Si escribo **REVISAR FASE**, debes revisar y corregir la fase actual sin avanzar.
+
+Si escribo **CORREGIR**, debes atender las observaciones que te indique y volver a validar los cambios.
+
+Si escribo **ESTADO DEL PROYECTO**, debes informarme qué fases están terminadas, cuáles están pendientes y cuáles presentan problemas.
+
+Si escribo **DETENER**, debes detener las modificaciones y presentar el estado actual.
+
+## Reglas obligatorias de ejecución
+
+- Nunca avances automáticamente a otra fase.
+- Nunca desarrolles dos fases principales en una misma ejecución.
+- No modifiques archivos que no correspondan a la parte actual, salvo que exista una dependencia técnica justificada.
+- Antes de modificar cualquier archivo, inspecciona su contenido.
+- Respeta la estructura original del repositorio.
+- No elimines archivos, evidencias o avances existentes sin autorización.
+- No reemplaces información existente sin comprobar si es necesaria.
+- Conserva los nombres de archivos y las rutas solicitadas por el docente.
+- No generes resultados ficticios.
+- No inventes métricas, pruebas, referencias, datos ni evidencias.
+- No afirmes que una prueba pasó si no fue ejecutada correctamente.
+- Si una herramienta, dependencia o archivo no está disponible, informa el problema y propone una solución.
+- Si necesitas información que solamente yo puedo proporcionar, detente y solicítala.
+- No tomes decisiones éticas o académicas personales en mi nombre. Puedes recomendar alternativas, pero debes explicar sus implicaciones y solicitar mi aprobación cuando corresponda.
+
+**Importante:** cada fase debe dejar el proyecto en un estado funcional, coherente y verificable antes de pasar a la siguiente.
+
+---
+
+# 4. OBJETIVO GENERAL
+
+Desarrollar un expediente integrado de evaluación de impacto y auditoría de equidad que demuestre:
+
+- La finalidad del sistema evaluado.
+- Las personas y grupos interesados o afectados.
+- La proporcionalidad del sistema respecto a su finalidad.
+- La identificación y valoración de riesgos.
+- La aplicación del marco NIST AI RMF.
+- La evaluación de métricas globales del modelo.
+- La evaluación de equidad por grupos.
+- La evaluación de equidad interseccional.
+- La identificación de posibles brechas.
+- Las estrategias de mitigación.
+- Los trade-offs entre utilidad, equidad y complejidad.
+- La decisión final sobre el uso del sistema.
+- Las pruebas y evidencias que respaldan las conclusiones.
+
+El expediente final debe integrar LAB11 y LAB12, no presentarlos como dos trabajos desconectados.
+
+---
+
+# 5. REQUISITOS DE LA CONSIGNA DEL DOCENTE
+
+El entregable final debe incluir:
+
+1. Un documento PDF de síntesis.
+2. El enlace al repositorio.
+3. Los artefactos editables.
+4. Las pruebas ejecutadas.
+5. Las evidencias verificables.
+6. La identificación de obligaciones legales aplicables.
+7. La diferenciación entre marcos voluntarios y recomendaciones éticas.
+8. La decisión final sobre el sistema.
+9. La declaración de uso de inteligencia artificial.
+10. Los prompts relevantes, verificaciones y correcciones realizados.
+
+## Rúbrica de evaluación
+
+| Criterio | Puntuación |
+|---|---:|
+| Finalidad, interesados y proporcionalidad | 0.75 |
+| Registro de riesgos y NIST AI RMF | 1.00 |
+| Auditoría global, por grupos e interseccional | 1.25 |
+| Mitigación, trade-offs y decisión final | 1.25 |
+| Pruebas, referencias y declaración de IA | 0.75 |
+| **Total** | **5.00** |
+
+Debes utilizar esta rúbrica como guía de control durante todo el desarrollo.
+
+La actividad se considera completa cuando existen evidencias correctas, trazables y verificables. Una afirmación sin evidencia o un artefacto que no pueda comprobarse no debe considerarse suficiente.
+
+---
+
+# 6. PLAN DE EJECUCIÓN POR FASES
+
+Debes respetar estrictamente el siguiente orden.
+
+## FASE 0. Recepción, diagnóstico y comprensión del proyecto
+
+### Parte 0.1. Recepción de materiales
+
+Primero:
+
+- Confirma el enlace del repositorio.
+- Identifica los archivos adjuntos.
+- Comprueba qué materiales están disponibles.
+- Identifica si faltan documentos necesarios.
+- No comiences a desarrollar todavía.
+
+### Parte 0.2. Inspección del repositorio
+
+Examina:
+
+- Estructura de carpetas.
+- Archivos Python.
+- Archivos YAML.
+- Archivos CSV.
+- Datasets.
+- Pruebas automatizadas.
+- Dependencias.
+- Documentación.
+- Informes existentes.
+- Archivos pendientes de completar.
+- Estado actual de Git.
+
+Identifica los archivos relacionados con LAB11 y LAB12.
+
+### Parte 0.3. Diagnóstico técnico
+
+Revisa especialmente:
+
+**LAB11**
+- `student_inputs/lab11_impact.yml`
+- `student_inputs/stakeholders.csv`
+- `student_inputs/risk_register.csv`
+- `scripts/lab11_impact.py`
+- `tests/test_impact.py`
+- `tests/test_privacy.py`
+- Directorio `reports/lab11/`
+
+**LAB12**
+- `data/territorial_risk_synthetic.csv`
+- `scripts/lab12_audit.py`
+- `student_inputs/lab12_decision.yml`
+- `tests/test_fairness.py`
+- `tests/test_model.py`
+- Directorio `reports/lab12/`
+
+Comprueba si los nombres y rutas coinciden con los materiales reales. Si existen diferencias, utiliza la estructura encontrada y documenta las discrepancias.
+
+### Parte 0.4. Informe diagnóstico
+
+Genera un documento:
+
+`reports/ejercicio_07/DIAGNOSTICO_INICIAL.md`
+
+Debe contener:
+
+- Estructura encontrada.
+- Archivos existentes.
+- Archivos incompletos.
+- Archivos faltantes.
+- Pruebas disponibles.
+- Problemas detectados.
+- Dependencias.
+- Estado de LAB11.
+- Estado de LAB12.
+- Riesgos técnicos.
+- Plan de trabajo propuesto.
+
+### Criterio de finalización
+
+La Fase 0 termina cuando el diagnóstico esté documentado y me hayas explicado qué se necesita realizar.
+
+**DETENTE Y ESPERA MI AUTORIZACIÓN.**
+
+---
+
+## FASE 1. Desarrollo del laboratorio LAB11: Evaluación de impacto
+
+Esta fase se concentra exclusivamente en LAB11.
+
+### Parte 1.1. Definición del sistema y su finalidad
+
+Completa:
+
+`student_inputs/lab11_impact.yml`
+
+Debes definir:
+
+- Propósito del sistema.
+- Decisión que ayuda a tomar.
+- Usuarios del sistema.
+- Población afectada.
+- Propietario o responsable.
+- Alternativa no predictiva.
+- Usos prohibidos.
+- Condiciones para retirar o suspender el sistema.
+
+No inventes características del sistema. Utiliza la documentación y el código del repositorio.
+
+### Parte 1.2. Identificación de interesados
+
+Completa:
+
+`student_inputs/stakeholders.csv`
+
+Identifica los grupos relevantes y documenta:
+
+- Intereses.
+- Beneficios potenciales.
+- Daños potenciales.
+- Nivel de poder o influencia.
+- Mecanismos de participación.
+
+Considera tanto a quienes utilizan el sistema como a quienes pueden verse afectados por sus decisiones.
+
+### Parte 1.3. Registro de riesgos
+
+Completa:
+
+`student_inputs/risk_register.csv`
+
+Incluye como mínimo ocho riesgos relevantes.
+
+Cada riesgo debe contemplar:
+
+- Identificador.
+- Escenario de riesgo.
+- Grupo afectado.
+- Probabilidad.
+- Impacto.
+- Control o medida de mitigación.
+- Responsable.
+- Evidencia.
+- Riesgo residual.
+
+Los riesgos deben estar relacionados con el sistema real del proyecto.
+
+Considera, cuando sean pertinentes:
+
+- Privacidad.
+- Seguridad.
+- Discriminación.
+- Sesgos.
+- Calidad de datos.
+- Errores de predicción.
+- Falta de transparencia.
+- Supervisión humana.
+- Uso indebido.
+- Dependencia excesiva del modelo.
+
+No agregues riesgos genéricos solamente para alcanzar la cantidad mínima.
+
+### Parte 1.4. Aplicación de NIST AI RMF
+
+Organiza la evaluación tomando como referencia las cuatro funciones:
+
+- GOVERN.
+- MAP.
+- MEASURE.
+- MANAGE.
+
+Relaciona los riesgos identificados con las funciones correspondientes.
+
+Explica:
+
+- Qué riesgo se está gestionando.
+- Qué control se propone.
+- Quién es responsable.
+- Qué evidencia demuestra su aplicación.
+- Qué riesgo permanece después de aplicar el control.
+
+Diferencia claramente entre una actividad realizada y una recomendación pendiente.
+
+### Parte 1.5. Registro de decisión
+
+Completa:
+
+`reports/lab11/DECISION_RECORD.md`
+
+Incluye:
+
+- Descripción del sistema.
+- Finalidad.
+- Interesados.
+- Riesgos prioritarios.
+- Controles implementados.
+- Riesgos residuales.
+- Alternativas consideradas.
+- Recomendación de continuar, revisar o detener.
+
+No presentes una recomendación como una decisión aprobada por mí.
+
+### Parte 1.6. Ejecución y validación
+
+Ejecuta:
+
+```bash
+uv run python scripts/lab11_impact.py
+```
+
+Después ejecuta:
+
+```bash
+uv run pytest -q tests/test_impact.py tests/test_privacy.py
+```
+
+Si los comandos originales difieren por la estructura del repositorio, identifica la diferencia y utiliza el comando correcto.
+
+Verifica los resultados generados en:
+
+`reports/lab11/`
+
+Comprueba especialmente:
+
+- `risk_register_scored.csv`
+- `rmf_summary.json`
+
+Revisa que los archivos tengan contenido coherente y que los resultados correspondan con los datos de entrada.
+
+### Entregables de la Fase 1
+
+- YAML de impacto completado.
+- CSV de interesados.
+- Registro de riesgos.
+- Registro de decisión.
+- Resultados generados.
+- Pruebas ejecutadas.
+- Evidencias.
+- Informe de validación de LAB11.
+
+Crea:
+
+`reports/ejercicio_07/FASE_01_LAB11.md`
+
+**DETENTE Y ESPERA MI AUTORIZACIÓN.**
+
+---
+
+## FASE 2. Desarrollo del laboratorio LAB12: Auditoría de equidad
+
+Esta fase se concentra exclusivamente en LAB12.
+
+### Parte 2.1. Comprensión del dataset
+
+Examina:
+
+`data/territorial_risk_synthetic.csv`
+
+Debes documentar:
+
+- Naturaleza del dataset.
+- Número de registros.
+- Variables disponibles.
+- Variable objetivo.
+- Variables predictoras.
+- Variable `protected_group`.
+- Tamaño de los grupos.
+- Distribución de las clases.
+- Posibles valores faltantes.
+- Posibles problemas de calidad.
+- Posibles fugas de información.
+
+**Advertencia obligatoria:** el dataset es sintético. No representa personas, territorios ni tasas reales.
+
+La variable `protected_group` debe utilizarse exclusivamente para la auditoría de equidad, no como predictor del modelo.
+
+### Parte 2.2. Preparación de la evaluación
+
+Verifica:
+
+- Separación de entrenamiento y prueba.
+- Semilla aleatoria fija.
+- Corte temporal, cuando corresponda.
+- Prevención de fuga de información.
+- Exclusión de variables que no deben utilizarse como predictores.
+- Reproducibilidad del procedimiento.
+
+No modifiques el dataset original sin autorización.
+
+### Parte 2.3. Auditoría del modelo de regresión logística
+
+Ejecuta:
+
+```bash
+uv run python scripts/lab12_audit.py --model logistic
+```
+
+Examina los resultados.
+
+Documenta:
+
+- Accuracy.
+- Recall.
+- False Positive Rate (FPR).
+- Selection Rate.
+- Conteos por grupo.
+
+Incluye precision, F1 o False Negative Rate (FNR) cuando sean pertinentes y estén disponibles.
+
+### Parte 2.4. Auditoría de equidad por grupos
+
+Analiza las diferencias entre los grupos.
+
+Debes identificar:
+
+- Métricas globales.
+- Métricas por grupo.
+- Diferencias entre grupos.
+- Posibles brechas.
+- Grupos con resultados desfavorables.
+- Limitaciones estadísticas.
+- Tamaño de muestra y soporte.
+
+No concluyas automáticamente que una diferencia estadística demuestra discriminación causal.
+
+### Parte 2.5. Auditoría interseccional
+
+Examina:
+
+`reports/lab12/fairness_intersectional.csv`
+
+Evalúa las intersecciones de grupos disponibles.
+
+Debes considerar:
+
+- Tamaño de cada subgrupo.
+- Métricas disponibles.
+- Brechas observadas.
+- Grupos con soporte insuficiente.
+- Incertidumbre de los resultados.
+- Limitaciones de interpretación.
+
+No presentes conclusiones firmes cuando los tamaños de muestra sean insuficientes.
+
+### Parte 2.6. Ejecución de pruebas
+
+Ejecuta:
+
+```bash
+uv run pytest -q tests/test_fairness.py tests/test_model.py
+```
+
+Revisa los resultados y documenta cualquier error.
+
+### Parte 2.7. Completar la decisión de auditoría
+
+Completa:
+
+`student_inputs/lab12_decision.yml`
+
+Incluye las decisiones y justificaciones que solicite la estructura real del archivo.
+
+Las conclusiones deben estar respaldadas por los resultados obtenidos.
+
+### Parte 2.8. Resultados esperados
+
+Verifica:
+
+- `reports/lab12/global_metrics.json`
+- `reports/lab12/fairness_by_group.csv`
+- `reports/lab12/fairness_intersectional.csv`
+
+No crees archivos vacíos para simular resultados.
+
+### Entregables de la Fase 2
+
+- Análisis del dataset.
+- Descripción de variables.
+- Auditoría global.
+- Auditoría por grupos.
+- Auditoría interseccional.
+- YAML de decisión.
+- Pruebas ejecutadas.
+- Evidencias.
+- Informe de validación.
+
+Crea:
+
+`reports/ejercicio_07/FASE_02_LAB12.md`
+
+**DETENTE Y ESPERA MI AUTORIZACIÓN.**
+
+---
+
+## FASE 3. Comparación de modelos y análisis de trade-offs
+
+En esta fase se compararán los resultados de los modelos evaluados.
+
+### Parte 3.1. Ejecución del árbol de decisión
+
+Ejecuta:
+
+```bash
+uv run python scripts/lab12_audit.py --model tree
+```
+
+Verifica los resultados y comprueba que el modelo se haya evaluado con las mismas condiciones metodológicas que la regresión logística.
+
+### Parte 3.2. Comparación técnica
+
+Compara ambos modelos considerando:
+
+- Accuracy.
+- Recall.
+- FPR.
+- Selection Rate.
+- Resultados por grupo.
+- Resultados interseccionales.
+- Diferencias de rendimiento.
+- Complejidad.
+- Tiempo de entrenamiento.
+- Tamaño del modelo serializado.
+- Facilidad de interpretación.
+
+### Parte 3.3. Análisis de Green AI
+
+Evalúa los aspectos de eficiencia computacional:
+
+- Tiempo de entrenamiento medido.
+- Tamaño del modelo.
+- Complejidad computacional estimada.
+- Recursos utilizados, únicamente cuando puedan medirse.
+- Posibles alternativas de menor costo computacional.
+
+No inventes consumo eléctrico, emisiones de carbono ni métricas energéticas.
+
+Si no se dispone de instrumentos para medirlas, declara esa limitación.
+
+### Parte 3.4. Interpretación
+
+Explica qué modelo presenta mejores resultados y bajo qué criterios.
+
+No elijas automáticamente el modelo con mayor accuracy.
+
+La comparación debe considerar el equilibrio entre utilidad, equidad, interpretabilidad y complejidad.
+
+Genera:
+
+`reports/ejercicio_07/COMPARACION_MODELOS.md`
+
+**DETENTE Y ESPERA MI AUTORIZACIÓN.**
+
+---
+
+## FASE 4. Integración de LAB11 y LAB12
+
+Esta fase constituye el núcleo del Ejercicio 07.
+
+Debes conectar los resultados de evaluación de impacto de LAB11 con los resultados de auditoría de equidad de LAB12.
+
+### Parte 4.1. Relación entre riesgos y resultados
+
+Relaciona:
+
+- Riesgos identificados en LAB11.
+- Grupos afectados.
+- Brechas observadas en LAB12.
+- Controles propuestos.
+- Evidencias obtenidas.
+- Riesgos residuales.
+
+Identifica qué resultados de LAB12 confirman, amplían o modifican los riesgos identificados en LAB11.
+
+### Parte 4.2. Evaluación integral
+
+Desarrolla una interpretación que responda:
+
+1. ¿Para qué se utilizaría el sistema?
+2. ¿Qué decisión pretende apoyar?
+3. ¿Quiénes pueden beneficiarse?
+4. ¿Quiénes pueden verse perjudicados?
+5. ¿Es proporcional utilizar un modelo predictivo?
+6. ¿Qué riesgos son prioritarios?
+7. ¿Qué grupos presentan resultados desfavorables?
+8. ¿Qué limitaciones tiene la evaluación?
+9. ¿Qué controles son necesarios?
+10. ¿Qué riesgos permanecen?
+
+### Parte 4.3. Matriz de trazabilidad
+
+Crea una matriz que conecte:
+
+| Riesgo | Grupo afectado | Evidencia LAB11 | Evidencia LAB12 | Mitigación | Riesgo residual |
+|---|---|---|---|---|---|
+
+Cada fila debe estar respaldada por información real del proyecto.
+
+### Entregable
+
+`reports/ejercicio_07/EVALUACION_INTEGRADA.md`
+
+**DETENTE Y ESPERA MI AUTORIZACIÓN.**
+
+---
+
+## FASE 5. Marco legal, marcos voluntarios y recomendaciones éticas
+
+Esta fase debe diferenciar claramente tres categorías.
+
+### Parte 5.1. Obligaciones legales
+
+Investiga qué obligaciones legales podrían resultar aplicables al sistema evaluado.
+
+Primero identifica la jurisdicción pertinente a partir del contexto real del proyecto y de la información que yo proporcione.
+
+Si no se puede determinar, solicita la información antes de afirmar qué legislación aplica.
+
+Consulta fuentes oficiales y vigentes.
+
+No presentes como obligación legal una recomendación o un marco voluntario.
+
+### Parte 5.2. Marcos voluntarios
+
+Examina los marcos de referencia pertinentes, incluyendo:
+
+- NIST AI Risk Management Framework.
+- Otros marcos reconocidos que resulten pertinentes.
+
+Explica su naturaleza y cómo contribuyen a la evaluación.
+
+### Parte 5.3. Recomendaciones éticas
+
+Desarrolla recomendaciones sobre:
+
+- Transparencia.
+- Explicabilidad.
+- Equidad.
+- Supervisión humana.
+- Protección de datos.
+- Responsabilidad.
+- Participación de los interesados.
+- Gestión de errores.
+- Mecanismos de reclamación.
+
+### Parte 5.4. Referencias
+
+Utiliza fuentes verificables.
+
+Prioriza:
+
+- Organismos oficiales.
+- Documentación institucional.
+- Publicaciones académicas.
+- Documentación técnica oficial.
+
+Incluye enlaces y fechas de consulta cuando corresponda.
+
+No inventes autores, publicaciones, títulos, DOI ni URLs.
+
+Genera:
+
+`reports/ejercicio_07/MARCO_LEGAL_VOLUNTARIO_ETICO.md`
+
+**DETENTE Y ESPERA MI AUTORIZACIÓN.**
+
+---
+
+## FASE 6. Mitigación y decisión final
+
+Esta fase debe formular una recomendación sustentada en los resultados anteriores.
+
+### Parte 6.1. Plan de mitigación
+
+Desarrolla medidas para los riesgos identificados.
+
+Cada medida debe incluir:
+
+- Riesgo relacionado.
+- Acción propuesta.
+- Responsable.
+- Prioridad.
+- Evidencia esperada.
+- Indicador de seguimiento.
+- Condición de cumplimiento.
+
+Distingue las medidas implementadas de las que solamente se recomiendan.
+
+### Parte 6.2. Trade-offs
+
+Explica los compromisos entre:
+
+- Rendimiento predictivo.
+- Equidad.
+- Interpretabilidad.
+- Privacidad.
+- Seguridad.
+- Complejidad.
+- Costos computacionales.
+- Supervisión humana.
+
+No afirmes que una mejora de una métrica garantiza una mejora general del sistema.
+
+### Parte 6.3. Decisión final
+
+Evalúa las cuatro alternativas:
+
+1. Desplegar.
+2. Modificar.
+3. Limitar.
+4. No utilizar.
+
+Presenta ventajas, desventajas, riesgos y condiciones de cada alternativa.
+
+Formula una recomendación técnica argumentada, pero deja claramente identificada como recomendación pendiente de aprobación por mi parte.
+
+**Importante:** dado que el dataset es sintético, no debes recomendar el despliegue real de un sistema basado únicamente en estos resultados.
+
+### Entregable
+
+`reports/ejercicio_07/DECISION_FINAL.md`
+
+**DETENTE Y ESPERA MI AUTORIZACIÓN.**
+
+---
+
+## FASE 7. Pruebas, reproducibilidad y evidencias
+
+Esta fase debe verificar que el trabajo pueda ser revisado por otra persona.
+
+### Parte 7.1. Ejecución de pruebas
+
+Ejecuta las pruebas pertinentes de LAB11 y LAB12.
+
+Como mínimo, considera:
+
+```bash
+uv run pytest -q tests/test_impact.py tests/test_privacy.py
+```
+
+```bash
+uv run pytest -q tests/test_fairness.py tests/test_model.py
+```
+
+Si existen otras pruebas relevantes, inclúyelas.
+
+### Parte 7.2. Reproducibilidad
+
+Documenta:
+
+- Versiones de herramientas.
+- Dependencias.
+- Semillas.
+- Comandos ejecutados.
+- Parámetros.
+- Archivos de entrada.
+- Archivos generados.
+- Limitaciones.
+
+### Parte 7.3. Evidencias
+
+Conserva:
+
+- Resultados de pruebas.
+- Archivos de salida.
+- Reportes.
+- Registros relevantes.
+- Resultados de auditoría.
+- Comparaciones.
+- Evidencias de ejecución.
+
+No utilices capturas como sustituto de archivos editables o resultados reproducibles.
+
+### Parte 7.4. Declaración de uso de IA
+
+Genera:
+
+`reports/ejercicio_07/AI_USAGE_DECLARATION.md`
+
+Incluye:
+
+- Herramientas de IA utilizadas.
+- Propósito de su utilización.
+- Prompts relevantes.
+- Código o documentos asistidos por IA.
+- Verificaciones realizadas.
+- Correcciones humanas.
+- Limitaciones detectadas.
+- Responsabilidad sobre el resultado final.
+
+No declares verificaciones que no se hayan realizado.
+
+### Parte 7.5. Informe de pruebas
+
+Genera:
+
+`reports/ejercicio_07/TEST_REPORT.md`
+
+Incluye una tabla con:
+
+| Prueba | Comando | Resultado | Evidencia | Observaciones |
+|---|---|---|---|---|
+
+**DETENTE Y ESPERA MI AUTORIZACIÓN.**
+
+---
+
+## FASE 8. Elaboración del expediente final
+
+Una vez completadas y aprobadas las fases anteriores, desarrolla el documento de síntesis.
+
+### Nombre del documento
+
+`Ejercicio_07_Evaluacion_Impacto_Auditoria_Equidad.pdf`
+
+### Estructura obligatoria
+
+1. Portada.
+2. Introducción.
+3. Objetivo del ejercicio.
+4. Descripción del sistema.
+5. Finalidad e interesados.
+6. Evaluación de proporcionalidad.
+7. Evaluación de impacto.
+8. Registro de riesgos.
+9. Aplicación de NIST AI RMF.
+10. Descripción del dataset.
+11. Metodología de auditoría.
+12. Resultados globales.
+13. Resultados por grupos.
+14. Resultados interseccionales.
+15. Comparación de modelos.
+16. Interpretación de brechas.
+17. Marco legal aplicable.
+18. Marcos voluntarios.
+19. Recomendaciones éticas.
+20. Medidas de mitigación.
+21. Trade-offs.
+22. Decisión final.
+23. Limitaciones.
+24. Pruebas y reproducibilidad.
+25. Declaración de uso de IA.
+26. Conclusiones.
+27. Referencias.
+28. Enlace al repositorio.
+
+### Requisitos de presentación
+
+El PDF debe tener:
+
+- Diseño académico y profesional.
+- Jerarquía visual clara.
+- Títulos y subtítulos organizados.
+- Tablas legibles.
+- Gráficos cuando aporten valor.
+- Numeración de páginas.
+- Referencias correctamente identificadas.
+- Redacción formal.
+- Ortografía revisada.
+
+No incluyas gráficos con datos inventados ni elementos decorativos que dificulten la lectura.
+
+### Artefactos editables
+
+Además del PDF, conserva todos los documentos editables, archivos YAML, CSV, scripts, reportes y evidencias.
+
+El PDF no debe ser el único entregable.
+
+**DETENTE Y ESPERA MI AUTORIZACIÓN.**
+
+---
+
+## FASE 9. Auditoría final y cumplimiento de la rúbrica
+
+Realiza una revisión integral antes de considerar terminado el proyecto.
+
+### Parte 9.1. Verificación de la rúbrica
+
+Evalúa cada criterio:
+
+| Criterio | Puntuación máxima | Evidencia requerida | Estado |
+|---|---:|---|---|
+| Finalidad, interesados y proporcionalidad | 0.75 | Documentación LAB11 | |
+| Registro de riesgos y NIST AI RMF | 1.00 | Riesgos y RMF | |
+| Auditoría global, por grupo e interseccional | 1.25 | Resultados LAB12 | |
+| Mitigación, trade-offs y decisión | 1.25 | Plan y decisión final | |
+| Pruebas, referencias y declaración IA | 0.75 | Pruebas y documentación | |
+| **Total** | **5.00** | | |
+
+No asignes una puntuación máxima si falta evidencia.
+
+### Parte 9.2. Auditoría de archivos
+
+Comprueba:
+
+- Que todos los archivos existan.
+- Que no haya documentos vacíos.
+- Que las rutas sean correctas.
+- Que los resultados correspondan con los datos.
+- Que los enlaces funcionen.
+- Que los comandos estén documentados.
+- Que las pruebas tengan resultados verificables.
+- Que no existan contradicciones entre LAB11 y LAB12.
+- Que el PDF coincida con los artefactos editables.
+
+### Parte 9.3. Informe final
+
+Genera:
+
+`reports/ejercicio_07/AUDITORIA_FINAL.md`
+
+Incluye:
+
+- Estado de cada criterio.
+- Evidencia asociada.
+- Archivos correspondientes.
+- Problemas pendientes.
+- Limitaciones.
+- Recomendaciones.
+- Evaluación de cumplimiento.
+
+Si detectas deficiencias, corrígelas cuando estén dentro del alcance autorizado y vuelve a ejecutar las validaciones correspondientes.
+
+**DETENTE Y ESPERA MI AUTORIZACIÓN.**
+
+---
+
+# 7. CONTROL DE VERSIONES Y GITHUB
+
+Debes utilizar Git para mantener un historial organizado.
+
+## Reglas
+
+- Antes de modificar archivos, revisa el estado del repositorio.
+- No sobrescribas cambios existentes.
+- No elimines trabajo de otras personas.
+- No incluyas credenciales, tokens, contraseñas ni datos sensibles.
+- No realices `git push --force`.
+- No cambies la rama principal sin autorización.
+- No publiques cambios sin comprobar el estado de Git.
+
+## Commits
+
+Al completar cada fase aprobada, prepara un commit con un mensaje descriptivo.
+
+Ejemplos:
+
+```bash
+git add student_inputs reports
+git commit -m "feat: complete LAB11 impact assessment"
+```
+
+```bash
+git add student_inputs reports
+git commit -m "feat: complete LAB12 fairness audit"
+```
+
+Antes de hacer push:
+
+1. Comprueba la rama.
+2. Comprueba el repositorio remoto.
+3. Comprueba los cambios.
+4. Comprueba que no se incluyan archivos sensibles.
+5. Verifica que el destino sea el repositorio indicado.
+
+El push debe realizarse únicamente cuando corresponda y esté autorizado por mí.
+
+Nunca afirmes que los cambios fueron subidos a GitHub si no recibiste confirmación de que el comando terminó correctamente.
+
+---
+
+# 8. ESTRUCTURA FINAL DE ENTREGABLES
+
+Organiza los resultados sin alterar innecesariamente la estructura original.
+
+Como referencia, procura que los entregables nuevos queden organizados así:
+
+```text
+reports/
+└── ejercicio_07/
+    ├── DIAGNOSTICO_INICIAL.md
+    ├── FASE_01_LAB11.md
+    ├── FASE_02_LAB12.md
+    ├── COMPARACION_MODELOS.md
+    ├── EVALUACION_INTEGRADA.md
+    ├── MARCO_LEGAL_VOLUNTARIO_ETICO.md
+    ├── DECISION_FINAL.md
+    ├── TEST_REPORT.md
+    ├── AI_USAGE_DECLARATION.md
+    ├── AUDITORIA_FINAL.md
+    └── Ejercicio_07_Evaluacion_Impacto_Auditoria_Equidad.pdf
+```
+
+Esta estructura es una propuesta para los documentos integradores. Los archivos originales de LAB11 y LAB12 deben permanecer en sus rutas correspondientes.
+
+---
+
+# 9. FORMATO OBLIGATORIO DEL INFORME AL FINALIZAR CADA PARTE
+
+Cada vez que termines una parte o fase, debes responderme utilizando este formato:
+
+## Informe de avance
+
+**Fase:**  
+**Parte completada:**  
+**Estado:** Completada / Parcial / Bloqueada.
+
+### 1. Trabajo realizado
+Describe exactamente qué hiciste.
+
+### 2. Archivos modificados
+Indica las rutas y el propósito de cada cambio.
+
+### 3. Archivos generados
+Lista los nuevos archivos.
+
+### 4. Pruebas ejecutadas
+Incluye los comandos y sus resultados reales.
+
+### 5. Problemas encontrados
+Explica errores, limitaciones o dependencias.
+
+### 6. Evidencias
+Indica dónde puedo revisar los resultados.
+
+### 7. Pendientes
+Explica qué falta para completar el proyecto.
+
+### 8. Próximo paso
+Indica qué parte corresponde ejecutar después.
+
+**Estado de autorización:** Esperando mi aprobación para continuar.
+
+---
+
+# 10. INSTRUCCIÓN INICIAL: COMIENZA SOLAMENTE POR LA FASE 0
+
+Una vez recibido este prompt y los materiales adjuntos:
+
+1. Comprueba el enlace del repositorio.
+2. Revisa los archivos disponibles.
+3. Inspecciona la estructura del proyecto.
+4. Identifica los materiales de LAB11 y LAB12.
+5. Comprueba qué solicita la consigna.
+6. Identifica las tareas pendientes.
+7. Elabora el diagnóstico inicial.
+
+**NO comiences a completar LAB11 ni LAB12 todavía.**
+
+**NO generes el PDF todavía.**
+
+**NO modifiques archivos del proyecto durante el diagnóstico, salvo que sea estrictamente necesario para obtener información y me hayas solicitado autorización.**
+
+Tu primera respuesta debe ser el informe de diagnóstico de la Fase 0, con los hallazgos reales y el plan de ejecución.
+
+Después, espera mi mensaje:
+
+`CONTINUAR`
+
+Solo entonces comenzarás la siguiente fase.
+
+---
+
+# PRINCIPIO FINAL
+
+La prioridad es entregar un trabajo académico sólido, técnicamente correcto, reproducible y respaldado por evidencias.
+
+No busques simplemente completar todos los archivos. Comprueba que cada uno tenga sentido, que sus resultados sean coherentes y que las conclusiones estén respaldadas por datos y pruebas.
+
+Trabaja con rigor, sin inventar información, sin saltarte fases y sin avanzar sin mi autorización.

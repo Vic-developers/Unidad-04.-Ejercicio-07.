@@ -1,0 +1,174 @@
+{
+  "source_commit_before_phase7": "136068306f66d2fa4037c35db2039cd7a72dc3e1",
+  "current_working_tree_copied": true,
+  "copies": [
+    {
+      "path": ".python-version",
+      "sha256": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d"
+    },
+    {
+      "path": "README.md",
+      "sha256": "c70645b4d166a45799bcdfc54d4dad1019e25184906b023a359ebaae05682f84"
+    },
+    {
+      "path": "app.py",
+      "sha256": "2105a3a9f6f125253cdd7a2f7fc927ccd7fa3fea8d2abce9918efcfb32f2d7ba"
+    },
+    {
+      "path": "configs/governance.yml",
+      "sha256": "05037b0170ad7c4047d41b263dca1c21c298e06ba5a43d5eacf2eb3edb75b113"
+    },
+    {
+      "path": "data/territorial_risk_synthetic.csv",
+      "sha256": "2af1858fe874f3914b0f9bfe068fd876cb716186694a6ece9a16e8c929128a01"
+    },
+    {
+      "path": "docs/AI_USE_DECLARATION.md",
+      "sha256": "b3bfa081add372a57af53d15be91102ec1e5cc462d57169bddcda182ef77c345"
+    },
+    {
+      "path": "docs/DATASET_CARD.md",
+      "sha256": "a93637edaaa3f8be060636d1519126d039faf55be1baf4b0ad97ca3eb7a3252e"
+    },
+    {
+      "path": "docs/MODEL_CARD.md",
+      "sha256": "b12d603e0df039e69563b80377995acddfc46644a94ecc17b15c43e5dc9ea9b8"
+    },
+    {
+      "path": "docs/RUNBOOK.md",
+      "sha256": "bd8b24cc70ed3616fbb96508db4520dfad7110c662d5e8ad5e1445b66be1901d"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "99f02ee8aadeca173ac1a1e59e47897c103cc2ca1f08b77ac2cd84dcccd67ad2"
+    },
+    {
+      "path": "reports/lab11/DECISION_RECORD.md",
+      "sha256": "69a515427ca7cbaba697de2786b8e1215304e00fc2fb0559f24c0f5be521f4f7"
+    },
+    {
+      "path": "reports/lab11/IMPACT_ASSESSMENT.md",
+      "sha256": "e770e958d994b72401591f20a201190686bd75dc7dbf94252b41a20ee2305a83"
+    },
+    {
+      "path": "scripts/check_environment.py",
+      "sha256": "17538c5905abd28664efda550d10236de7cb9135918ab8c45dbbde40dffabb83"
+    },
+    {
+      "path": "scripts/describe_dataset.py",
+      "sha256": "f4bab95aeeb1c4c8c474add556aa18ffbdcdf9a1732614ab5ce0b15b8ad64f22"
+    },
+    {
+      "path": "scripts/lab11_impact.py",
+      "sha256": "06d49a845987685d44949fba0df5bd97a09a270c086eff7f029fa912f2576f4b"
+    },
+    {
+      "path": "scripts/lab12_audit.py",
+      "sha256": "25b9463b800c4dfda202811453e6b692003b32b5055a0ec0a065b7c418bfdb5a"
+    },
+    {
+      "path": "scripts/lab12_compare_models.py",
+      "sha256": "3ac8fb4c8e4a2d394f5c6c82dd638c188625c8f7e1ec357779887c42e8bbf7b8"
+    },
+    {
+      "path": "scripts/lab12_supporting_evidence.py",
+      "sha256": "f128ba3cf309d34c3f8ed1375cebab91ad04df95eaaaa4b85d2e2fd56025e8c7"
+    },
+    {
+      "path": "scripts/lab13_governance.py",
+      "sha256": "325223926fb09d6d3536ccce51897e29ec43e9a32d4b96a89b8d10fe234fc5ce"
+    },
+    {
+      "path": "scripts/simulate_incident.py",
+      "sha256": "8d118f92f8379db9bc69670f626821736a312733ddb7bc618039fcded6c33570"
+    },
+    {
+      "path": "scripts/validate_lab12_decision.py",
+      "sha256": "f552f44d2d9a4afbe917f3d072c3a39abf31d6f768b15a2796776ed7c831ace1"
+    },
+    {
+      "path": "src/inf8239_u04/__init__.py",
+      "sha256": "20c8e430ededc2143396e553a3c67aac4ec483ef54efdfcb18a31cb162ca0646"
+    },
+    {
+      "path": "src/inf8239_u04/data.py",
+      "sha256": "aa267f996c8304abec0e4c0224e5481a25bed5747ee52c089c28d3d231e08354"
+    },
+    {
+      "path": "src/inf8239_u04/fairness.py",
+      "sha256": "5663801032c3414a0f6c48e3484546ae15ed83a60cf4489e0e8e8a867d44b4f7"
+    },
+    {
+      "path": "src/inf8239_u04/governance.py",
+      "sha256": "c17706d2f9d8f196a3731e13c14200af899049aa60b72c99c970ddaa527fea97"
+    },
+    {
+      "path": "src/inf8239_u04/impact.py",
+      "sha256": "4e970e4ef346f10cb0602f2d1f753410d6a0f22a196e0256be7ae7bc7c6c07cf"
+    },
+    {
+      "path": "src/inf8239_u04/model.py",
+      "sha256": "6c18d68af664ae513221bcc18520970350d1aacc047cb6fd1e6d14da28dab9cc"
+    },
+    {
+      "path": "src/inf8239_u04/pipeline.py",
+      "sha256": "5e55fc6187c840e1b84d5cdf525ce1a82ab093533e9336e9786c4bfac87cdaec"
+    },
+    {
+      "path": "student_inputs/lab11_impact.yml",
+      "sha256": "c17bbf56ae15a0cf1c73d2b151516da7b01d5664eba108a86c186e7ca8f87d25"
+    },
+    {
+      "path": "student_inputs/lab12_decision.yml",
+      "sha256": "db87144a12a18034bebe0a716adc86fb680b9a078b29b1a57a588f61d6aaaae0"
+    },
+    {
+      "path": "student_inputs/raci.csv",
+      "sha256": "4ac4b977965ee5fb6b8d5ce828d55f1ab94b60b0610f282ac76f684f5f2a84df"
+    },
+    {
+      "path": "student_inputs/risk_register.csv",
+      "sha256": "afe5915e0b6a5a7a285f477e6d8a683f69b10d1b0f03215296251e55eeb4d74a"
+    },
+    {
+      "path": "student_inputs/stakeholders.csv",
+      "sha256": "12c043a529d354e379bc090eb696ad34c85765b6edaf2a21b4c30ac5e0f32d2b"
+    },
+    {
+      "path": "tests/test_app.py",
+      "sha256": "9968363486d3fe2dcb56fa7bed12ec3328b8b54c068ed4e2f4fb92f04b42648e"
+    },
+    {
+      "path": "tests/test_data.py",
+      "sha256": "cf18efd4e270e3dbe4d092992d7409473a5ae24a632db20a9bdeda9e38b060a1"
+    },
+    {
+      "path": "tests/test_fairness.py",
+      "sha256": "0151a6b2dc363140f812885d2b9344871eb2128c22e5f85c58703a076eba0574"
+    },
+    {
+      "path": "tests/test_governance.py",
+      "sha256": "7874f1405314a894db49e2390fd1aaf67561e1490a155531e2242d067ec207e4"
+    },
+    {
+      "path": "tests/test_impact.py",
+      "sha256": "bed3f1ab6d9d874c4d37f6f58284738b9543d2a41edcb4a599f64465a54b2ef3"
+    },
+    {
+      "path": "tests/test_lab11_script.py",
+      "sha256": "151306515fc063dcc19f7503551c876ebfcb5baa161d33b1f08360ef72ec2839"
+    },
+    {
+      "path": "tests/test_model.py",
+      "sha256": "eebd6dce53df01f107731934e7b6533c417b59a84d4c981a35e5caf8b2a4f26e"
+    },
+    {
+      "path": "tests/test_privacy.py",
+      "sha256": "3721bdbcf8a668ef638246e23a99433036d6240864da6315e7f1a7554fda0c75"
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "9d645049178d308bb585a9d246211bea8dac5e2e2c6b2c7b57a298ec31db2042"
+    }
+  ]
+}

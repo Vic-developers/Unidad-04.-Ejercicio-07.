@@ -1,0 +1,18 @@
+{
+  "status": "interrupted_unfinished_command_not_passed",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-B",
+    "reports\\ejercicio_07\\evidencias\\fase_07\\reproduce.py"
+  ],
+  "termination": "Ctrl+C sent through exec session 49918; tool returned exit code 1",
+  "termination_tool_exit_code": 1,
+  "completed_and_preserved": [
+    "reproduction/commands/01_import_origin.json",
+    "reproduction/commands/02_lab11_tests.json",
+    "reproduction/commands/03_lab12_tests.json"
+  ],
+  "unfinished": "combined complementary tests; no final result recorded",
+  "root_outputs_overwritten": false,
+  "reason": "Unfinished execution was separated into non-UI tests and AppTest with a bounded diagnostic timeout."
+}

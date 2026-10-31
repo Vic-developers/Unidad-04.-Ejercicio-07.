@@ -1,0 +1,12 @@
+{
+  "python_files_parsed": 44,
+  "errors": [
+    {
+      "path": "scripts/simulate_incident.py",
+      "line": 3,
+      "message": "unterminated f-string literal (detected at line 3)"
+    }
+  ],
+  "scripts_executed": 0,
+  "method": "ast.parse; no bytecode output"
+}

@@ -1,0 +1,30 @@
+{
+  "label": "04a_non_ui_tests",
+  "command": [
+    "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_data.py",
+    "tests/test_lab11_script.py",
+    "tests/test_governance.py",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp=C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\reports\\ejercicio_07\\evidencias\\fase_07\\.runtime\\reproduction_01\\pytest_tmp_04a_non_ui_tests",
+    "--junitxml=C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\reports\\ejercicio_07\\evidencias\\fase_07\\reproduction\\04a_non_ui_tests.xml"
+  ],
+  "cwd": "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\reports\\ejercicio_07\\evidencias\\fase_07\\.runtime\\reproduction_01",
+  "started_at_utc": "2026-10-31T19:17:04.744590+00:00",
+  "elapsed_seconds": 2.657470000001922,
+  "exit_code": 0,
+  "stdout": ".......                                                                  [100%]\n- generated xml file: C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\reports\\ejercicio_07\\evidencias\\fase_07\\reproduction\\04a_non_ui_tests.xml -\n7 passed in 1.38s\n",
+  "stderr": "",
+  "environment_overrides": {
+    "PYTHONPATH": "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\reports\\ejercicio_07\\evidencias\\fase_07\\.runtime\\reproduction_01\\src",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8",
+    "STREAMLIT_BROWSER_GATHER_USAGE_STATS": "false"
+  }
+}
