@@ -1,0 +1,18 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-B",
+    "reports\\ejercicio_07\\evidencias\\fase_04\\build_facts.py"
+  ],
+  "started_at_utc": "2026-10-31T18:06:07.333771+00:00",
+  "elapsed_seconds": 0.1637665999987803,
+  "exit_code": 0,
+  "stdout": "{\"models\": [\"logistic\", \"tree\"], \"lab11_risks\": 9, \"test_cases_per_model\": 160, \"retrained_models\": 0, \"output\": \"reports/ejercicio_07/evidencias/fase_04/integration_facts.json\"}\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

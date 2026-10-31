@@ -1,0 +1,1281 @@
+{
+  "scope": "Saved evidence only; no model fitting, new sample or human approval.",
+  "dataset": {
+    "synthetic_only": true,
+    "dataset_sha256": "2af1858fe874f3914b0f9bfe068fd876cb716186694a6ece9a16e8c929128a01",
+    "rows": 640,
+    "column_count": 9,
+    "dtypes": {
+      "case_id": "object",
+      "received_date": "datetime64[ns]",
+      "zone": "object",
+      "protected_group": "object",
+      "age_band": "object",
+      "previous_incidents": "int64",
+      "infrastructure_score": "float64",
+      "exposure": "float64",
+      "target": "int64"
+    },
+    "missing_counts": {
+      "case_id": 0,
+      "received_date": 0,
+      "zone": 0,
+      "protected_group": 0,
+      "age_band": 0,
+      "previous_incidents": 0,
+      "infrastructure_score": 0,
+      "exposure": 0,
+      "target": 0
+    },
+    "duplicate_ids": 0,
+    "duplicate_full_rows": 0,
+    "duplicate_predictor_rows": 0,
+    "numeric_values_finite": true,
+    "previous_incidents_nonnegative_integer": true,
+    "numeric_summary": {
+      "previous_incidents": {
+        "count": 640.0,
+        "mean": 3.284375,
+        "std": 1.6493199385749595,
+        "min": 0.0,
+        "25%": 2.0,
+        "50%": 3.0,
+        "75%": 4.0,
+        "max": 9.0
+      },
+      "infrastructure_score": {
+        "count": 640.0,
+        "mean": 0.51923671875,
+        "std": 0.18201185444853743,
+        "min": 0.0316,
+        "25%": 0.39732500000000004,
+        "50%": 0.5136000000000001,
+        "75%": 0.645475,
+        "max": 0.9835
+      },
+      "exposure": {
+        "count": 640.0,
+        "mean": 0.50316296875,
+        "std": 0.19252963299491607,
+        "min": 0.0,
+        "25%": 0.3641,
+        "50%": 0.5129999999999999,
+        "75%": 0.633925,
+        "max": 1.0
+      }
+    },
+    "categories": {
+      "zone": {
+        "Este": 164,
+        "Norte": 155,
+        "Oeste": 157,
+        "Sur": 164
+      },
+      "protected_group": {
+        "G1": 396,
+        "G2": 244
+      },
+      "age_band": {
+        "18-29": 148,
+        "30-44": 163,
+        "45-59": 150,
+        "60+": 179
+      }
+    },
+    "raw_dates_already_sorted": false,
+    "unique_dates": 324,
+    "predictors": [
+      "zone",
+      "age_band",
+      "previous_incidents",
+      "infrastructure_score",
+      "exposure"
+    ],
+    "excluded_from_predictors": [
+      "case_id",
+      "received_date",
+      "protected_group",
+      "target"
+    ],
+    "split": {
+      "all": {
+        "n": 640,
+        "start": "2026-01-01",
+        "end": "2026-12-27",
+        "target": {
+          "0": 287,
+          "1": 353
+        },
+        "protected_group": {
+          "G1": 396,
+          "G2": 244
+        },
+        "group_target": {
+          "G1": {
+            "0": 199,
+            "1": 197
+          },
+          "G2": {
+            "0": 88,
+            "1": 156
+          }
+        }
+      },
+      "train": {
+        "n": 480,
+        "start": "2026-01-01",
+        "end": "2026-09-24",
+        "target": {
+          "0": 219,
+          "1": 261
+        },
+        "protected_group": {
+          "G1": 295,
+          "G2": 185
+        },
+        "group_target": {
+          "G1": {
+            "0": 147,
+            "1": 148
+          },
+          "G2": {
+            "0": 72,
+            "1": 113
+          }
+        }
+      },
+      "test": {
+        "n": 160,
+        "start": "2026-09-25",
+        "end": "2026-12-27",
+        "target": {
+          "0": 68,
+          "1": 92
+        },
+        "protected_group": {
+          "G1": 101,
+          "G2": 59
+        },
+        "group_target": {
+          "G1": {
+            "0": 52,
+            "1": 49
+          },
+          "G2": {
+            "0": 16,
+            "1": 43
+          }
+        }
+      }
+    },
+    "test_categories_absent_from_training": {
+      "zone": [],
+      "age_band": []
+    },
+    "cross_split_duplicate_predictor_rows": 0,
+    "limitation": "Observed quality checks do not establish label validity, pre-event availability or validity for real populations."
+  },
+  "models": {
+    "logistic": {
+      "primary": {
+        "metrics": {
+          "count": 160.0,
+          "accuracy": 0.71875,
+          "selection_rate": 0.53125,
+          "recall": 0.717391304347826,
+          "precision": 0.7764705882352941,
+          "fpr": 0.27941176470588236
+        },
+        "differences": {
+          "count": 42.0,
+          "accuracy": 0.04279241483470386,
+          "selection_rate": 0.23242154723946967,
+          "recall": 0.13763644992880875,
+          "precision": 0.13888888888888884,
+          "fpr": 0.125
+        },
+        "resources": {
+          "training_seconds": 0.33563929999945685,
+          "model_kb": 3.5634765625
+        }
+      },
+      "support": [
+        {
+          "level": "global",
+          "group": "ALL",
+          "count": 160,
+          "positive_n": 92,
+          "negative_n": 68,
+          "selected_n": 85,
+          "tp": 66,
+          "tn": 49,
+          "fp": 19,
+          "fn": 26,
+          "prevalence": 0.575,
+          "accuracy": 0.71875,
+          "recall": 0.717391304347826,
+          "fpr": 0.27941176470588236,
+          "fnr": 0.2826086956521739,
+          "selection_rate": 0.53125,
+          "precision": 0.7764705882352941,
+          "f1": 0.7457627118644068,
+          "small_total_n_lt30": false,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": false,
+          "recall_wilson95_low": 0.6181127107236785,
+          "recall_wilson95_high": 0.799243206978225,
+          "fpr_wilson95_low": 0.1867794792380012,
+          "fpr_wilson95_high": 0.39563434569732403,
+          "selection_rate_wilson95_low": 0.4541027203729972,
+          "selection_rate_wilson95_high": 0.6069318924287838
+        },
+        {
+          "level": "group",
+          "group": "G1",
+          "count": 101,
+          "positive_n": 49,
+          "negative_n": 52,
+          "selected_n": 45,
+          "tp": 32,
+          "tn": 39,
+          "fp": 13,
+          "fn": 17,
+          "prevalence": 0.48514851485148514,
+          "accuracy": 0.7029702970297029,
+          "recall": 0.6530612244897959,
+          "fpr": 0.25,
+          "fnr": 0.3469387755102041,
+          "selection_rate": 0.44554455445544555,
+          "precision": 0.7111111111111111,
+          "f1": 0.6808510638297872,
+          "small_total_n_lt30": false,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": false,
+          "recall_wilson95_low": 0.5131119428697273,
+          "recall_wilson95_high": 0.7707560716546102,
+          "fpr_wilson95_low": 0.15233153863595766,
+          "fpr_wilson95_high": 0.38206457942597344,
+          "selection_rate_wilson95_low": 0.35237950540611346,
+          "selection_rate_wilson95_high": 0.542700168954267
+        },
+        {
+          "level": "group",
+          "group": "G2",
+          "count": 59,
+          "positive_n": 43,
+          "negative_n": 16,
+          "selected_n": 40,
+          "tp": 34,
+          "tn": 10,
+          "fp": 6,
+          "fn": 9,
+          "prevalence": 0.7288135593220338,
+          "accuracy": 0.7457627118644068,
+          "recall": 0.7906976744186046,
+          "fpr": 0.375,
+          "fnr": 0.20930232558139536,
+          "selection_rate": 0.6779661016949152,
+          "precision": 0.85,
+          "f1": 0.8192771084337349,
+          "small_total_n_lt30": false,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": false,
+          "recall_wilson95_low": 0.6479435728926356,
+          "recall_wilson95_high": 0.885771657790044,
+          "fpr_wilson95_low": 0.18481232558863633,
+          "fpr_wilson95_high": 0.6135895945449727,
+          "selection_rate_wilson95_low": 0.5510500442652536,
+          "selection_rate_wilson95_high": 0.7831242475811436
+        },
+        {
+          "level": "intersection",
+          "group": "G1 | 18-29",
+          "count": 18,
+          "positive_n": 4,
+          "negative_n": 14,
+          "selected_n": 5,
+          "tp": 3,
+          "tn": 12,
+          "fp": 2,
+          "fn": 1,
+          "prevalence": 0.2222222222222222,
+          "accuracy": 0.8333333333333334,
+          "recall": 0.75,
+          "fpr": 0.14285714285714285,
+          "fnr": 0.25,
+          "selection_rate": 0.2777777777777778,
+          "precision": 0.6,
+          "f1": 0.6666666666666666,
+          "small_total_n_lt30": true,
+          "small_positive_n_lt10": true,
+          "small_negative_n_lt10": false,
+          "recall_wilson95_low": 0.30064184258240184,
+          "recall_wilson95_high": 0.9544127391902995,
+          "fpr_wilson95_low": 0.040093921271464966,
+          "fpr_wilson95_high": 0.39941379496970353,
+          "selection_rate_wilson95_low": 0.12499753379553993,
+          "selection_rate_wilson95_high": 0.5087265656029746
+        },
+        {
+          "level": "intersection",
+          "group": "G1 | 30-44",
+          "count": 24,
+          "positive_n": 16,
+          "negative_n": 8,
+          "selected_n": 10,
+          "tp": 9,
+          "tn": 7,
+          "fp": 1,
+          "fn": 7,
+          "prevalence": 0.6666666666666666,
+          "accuracy": 0.6666666666666666,
+          "recall": 0.5625,
+          "fpr": 0.125,
+          "fnr": 0.4375,
+          "selection_rate": 0.4166666666666667,
+          "precision": 0.9,
+          "f1": 0.6923076923076923,
+          "small_total_n_lt30": true,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": true,
+          "recall_wilson95_low": 0.331785563988119,
+          "recall_wilson95_high": 0.7690134759450765,
+          "fpr_wilson95_low": 0.02241749145005667,
+          "fpr_wilson95_high": 0.4708881822128535,
+          "selection_rate_wilson95_low": 0.2446760260981176,
+          "selection_rate_wilson95_high": 0.6116533413477124
+        },
+        {
+          "level": "intersection",
+          "group": "G1 | 45-59",
+          "count": 35,
+          "positive_n": 17,
+          "negative_n": 18,
+          "selected_n": 17,
+          "tp": 10,
+          "tn": 11,
+          "fp": 7,
+          "fn": 7,
+          "prevalence": 0.4857142857142857,
+          "accuracy": 0.6,
+          "recall": 0.5882352941176471,
+          "fpr": 0.3888888888888889,
+          "fnr": 0.4117647058823529,
+          "selection_rate": 0.4857142857142857,
+          "precision": 0.5882352941176471,
+          "f1": 0.5882352941176471,
+          "small_total_n_lt30": false,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": false,
+          "recall_wilson95_low": 0.36005442642999785,
+          "recall_wilson95_high": 0.7838894320978518,
+          "fpr_wilson95_low": 0.2030524657216362,
+          "fpr_wilson95_high": 0.613809583977621,
+          "selection_rate_wilson95_low": 0.3299423600250973,
+          "selection_rate_wilson95_high": 0.6443119540413142
+        },
+        {
+          "level": "intersection",
+          "group": "G1 | 60+",
+          "count": 24,
+          "positive_n": 12,
+          "negative_n": 12,
+          "selected_n": 13,
+          "tp": 10,
+          "tn": 9,
+          "fp": 3,
+          "fn": 2,
+          "prevalence": 0.5,
+          "accuracy": 0.7916666666666666,
+          "recall": 0.8333333333333334,
+          "fpr": 0.25,
+          "fnr": 0.16666666666666666,
+          "selection_rate": 0.5416666666666666,
+          "precision": 0.7692307692307693,
+          "f1": 0.8,
+          "small_total_n_lt30": true,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": false,
+          "recall_wilson95_low": 0.5519691377470266,
+          "recall_wilson95_high": 0.953034857816146,
+          "fpr_wilson95_low": 0.08894166839405471,
+          "fpr_wilson95_high": 0.5323053349335657,
+          "selection_rate_wilson95_low": 0.35074865358919494,
+          "selection_rate_wilson95_high": 0.7210866626878901
+        },
+        {
+          "level": "intersection",
+          "group": "G2 | 18-29",
+          "count": 11,
+          "positive_n": 8,
+          "negative_n": 3,
+          "selected_n": 7,
+          "tp": 7,
+          "tn": 3,
+          "fp": 0,
+          "fn": 1,
+          "prevalence": 0.7272727272727273,
+          "accuracy": 0.9090909090909091,
+          "recall": 0.875,
+          "fpr": 0.0,
+          "fnr": 0.125,
+          "selection_rate": 0.6363636363636364,
+          "precision": 1.0,
+          "f1": 0.9333333333333333,
+          "small_total_n_lt30": true,
+          "small_positive_n_lt10": true,
+          "small_negative_n_lt10": true,
+          "recall_wilson95_low": 0.5291118177871464,
+          "recall_wilson95_high": 0.9775825085499433,
+          "fpr_wilson95_low": 0.0,
+          "fpr_wilson95_high": 0.5614970317550454,
+          "selection_rate_wilson95_low": 0.35380117450784887,
+          "selection_rate_wilson95_high": 0.8483352890463243
+        },
+        {
+          "level": "intersection",
+          "group": "G2 | 30-44",
+          "count": 14,
+          "positive_n": 12,
+          "negative_n": 2,
+          "selected_n": 9,
+          "tp": 8,
+          "tn": 1,
+          "fp": 1,
+          "fn": 4,
+          "prevalence": 0.8571428571428571,
+          "accuracy": 0.6428571428571429,
+          "recall": 0.6666666666666666,
+          "fpr": 0.5,
+          "fnr": 0.3333333333333333,
+          "selection_rate": 0.6428571428571429,
+          "precision": 0.8888888888888888,
+          "f1": 0.7619047619047619,
+          "small_total_n_lt30": true,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": true,
+          "recall_wilson95_low": 0.39062208887279953,
+          "recall_wilson95_high": 0.8618799089087867,
+          "fpr_wilson95_low": 0.09453120573423074,
+          "fpr_wilson95_high": 0.9054687942657693,
+          "selection_rate_wilson95_low": 0.38764423103907397,
+          "selection_rate_wilson95_high": 0.8365526824644587
+        },
+        {
+          "level": "intersection",
+          "group": "G2 | 45-59",
+          "count": 8,
+          "positive_n": 6,
+          "negative_n": 2,
+          "selected_n": 6,
+          "tp": 6,
+          "tn": 2,
+          "fp": 0,
+          "fn": 0,
+          "prevalence": 0.75,
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "fpr": 0.0,
+          "fnr": 0.0,
+          "selection_rate": 0.75,
+          "precision": 1.0,
+          "f1": 1.0,
+          "small_total_n_lt30": true,
+          "small_positive_n_lt10": true,
+          "small_negative_n_lt10": true,
+          "recall_wilson95_low": 0.6096657120978346,
+          "recall_wilson95_high": 1.0,
+          "fpr_wilson95_low": 0.0,
+          "fpr_wilson95_high": 0.6576197724933469,
+          "selection_rate_wilson95_low": 0.40927543031016883,
+          "selection_rate_wilson95_high": 0.9285207872478909
+        },
+        {
+          "level": "intersection",
+          "group": "G2 | 60+",
+          "count": 26,
+          "positive_n": 17,
+          "negative_n": 9,
+          "selected_n": 18,
+          "tp": 13,
+          "tn": 4,
+          "fp": 5,
+          "fn": 4,
+          "prevalence": 0.6538461538461539,
+          "accuracy": 0.6538461538461539,
+          "recall": 0.7647058823529411,
+          "fpr": 0.5555555555555556,
+          "fnr": 0.23529411764705882,
+          "selection_rate": 0.6923076923076923,
+          "precision": 0.7222222222222222,
+          "f1": 0.7428571428571429,
+          "small_total_n_lt30": true,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": true,
+          "recall_wilson95_low": 0.5273820188043502,
+          "recall_wilson95_high": 0.9044495567791989,
+          "fpr_wilson95_low": 0.2666512934954931,
+          "fpr_wilson95_high": 0.8112214789023354,
+          "selection_rate_wilson95_low": 0.5001174167780164,
+          "selection_rate_wilson95_high": 0.8349868440453624
+        }
+      ],
+      "gaps": {
+        "group": {
+          "accuracy": {
+            "max_minus_min": 0.04279241483470386,
+            "min_group": "G1",
+            "max_group": "G2",
+            "G2_minus_G1": 0.04279241483470386
+          },
+          "recall": {
+            "max_minus_min": 0.13763644992880875,
+            "min_group": "G1",
+            "max_group": "G2",
+            "G2_minus_G1": 0.13763644992880875
+          },
+          "fpr": {
+            "max_minus_min": 0.125,
+            "min_group": "G1",
+            "max_group": "G2",
+            "G2_minus_G1": 0.125
+          },
+          "selection_rate": {
+            "max_minus_min": 0.23242154723946967,
+            "min_group": "G1",
+            "max_group": "G2",
+            "G2_minus_G1": 0.23242154723946967
+          },
+          "precision": {
+            "max_minus_min": 0.13888888888888884,
+            "min_group": "G1",
+            "max_group": "G2",
+            "G2_minus_G1": 0.13888888888888884
+          },
+          "fnr": {
+            "max_minus_min": 0.13763644992880872,
+            "min_group": "G2",
+            "max_group": "G1",
+            "G2_minus_G1": -0.13763644992880872
+          }
+        },
+        "intersection": {
+          "accuracy": {
+            "max_minus_min": 0.4,
+            "min_group": "G1 | 45-59",
+            "max_group": "G2 | 45-59"
+          },
+          "recall": {
+            "max_minus_min": 0.4375,
+            "min_group": "G1 | 30-44",
+            "max_group": "G2 | 45-59"
+          },
+          "fpr": {
+            "max_minus_min": 0.5555555555555556,
+            "min_group": "G2 | 18-29",
+            "max_group": "G2 | 60+"
+          },
+          "selection_rate": {
+            "max_minus_min": 0.4722222222222222,
+            "min_group": "G1 | 18-29",
+            "max_group": "G2 | 45-59"
+          },
+          "precision": {
+            "max_minus_min": 0.4117647058823529,
+            "min_group": "G1 | 45-59",
+            "max_group": "G2 | 18-29"
+          },
+          "fnr": {
+            "max_minus_min": 0.4375,
+            "min_group": "G2 | 45-59",
+            "max_group": "G1 | 30-44"
+          }
+        }
+      },
+      "metadata": {
+        "kind": "logistic",
+        "model_sha256": "9fc217d3fed0cfb74093c95d40012c386c0e1172e71d0f30f594cd2da177eb2a",
+        "model_bytes": 3649,
+        "dataset_sha256": "2af1858fe874f3914b0f9bfe068fd876cb716186694a6ece9a16e8c929128a01",
+        "python": "3.12.13 (main, Jun 11 2026, 04:05:29) [MSC v.1944 64 bit (AMD64)]",
+        "packages": {
+          "scikit-learn": "1.9.1",
+          "fairlearn": "0.12.0",
+          "pandas": "2.3.3",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1",
+          "joblib": "1.6.0"
+        },
+        "features": [
+          "zone",
+          "age_band",
+          "previous_incidents",
+          "infrastructure_score",
+          "exposure"
+        ],
+        "transformed_feature_count": 11,
+        "estimator_parameters": {
+          "class_weight": "balanced",
+          "random_state": 42,
+          "max_iter": 1200,
+          "solver": "lbfgs",
+          "C": 1.0,
+          "tol": 0.0001
+        },
+        "iterations": [
+          9
+        ],
+        "train_n": 480,
+        "test_n": 160,
+        "fitted_scaler_matches_training_only": true,
+        "encoder_categories_match_training_only": true,
+        "primary_metrics_match_reconstructed_counts": true,
+        "refitted_by_support_script": false,
+        "interval_method": "SciPy binomtest.proportion_ci: Wilson 95%, no continuity correction",
+        "support_flags": "Descriptive warnings only: n<30, positive_n<10 or negative_n<10; not fairness acceptance thresholds.",
+        "uncertainty_limitations": "Conditional binomial intervals; no model-training uncertainty, simultaneous gap inference or external population validity established."
+      }
+    },
+    "tree": {
+      "primary": {
+        "metrics": {
+          "count": 160.0,
+          "accuracy": 0.70625,
+          "selection_rate": 0.54375,
+          "recall": 0.717391304347826,
+          "precision": 0.7586206896551724,
+          "fpr": 0.3088235294117647
+        },
+        "differences": {
+          "count": 42.0,
+          "accuracy": 0.06259439503272357,
+          "selection_rate": 0.26631985232421546,
+          "recall": 0.1813004271476032,
+          "precision": 0.1444444444444445,
+          "fpr": 0.16826923076923078
+        },
+        "resources": {
+          "training_seconds": 0.04983200000060606,
+          "model_kb": 7.8701171875
+        }
+      },
+      "support": [
+        {
+          "level": "global",
+          "group": "ALL",
+          "count": 160,
+          "positive_n": 92,
+          "negative_n": 68,
+          "selected_n": 87,
+          "tp": 66,
+          "tn": 47,
+          "fp": 21,
+          "fn": 26,
+          "prevalence": 0.575,
+          "accuracy": 0.70625,
+          "recall": 0.717391304347826,
+          "fpr": 0.3088235294117647,
+          "fnr": 0.2826086956521739,
+          "selection_rate": 0.54375,
+          "precision": 0.7586206896551724,
+          "f1": 0.7374301675977654,
+          "small_total_n_lt30": false,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": false,
+          "recall_wilson95_low": 0.6181127107236785,
+          "recall_wilson95_high": 0.799243206978225,
+          "fpr_wilson95_low": 0.2117238646755198,
+          "fpr_wilson95_high": 0.4263681169350954,
+          "selection_rate_wilson95_low": 0.466450226075894,
+          "selection_rate_wilson95_high": 0.6189982318465993
+        },
+        {
+          "level": "group",
+          "group": "G1",
+          "count": 101,
+          "positive_n": 49,
+          "negative_n": 52,
+          "selected_n": 45,
+          "tp": 31,
+          "tn": 38,
+          "fp": 14,
+          "fn": 18,
+          "prevalence": 0.48514851485148514,
+          "accuracy": 0.6831683168316832,
+          "recall": 0.6326530612244898,
+          "fpr": 0.2692307692307692,
+          "fnr": 0.3673469387755102,
+          "selection_rate": 0.44554455445544555,
+          "precision": 0.6888888888888889,
+          "f1": 0.6595744680851063,
+          "small_total_n_lt30": false,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": false,
+          "recall_wilson95_low": 0.4926706756079243,
+          "recall_wilson95_high": 0.7533482703131685,
+          "fpr_wilson95_low": 0.16768960295166518,
+          "fpr_wilson95_high": 0.4025221983362713,
+          "selection_rate_wilson95_low": 0.35237950540611346,
+          "selection_rate_wilson95_high": 0.542700168954267
+        },
+        {
+          "level": "group",
+          "group": "G2",
+          "count": 59,
+          "positive_n": 43,
+          "negative_n": 16,
+          "selected_n": 42,
+          "tp": 35,
+          "tn": 9,
+          "fp": 7,
+          "fn": 8,
+          "prevalence": 0.7288135593220338,
+          "accuracy": 0.7457627118644068,
+          "recall": 0.813953488372093,
+          "fpr": 0.4375,
+          "fnr": 0.18604651162790697,
+          "selection_rate": 0.711864406779661,
+          "precision": 0.8333333333333334,
+          "f1": 0.8235294117647058,
+          "small_total_n_lt30": false,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": false,
+          "recall_wilson95_low": 0.6738299634272562,
+          "recall_wilson95_high": 0.9025824857100377,
+          "fpr_wilson95_low": 0.23098652405492354,
+          "fpr_wilson95_high": 0.6682144360118811,
+          "selection_rate_wilson95_low": 0.5861915342706008,
+          "selection_rate_wilson95_high": 0.811635003641777
+        },
+        {
+          "level": "intersection",
+          "group": "G1 | 18-29",
+          "count": 18,
+          "positive_n": 4,
+          "negative_n": 14,
+          "selected_n": 6,
+          "tp": 3,
+          "tn": 11,
+          "fp": 3,
+          "fn": 1,
+          "prevalence": 0.2222222222222222,
+          "accuracy": 0.7777777777777778,
+          "recall": 0.75,
+          "fpr": 0.21428571428571427,
+          "fnr": 0.25,
+          "selection_rate": 0.3333333333333333,
+          "precision": 0.5,
+          "f1": 0.6,
+          "small_total_n_lt30": true,
+          "small_positive_n_lt10": true,
+          "small_negative_n_lt10": false,
+          "recall_wilson95_low": 0.30064184258240184,
+          "recall_wilson95_high": 0.9544127391902995,
+          "fpr_wilson95_low": 0.07571386712693184,
+          "fpr_wilson95_high": 0.47589230586600295,
+          "selection_rate_wilson95_low": 0.16278774750833697,
+          "selection_rate_wilson95_high": 0.5625053270405489
+        },
+        {
+          "level": "intersection",
+          "group": "G1 | 30-44",
+          "count": 24,
+          "positive_n": 16,
+          "negative_n": 8,
+          "selected_n": 13,
+          "tp": 10,
+          "tn": 5,
+          "fp": 3,
+          "fn": 6,
+          "prevalence": 0.6666666666666666,
+          "accuracy": 0.625,
+          "recall": 0.625,
+          "fpr": 0.375,
+          "fnr": 0.375,
+          "selection_rate": 0.5416666666666666,
+          "precision": 0.7692307692307693,
+          "f1": 0.6896551724137931,
+          "small_total_n_lt30": true,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": true,
+          "recall_wilson95_low": 0.38641040545502714,
+          "recall_wilson95_high": 0.8151876744113636,
+          "fpr_wilson95_low": 0.13684428582359737,
+          "fpr_wilson95_high": 0.6942576053973728,
+          "selection_rate_wilson95_low": 0.35074865358919494,
+          "selection_rate_wilson95_high": 0.7210866626878901
+        },
+        {
+          "level": "intersection",
+          "group": "G1 | 45-59",
+          "count": 35,
+          "positive_n": 17,
+          "negative_n": 18,
+          "selected_n": 16,
+          "tp": 11,
+          "tn": 13,
+          "fp": 5,
+          "fn": 6,
+          "prevalence": 0.4857142857142857,
+          "accuracy": 0.6857142857142857,
+          "recall": 0.6470588235294118,
+          "fpr": 0.2777777777777778,
+          "fnr": 0.35294117647058826,
+          "selection_rate": 0.45714285714285713,
+          "precision": 0.6875,
+          "f1": 0.6666666666666666,
+          "small_total_n_lt30": false,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": false,
+          "recall_wilson95_low": 0.41300363485218683,
+          "recall_wilson95_high": 0.8269027960275626,
+          "fpr_wilson95_low": 0.12499753379553993,
+          "fpr_wilson95_high": 0.5087265656029746,
+          "selection_rate_wilson95_low": 0.3046601928840722,
+          "selection_rate_wilson95_high": 0.6181027493151624
+        },
+        {
+          "level": "intersection",
+          "group": "G1 | 60+",
+          "count": 24,
+          "positive_n": 12,
+          "negative_n": 12,
+          "selected_n": 10,
+          "tp": 7,
+          "tn": 9,
+          "fp": 3,
+          "fn": 5,
+          "prevalence": 0.5,
+          "accuracy": 0.6666666666666666,
+          "recall": 0.5833333333333334,
+          "fpr": 0.25,
+          "fnr": 0.4166666666666667,
+          "selection_rate": 0.4166666666666667,
+          "precision": 0.7,
+          "f1": 0.6363636363636364,
+          "small_total_n_lt30": true,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": false,
+          "recall_wilson95_low": 0.31951131254954973,
+          "recall_wilson95_high": 0.8067396863412435,
+          "fpr_wilson95_low": 0.08894166839405471,
+          "fpr_wilson95_high": 0.5323053349335657,
+          "selection_rate_wilson95_low": 0.2446760260981176,
+          "selection_rate_wilson95_high": 0.6116533413477124
+        },
+        {
+          "level": "intersection",
+          "group": "G2 | 18-29",
+          "count": 11,
+          "positive_n": 8,
+          "negative_n": 3,
+          "selected_n": 8,
+          "tp": 8,
+          "tn": 3,
+          "fp": 0,
+          "fn": 0,
+          "prevalence": 0.7272727272727273,
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "fpr": 0.0,
+          "fnr": 0.0,
+          "selection_rate": 0.7272727272727273,
+          "precision": 1.0,
+          "f1": 1.0,
+          "small_total_n_lt30": true,
+          "small_positive_n_lt10": true,
+          "small_negative_n_lt10": true,
+          "recall_wilson95_low": 0.6755924351161198,
+          "recall_wilson95_high": 1.0,
+          "fpr_wilson95_low": 0.0,
+          "fpr_wilson95_high": 0.5614970317550454,
+          "selection_rate_wilson95_low": 0.4343546988238708,
+          "selection_rate_wilson95_high": 0.9025394070997511
+        },
+        {
+          "level": "intersection",
+          "group": "G2 | 30-44",
+          "count": 14,
+          "positive_n": 12,
+          "negative_n": 2,
+          "selected_n": 12,
+          "tp": 10,
+          "tn": 0,
+          "fp": 2,
+          "fn": 2,
+          "prevalence": 0.8571428571428571,
+          "accuracy": 0.7142857142857143,
+          "recall": 0.8333333333333334,
+          "fpr": 1.0,
+          "fnr": 0.16666666666666666,
+          "selection_rate": 0.8571428571428571,
+          "precision": 0.8333333333333334,
+          "f1": 0.8333333333333334,
+          "small_total_n_lt30": true,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": true,
+          "recall_wilson95_low": 0.5519691377470266,
+          "recall_wilson95_high": 0.953034857816146,
+          "fpr_wilson95_low": 0.34238022750665303,
+          "fpr_wilson95_high": 1.0,
+          "selection_rate_wilson95_low": 0.6005862050302965,
+          "selection_rate_wilson95_high": 0.9599060787285351
+        },
+        {
+          "level": "intersection",
+          "group": "G2 | 45-59",
+          "count": 8,
+          "positive_n": 6,
+          "negative_n": 2,
+          "selected_n": 4,
+          "tp": 4,
+          "tn": 2,
+          "fp": 0,
+          "fn": 2,
+          "prevalence": 0.75,
+          "accuracy": 0.75,
+          "recall": 0.6666666666666666,
+          "fpr": 0.0,
+          "fnr": 0.3333333333333333,
+          "selection_rate": 0.5,
+          "precision": 1.0,
+          "f1": 0.8,
+          "small_total_n_lt30": true,
+          "small_positive_n_lt10": true,
+          "small_negative_n_lt10": true,
+          "recall_wilson95_low": 0.299993315138392,
+          "recall_wilson95_high": 0.9032285888942195,
+          "fpr_wilson95_low": 0.0,
+          "fpr_wilson95_high": 0.6576197724933469,
+          "selection_rate_wilson95_low": 0.21521606221387757,
+          "selection_rate_wilson95_high": 0.7847839377861224
+        },
+        {
+          "level": "intersection",
+          "group": "G2 | 60+",
+          "count": 26,
+          "positive_n": 17,
+          "negative_n": 9,
+          "selected_n": 18,
+          "tp": 13,
+          "tn": 4,
+          "fp": 5,
+          "fn": 4,
+          "prevalence": 0.6538461538461539,
+          "accuracy": 0.6538461538461539,
+          "recall": 0.7647058823529411,
+          "fpr": 0.5555555555555556,
+          "fnr": 0.23529411764705882,
+          "selection_rate": 0.6923076923076923,
+          "precision": 0.7222222222222222,
+          "f1": 0.7428571428571429,
+          "small_total_n_lt30": true,
+          "small_positive_n_lt10": false,
+          "small_negative_n_lt10": true,
+          "recall_wilson95_low": 0.5273820188043502,
+          "recall_wilson95_high": 0.9044495567791989,
+          "fpr_wilson95_low": 0.2666512934954931,
+          "fpr_wilson95_high": 0.8112214789023354,
+          "selection_rate_wilson95_low": 0.5001174167780164,
+          "selection_rate_wilson95_high": 0.8349868440453624
+        }
+      ],
+      "gaps": {
+        "group": {
+          "accuracy": {
+            "max_minus_min": 0.06259439503272357,
+            "min_group": "G1",
+            "max_group": "G2",
+            "G2_minus_G1": 0.06259439503272357
+          },
+          "recall": {
+            "max_minus_min": 0.1813004271476032,
+            "min_group": "G1",
+            "max_group": "G2",
+            "G2_minus_G1": 0.1813004271476032
+          },
+          "fpr": {
+            "max_minus_min": 0.16826923076923078,
+            "min_group": "G1",
+            "max_group": "G2",
+            "G2_minus_G1": 0.16826923076923078
+          },
+          "selection_rate": {
+            "max_minus_min": 0.26631985232421546,
+            "min_group": "G1",
+            "max_group": "G2",
+            "G2_minus_G1": 0.26631985232421546
+          },
+          "precision": {
+            "max_minus_min": 0.1444444444444445,
+            "min_group": "G1",
+            "max_group": "G2",
+            "G2_minus_G1": 0.1444444444444445
+          },
+          "fnr": {
+            "max_minus_min": 0.18130042714760325,
+            "min_group": "G2",
+            "max_group": "G1",
+            "G2_minus_G1": -0.18130042714760325
+          }
+        },
+        "intersection": {
+          "accuracy": {
+            "max_minus_min": 0.375,
+            "min_group": "G1 | 30-44",
+            "max_group": "G2 | 18-29"
+          },
+          "recall": {
+            "max_minus_min": 0.41666666666666663,
+            "min_group": "G1 | 60+",
+            "max_group": "G2 | 18-29"
+          },
+          "fpr": {
+            "max_minus_min": 1.0,
+            "min_group": "G2 | 18-29",
+            "max_group": "G2 | 30-44"
+          },
+          "selection_rate": {
+            "max_minus_min": 0.5238095238095237,
+            "min_group": "G1 | 18-29",
+            "max_group": "G2 | 30-44"
+          },
+          "precision": {
+            "max_minus_min": 0.5,
+            "min_group": "G1 | 18-29",
+            "max_group": "G2 | 18-29"
+          },
+          "fnr": {
+            "max_minus_min": 0.4166666666666667,
+            "min_group": "G2 | 18-29",
+            "max_group": "G1 | 60+"
+          }
+        }
+      },
+      "metadata": {
+        "kind": "tree",
+        "model_sha256": "e778bdfdbd0c2f02f14ac869046cab6dad79f54e6aac1c7c44e3a925fc611a87",
+        "model_bytes": 8059,
+        "dataset_sha256": "2af1858fe874f3914b0f9bfe068fd876cb716186694a6ece9a16e8c929128a01",
+        "python": "3.12.13 (main, Jun 11 2026, 04:05:29) [MSC v.1944 64 bit (AMD64)]",
+        "packages": {
+          "scikit-learn": "1.9.1",
+          "fairlearn": "0.12.0",
+          "pandas": "2.3.3",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1",
+          "joblib": "1.6.0"
+        },
+        "features": [
+          "zone",
+          "age_band",
+          "previous_incidents",
+          "infrastructure_score",
+          "exposure"
+        ],
+        "transformed_feature_count": 11,
+        "estimator_parameters": {
+          "class_weight": "balanced",
+          "random_state": 42,
+          "max_depth": 5,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "criterion": "gini"
+        },
+        "iterations": null,
+        "train_n": 480,
+        "test_n": 160,
+        "fitted_scaler_matches_training_only": true,
+        "encoder_categories_match_training_only": true,
+        "primary_metrics_match_reconstructed_counts": true,
+        "refitted_by_support_script": false,
+        "interval_method": "SciPy binomtest.proportion_ci: Wilson 95%, no continuity correction",
+        "support_flags": "Descriptive warnings only: n<30, positive_n<10 or negative_n<10; not fairness acceptance thresholds.",
+        "uncertainty_limitations": "Conditional binomial intervals; no model-training uncertainty, simultaneous gap inference or external population validity established.",
+        "tree_structure": {
+          "actual_depth": 5,
+          "node_count": 51,
+          "leaf_count": 26
+        }
+      }
+    }
+  },
+  "lab11_risks": [
+    {
+      "id": "R01",
+      "scenario": "Errores o tasas de selección desiguales entre G1/G2 o intersecciones con edad por uso de age_band y zone como predictores",
+      "affected": "Grupos sintéticos; personas solo en una reutilización fuera de alcance",
+      "likelihood_1_4": "3",
+      "impact_1_4": "4",
+      "control": "Implementado: protected_group excluido de features. Pendiente: auditoría por grupos e intersecciones con soporte e incertidumbre en LAB12 y justificación de age_band",
+      "owner": "Equipo de datos y modelos (rol propuesto)",
+      "evidence": "src/inf8239_u04/data.py; src/inf8239_u04/fairness.py; configs/governance.yml; reports/lab11/IMPACT_ASSESSMENT.md",
+      "residual": "high"
+    },
+    {
+      "id": "R02",
+      "scenario": "Falsos negativos dejarían sin prioridad de revisión casos con target=1 si la clasificación se utilizara como filtro",
+      "affected": "Casos positivos sintéticos; personas solo en una adaptación futura",
+      "likelihood_1_4": "2",
+      "impact_1_4": "4",
+      "control": "Documentado: no excluir casos automáticamente y considerar revisión cronológica. Pendiente: medir recall y falsos negativos globales y por grupo en LAB12",
+      "owner": "Operador revisor de la demostración",
+      "evidence": "src/inf8239_u04/model.py; src/inf8239_u04/fairness.py; student_inputs/lab11_impact.yml",
+      "residual": "high"
+    },
+    {
+      "id": "R03",
+      "scenario": "Falsos positivos concentrarían revisiones innecesarias y podrían desplazar otros casos si se presume capacidad limitada",
+      "affected": "Operador y casos sintéticos no seleccionados; daño real solo condicional",
+      "likelihood_1_4": "3",
+      "impact_1_4": "3",
+      "control": "Documentado: revisión humana y alternativa por fecha. Pendiente: medir FPR y selection rate por grupo y evaluar carga; no se ha simulado capacidad operativa",
+      "owner": "Operador revisor de la demostración",
+      "evidence": "src/inf8239_u04/fairness.py; student_inputs/lab11_impact.yml; reports/lab11/IMPACT_ASSESSMENT.md",
+      "residual": "medium"
+    },
+    {
+      "id": "R04",
+      "scenario": "Un CSV sustituto podría incorporar nombres documentos correos o teléfonos y romper el carácter anónimo de la demo",
+      "affected": "Personas cuyos datos se introdujeran indebidamente; no presentes en el CSV sintético recibido",
+      "likelihood_1_4": "2",
+      "impact_1_4": "4",
+      "control": "Implementado: rechazo de cuatro nombres de columnas de identificadores directos. Pendiente: revisión semántica de otros campos y restricción de acceso antes de admitir nuevos datos",
+      "owner": "Equipo de datos y modelos (rol propuesto)",
+      "evidence": "src/inf8239_u04/data.py; tests/test_privacy.py; tests/test_data.py; docs/DATASET_CARD.md",
+      "residual": "medium"
+    },
+    {
+      "id": "R05",
+      "scenario": "Calidad insuficiente semántica de target no documentada o cambios temporales podrían producir resultados engañosos incluso con el esquema mínimo válido",
+      "affected": "Analista operador y grupos sintéticos; eventual interpretación académica",
+      "likelihood_1_4": "3",
+      "impact_1_4": "3",
+      "control": "Implementado: validación de columnas y objetivo binario y carga ordenada por fecha. Pendiente: documentar etiqueta rangos faltantes y estabilidad temporal en LAB12; no se acredita validez externa",
+      "owner": "Equipo de datos y modelos (rol propuesto)",
+      "evidence": "src/inf8239_u04/data.py; docs/DATASET_CARD.md; scripts/check_environment.py; tests/test_data.py",
+      "residual": "high"
+    },
+    {
+      "id": "R06",
+      "scenario": "La advertencia de uso educativo podría ignorarse y un estado GO del DSS confundirse con autorización para intervenir decidir elegibilidad o declarar emergencias reales",
+      "affected": "Usuarios y personas o territorios solo si se reutiliza indebidamente la demostración",
+      "likelihood_1_4": "2",
+      "impact_1_4": "4",
+      "control": "Implementado: avisos sintéticos y usos prohibidos en documentación configuración y aplicación. Documentado: recomendación REVIEW y límites de finalidad. Pendiente: barreras institucionales y supervisión efectiva",
+      "owner": "Responsable académico (rol propuesto)",
+      "evidence": "README.md; app.py; configs/governance.yml; src/inf8239_u04/governance.py; reports/lab11/DECISION_RECORD.md",
+      "residual": "high"
+    },
+    {
+      "id": "R07",
+      "scenario": "Reejecutar LAB11 sobrescribiría el registro de decisión o usar entornos distintos impediría reconstruir una conclusión",
+      "affected": "Responsable académico equipo de datos y persona evaluadora",
+      "likelihood_1_4": "3",
+      "impact_1_4": "3",
+      "control": "Implementado en Fase 1: preservar el registro existente y registrar dependencias comandos y hashes. Pendiente: reproducir auditorías de modelos en fases posteriores",
+      "owner": "Equipo de datos y modelos (rol propuesto)",
+      "evidence": "scripts/lab11_impact.py; tests/test_lab11_script.py; uv.lock; reports/ejercicio_07/evidencias/fase_01/environment.json",
+      "residual": "medium"
+    },
+    {
+      "id": "R08",
+      "scenario": "Sin un canal de objeción ni autoridad independiente un error o explicación insuficiente podría quedar sin revisión",
+      "affected": "Operador y grupos representados; personas reales solo en una futura adaptación",
+      "likelihood_1_4": "2",
+      "impact_1_4": "3",
+      "control": "Documentado: propuesta de revisión de case_id y respuesta trazada por otra persona. Pendiente: asignar responsables canal plazos y validar accesibilidad; no hay mecanismo técnico de apelación",
+      "owner": "Responsable académico (rol propuesto)",
+      "evidence": "student_inputs/lab11_impact.yml; student_inputs/stakeholders.csv; reports/lab11/IMPACT_ASSESSMENT.md",
+      "residual": "high"
+    },
+    {
+      "id": "R09",
+      "scenario": "Ediciones no revisadas de entradas o reportes locales podrían alterar evidencias sin que una persona revisora identifique su procedencia",
+      "affected": "Equipo de datos responsable académico y persona evaluadora",
+      "likelihood_1_4": "2",
+      "impact_1_4": "3",
+      "control": "Implementado: historial Git local y manifiesto SHA-256 para detectar cambios frente a una copia confiable. Pendiente: revisión independiente y controles de acceso; los hashes no autentican al autor ni previenen alteraciones",
+      "owner": "Equipo de datos y modelos (rol propuesto)",
+      "evidence": "reports/ejercicio_07/evidencias/fase_01/artifact_manifest.json; reports/ejercicio_07/evidencias/fase_01/execution_log.json; uv.lock",
+      "residual": "medium"
+    }
+  ],
+  "lab11_rmf": {
+    "GOVERN": {
+      "status": "documented_pending_human_approval",
+      "owner": "Rol propuesto: responsable académico del ejercicio, pendiente de designación nominal y aprobación por el usuario. Debe custodiar las evidencias y autorizar cualquier cambio de alcance; no se atribuye responsabilidad a una institución real.",
+      "evidence": [
+        "student_inputs/lab11_impact.yml",
+        "reports/lab11/DECISION_RECORD.md"
+      ]
+    },
+    "MAP": {
+      "status": "documented",
+      "risk_count": 9,
+      "stakeholder_count": 6,
+      "risk_ids": [
+        "R01",
+        "R03",
+        "R05",
+        "R07",
+        "R02",
+        "R04",
+        "R06",
+        "R08",
+        "R09"
+      ],
+      "evidence": [
+        "student_inputs/risk_register.csv",
+        "student_inputs/stakeholders.csv"
+      ]
+    },
+    "MEASURE": {
+      "risk_scoring": "likelihood_1_4 * impact_1_4",
+      "score_interpretation": "proposed_ordinal_ratings_not_observed_frequencies",
+      "model_audit_status": "not_evaluated_by_this_script_see_LAB12",
+      "evidence": [
+        "reports/lab11/risk_register_scored.csv"
+      ]
+    },
+    "MANAGE": {
+      "status": "controls_documented_see_traceability_for_implementation",
+      "traceability_document": "reports/lab11/IMPACT_ASSESSMENT.md",
+      "decision_record_policy": "preserve_existing_file",
+      "human_approval": "not_recorded_by_this_script",
+      "deployment_authorized": false,
+      "evidence": [
+        "reports/lab11/DECISION_RECORD.md",
+        "student_inputs/lab11_impact.yml"
+      ]
+    }
+  },
+  "paired_comparison": {
+    "raw_features": 5,
+    "transformed_features": 11,
+    "train_rows": 480,
+    "logistic": {
+      "coefficient_count": 11,
+      "intercept_count": 1,
+      "iterations": [
+        9
+      ],
+      "learned_array_buffer_bytes": 96
+    },
+    "tree": {
+      "depth": 5,
+      "nodes": 51,
+      "leaves": 26,
+      "learned_array_buffer_bytes": 4080
+    },
+    "buffer_scope": "Estimator coefficient or node/value arrays only; not total RAM or peak training memory.",
+    "paired_test": {
+      "same_predictions": 130,
+      "different_predictions": 30,
+      "both_correct": 99,
+      "only_logistic_correct": 16,
+      "only_tree_correct": 14,
+      "both_wrong": 31
+    }
+  }
+}

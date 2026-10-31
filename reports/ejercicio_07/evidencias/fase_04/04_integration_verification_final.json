@@ -1,0 +1,18 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-B",
+    "reports\\ejercicio_07\\evidencias\\fase_04\\verify_integration.py"
+  ],
+  "started_at_utc": "2026-10-31T18:13:45.036371+00:00",
+  "elapsed_seconds": 0.3703026000002865,
+  "exit_code": 0,
+  "stdout": "{\"status\": \"passed\", \"starting_commit\": \"cdb6b93a1ad581eb593195d41448bbaf6f79eced\", \"previous_files_unchanged\": 129, \"matrix_risks\": 9, \"risk_coverage_complete\": true, \"evidence_path_references_checked\": 59, \"affected_groups_owners_residuals_match_LAB11\": true, \"independent_confusion_and_rate_reconstruction\": true, \"models_checked\": [\"logistic\", \"tree\"], \"test_cases_per_model\": 160, \"integrated_questions_covered\": 10, \"previous_test_records_verified\": {\"phase_01\": 8, \"phase_02\": 2, \"phase_03\": 4}, \"new_pytest_executions\": 0, \"new_model_fits\": 0, \"human_approval\": \"pending\"}\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}
