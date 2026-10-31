@@ -1,0 +1,43 @@
+{
+  "kind": "logistic",
+  "model_sha256": "9fc217d3fed0cfb74093c95d40012c386c0e1172e71d0f30f594cd2da177eb2a",
+  "model_bytes": 3649,
+  "dataset_sha256": "2af1858fe874f3914b0f9bfe068fd876cb716186694a6ece9a16e8c929128a01",
+  "python": "3.12.13 (main, Jun 11 2026, 04:05:29) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "scikit-learn": "1.9.1",
+    "fairlearn": "0.12.0",
+    "pandas": "2.3.3",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0"
+  },
+  "features": [
+    "zone",
+    "age_band",
+    "previous_incidents",
+    "infrastructure_score",
+    "exposure"
+  ],
+  "transformed_feature_count": 11,
+  "estimator_parameters": {
+    "class_weight": "balanced",
+    "random_state": 42,
+    "max_iter": 1200,
+    "solver": "lbfgs",
+    "C": 1.0,
+    "tol": 0.0001
+  },
+  "iterations": [
+    9
+  ],
+  "train_n": 480,
+  "test_n": 160,
+  "fitted_scaler_matches_training_only": true,
+  "encoder_categories_match_training_only": true,
+  "primary_metrics_match_reconstructed_counts": true,
+  "refitted_by_support_script": false,
+  "interval_method": "SciPy binomtest.proportion_ci: Wilson 95%, no continuity correction",
+  "support_flags": "Descriptive warnings only: n<30, positive_n<10 or negative_n<10; not fairness acceptance thresholds.",
+  "uncertainty_limitations": "Conditional binomial intervals; no model-training uncertainty, simultaneous gap inference or external population validity established."
+}

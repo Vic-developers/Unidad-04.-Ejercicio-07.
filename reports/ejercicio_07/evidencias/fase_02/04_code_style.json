@@ -1,0 +1,22 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "ruff",
+    "check",
+    "--fix",
+    "scripts/lab12_supporting_evidence.py",
+    "reports/ejercicio_07/evidencias/fase_02/record_command.py"
+  ],
+  "started_at_utc": "2026-10-31T17:33:00.156163+00:00",
+  "elapsed_seconds": 0.14710360000026412,
+  "exit_code": 1,
+  "stdout": "PLW1510 `subprocess.run` without explicit `check` argument\n  --> reports\\ejercicio_07\\evidencias\\fase_02\\record_command.py:32:14\n   |\n30 |     started = datetime.now(UTC).isoformat()\n31 |     tick = time.perf_counter()\n32 |     result = subprocess.run(command, cwd=root, env=environment, capture_output=True, text=True, encoding=\"utf-8\")\n   |              ^^^^^^^^^^^^^^\n33 |     record = {\n34 |         \"command\": command, \"started_at_utc\": started,\n   |\nhelp: Add explicit `check=False`\n\nFound 6 errors (5 fixed, 1 remaining).\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

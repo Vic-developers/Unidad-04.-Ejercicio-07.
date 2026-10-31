@@ -1,0 +1,21 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "-q",
+    "tests/test_fairness.py",
+    "tests/test_model.py"
+  ],
+  "started_at_utc": "2026-10-31T17:33:03.659982+00:00",
+  "elapsed_seconds": 4.862652499999967,
+  "exit_code": 0,
+  "stdout": "..                                                                       [100%]\n2 passed in 2.87s\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

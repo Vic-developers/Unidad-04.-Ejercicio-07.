@@ -1,0 +1,21 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "python",
+    "scripts/lab12_supporting_evidence.py",
+    "--model",
+    "logistic"
+  ],
+  "started_at_utc": "2026-10-31T17:31:56.681009+00:00",
+  "elapsed_seconds": 3.3775371000010637,
+  "exit_code": 0,
+  "stdout": "{\"rows\": 640, \"predictors\": [\"zone\", \"age_band\", \"previous_incidents\", \"infrastructure_score\", \"exposure\"], \"split\": {\"all\": {\"n\": 640, \"start\": \"2026-01-01\", \"end\": \"2026-12-27\", \"target\": {\"0\": 287, \"1\": 353}, \"protected_group\": {\"G1\": 396, \"G2\": 244}, \"group_target\": {\"G1\": {\"0\": 199, \"1\": 197}, \"G2\": {\"0\": 88, \"1\": 156}}}, \"train\": {\"n\": 480, \"start\": \"2026-01-01\", \"end\": \"2026-09-24\", \"target\": {\"0\": 219, \"1\": 261}, \"protected_group\": {\"G1\": 295, \"G2\": 185}, \"group_target\": {\"G1\": {\"0\": 147, \"1\": 148}, \"G2\": {\"0\": 72, \"1\": 113}}}, \"test\": {\"n\": 160, \"start\": \"2026-09-25\", \"end\": \"2026-12-27\", \"target\": {\"0\": 68, \"1\": 92}, \"protected_group\": {\"G1\": 101, \"G2\": 59}, \"group_target\": {\"G1\": {\"0\": 52, \"1\": 49}, \"G2\": {\"0\": 16, \"1\": 43}}}}}\n       level      group  count  positive_n  negative_n  tp  tn  fp  fn   recall      fpr\n      global        ALL    160          92          68  66  49  19  26 0.717391 0.279412\n       group         G1    101          49          52  32  39  13  17 0.653061 0.250000\n       group         G2     59          43          16  34  10   6   9 0.790698 0.375000\nintersection G1 | 18-29     18           4          14   3  12   2   1 0.750000 0.142857\nintersection G1 | 30-44     24          16           8   9   7   1   7 0.562500 0.125000\nintersection G1 | 45-59     35          17          18  10  11   7   7 0.588235 0.388889\nintersection   G1 | 60+     24          12          12  10   9   3   2 0.833333 0.250000\nintersection G2 | 18-29     11           8           3   7   3   0   1 0.875000 0.000000\nintersection G2 | 30-44     14          12           2   8   1   1   4 0.666667 0.500000\nintersection G2 | 45-59      8           6           2   6   2   0   0 1.000000 0.000000\nintersection   G2 | 60+     26          17           9  13   4   5   4 0.764706 0.555556\n{\"verified_primary_metrics\": true, \"model_sha256\": \"9fc217d3fed0cfb74093c95d40012c386c0e1172e71d0f30f594cd2da177eb2a\", \"gaps\": {\"group\": {\"accuracy\": {\"max_minus_min\": 0.04279241483470386, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.04279241483470386}, \"recall\": {\"max_minus_min\": 0.13763644992880875, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.13763644992880875}, \"fpr\": {\"max_minus_min\": 0.125, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.125}, \"selection_rate\": {\"max_minus_min\": 0.23242154723946967, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.23242154723946967}, \"precision\": {\"max_minus_min\": 0.13888888888888884, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.13888888888888884}, \"fnr\": {\"max_minus_min\": 0.13763644992880872, \"min_group\": \"G2\", \"max_group\": \"G1\", \"G2_minus_G1\": -0.13763644992880872}}, \"intersection\": {\"accuracy\": {\"max_minus_min\": 0.4, \"min_group\": \"G1 | 45-59\", \"max_group\": \"G2 | 45-59\"}, \"recall\": {\"max_minus_min\": 0.4375, \"min_group\": \"G1 | 30-44\", \"max_group\": \"G2 | 45-59\"}, \"fpr\": {\"max_minus_min\": 0.5555555555555556, \"min_group\": \"G2 | 18-29\", \"max_group\": \"G2 | 60+\"}, \"selection_rate\": {\"max_minus_min\": 0.4722222222222222, \"min_group\": \"G1 | 18-29\", \"max_group\": \"G2 | 45-59\"}, \"precision\": {\"max_minus_min\": 0.4117647058823529, \"min_group\": \"G1 | 45-59\", \"max_group\": \"G2 | 18-29\"}, \"fnr\": {\"max_minus_min\": 0.4375, \"min_group\": \"G2 | 45-59\", \"max_group\": \"G1 | 30-44\"}}}}\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

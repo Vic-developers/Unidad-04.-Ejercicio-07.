@@ -1,6 +1,48 @@
-priority_harm: REPLACE
-primary_metric: REPLACE
-tolerance: REPLACE
-evidence: REPLACE
-limitation: REPLACE
-recommendation: REPLACE
+# Recomendación técnica propuesta; no registra aceptación ética ni despliegue.
+priority_harm: >-
+  Propuesta para revisión: atender la omisión de casos sintéticos positivos si
+  una clasificación negativa se interpretara como exclusión de revisión humana.
+  G1 presenta 17 falsos negativos entre 49 positivos y G2 presenta 9 entre 43.
+  También debe revisarse la carga por falsos positivos: G2 tiene FPR 6/16 frente
+  a 13/52 en G1. La prioridad depende del uso; no se atribuye daño real ni
+  discriminación causal y la valoración normativa queda pendiente de aprobación.
+primary_metric: >-
+  Propuesta técnica: recall global y por grupo para estudiar omisiones, acompañado
+  obligatoriamente por FPR, selección, soporte e intersecciones. Recall global
+  66/92=0.717391; G1 32/49=0.653061; G2 34/43=0.790698. FPR global
+  19/68=0.279412; G1 0.25; G2 0.375. No se optimizó un umbral con el test.
+tolerance: >-
+  Referencia experimental del archivo configs/governance.yml: recall global
+  mínimo 0.68 y gaps máximos por protected_group de recall y FPR de 0.16.
+  Los valores observados 0.717391, 0.137636 y 0.125 satisfacen respectivamente
+  esas tres comparaciones puntuales. Esto no acredita equidad ni es un GO:
+  los gaps interseccionales son 0.4375 y 0.555556 y tienen soporte pequeño.
+  No se aprueba aquí tolerancia normativa ni umbral interseccional; se requiere
+  revisión humana del daño, la incertidumbre y el contexto antes de aceptar riesgos.
+evidence: >-
+  reports/lab12/logistic/global_metrics.json;
+  reports/lab12/logistic/fairness_by_group.csv;
+  reports/lab12/logistic/fairness_intersectional.csv;
+  reports/lab12/logistic/audit_support.csv;
+  reports/lab12/logistic/test_predictions.csv;
+  reports/lab12/logistic/model_metadata.json;
+  reports/lab12/dataset_profile.json;
+  reports/lab12/temporal_split.csv;
+  reports/ejercicio_07/evidencias/fase_02/05_required_tests.json;
+  reports/ejercicio_07/FASE_02_LAB12.md
+limitation: >-
+  Datos exclusivamente sintéticos: 640 registros, entrenamiento temporal con
+  480 y prueba con 160. Las ocho intersecciones tienen entre 8 y 35 casos;
+  siete tienen menos de 30. G2 45-59 obtiene recall 6/6 pero solo contiene
+  dos negativos, por lo que un FPR 0/2 no demuestra ausencia de riesgo.
+  Los intervalos Wilson 95% son condicionales y no simultáneos; no reflejan
+  incertidumbre del entrenamiento ni validez externa. Faltan definición
+  operacional de target, generador de datos y disponibilidad temporal documentada
+  de los predictores. Excluir protected_group no elimina efectos de edad o zona.
+recommendation: >-
+  REVIEW, pendiente de aprobación del usuario. Mantener la demostración limitada
+  al ámbito académico y sin exclusiones automáticas de casos. Revisar diferencias
+  de error y selección con soporte e incertidumbre, justificar predictores y
+  ampliar validación antes de recomendar mitigaciones operativas. La comparación
+  con árbol corresponde a la Fase 3 y no se ha realizado. No utilizar estos
+  resultados sintéticos como autorización para desplegar un sistema real.

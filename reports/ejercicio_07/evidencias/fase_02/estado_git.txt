@@ -1,0 +1,58 @@
+Estado previo al commit local de Fase 2
+UTC: 2026-10-31T17:42:30.611943+00:00
+No se ha ejecutado push.
+
+COMMAND: git branch --show-current
+EXIT_CODE: 0
+STDOUT:
+codex/ejercicio-07
+STDERR:
+
+
+COMMAND: git remote -v
+EXIT_CODE: 0
+STDOUT:
+origin	https://github.com/Vic-developers/Unidad-04.-Ejercicio-07..git (fetch)
+origin	https://github.com/Vic-developers/Unidad-04.-Ejercicio-07..git (push)
+STDERR:
+
+
+COMMAND: git status --short --untracked-files=all
+EXIT_CODE: 0
+STDOUT:
+ M student_inputs/lab12_decision.yml
+?? reports/ejercicio_07/FASE_02_LAB12.md
+?? reports/ejercicio_07/evidencias/fase_02/01_dataset_profile.json
+?? reports/ejercicio_07/evidencias/fase_02/02_logistic_audit.json
+?? reports/ejercicio_07/evidencias/fase_02/03_support_and_uncertainty.json
+?? reports/ejercicio_07/evidencias/fase_02/04_code_style.json
+?? reports/ejercicio_07/evidencias/fase_02/05_required_tests.json
+?? reports/ejercicio_07/evidencias/fase_02/06_style_final.json
+?? reports/ejercicio_07/evidencias/fase_02/07_final_support_verification.json
+?? reports/ejercicio_07/evidencias/fase_02/08_decision_yaml_validation.json
+?? reports/ejercicio_07/evidencias/fase_02/09_final_decision_validation.json
+?? reports/ejercicio_07/evidencias/fase_02/10_integrity_verification.json
+?? reports/ejercicio_07/evidencias/fase_02/11_final_evidence_style.json
+?? reports/ejercicio_07/evidencias/fase_02/execution_log.json
+?? reports/ejercicio_07/evidencias/fase_02/initial_state.json
+?? reports/ejercicio_07/evidencias/fase_02/integrity_verification.json
+?? reports/ejercicio_07/evidencias/fase_02/record_command.py
+?? reports/ejercicio_07/evidencias/fase_02/verify_phase.py
+?? reports/lab12/dataset_profile.json
+?? reports/lab12/logistic/audit_support.csv
+?? reports/lab12/logistic/fairness_by_group.csv
+?? reports/lab12/logistic/fairness_intersectional.csv
+?? reports/lab12/logistic/gap_analysis.json
+?? reports/lab12/logistic/global_metrics.json
+?? reports/lab12/logistic/model_metadata.json
+?? reports/lab12/logistic/test_predictions.csv
+?? reports/lab12/temporal_split.csv
+?? scripts/lab12_supporting_evidence.py
+STDERR:
+
+
+COMMAND: git log -1 --format=%h %s
+EXIT_CODE: 0
+STDOUT:
+86885b8 feat: complete LAB11 impact assessment
+STDERR:

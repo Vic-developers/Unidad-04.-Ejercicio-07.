@@ -1,0 +1,20 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "python",
+    "scripts/lab12_supporting_evidence.py",
+    "--profile-only"
+  ],
+  "started_at_utc": "2026-10-31T17:31:07.889466+00:00",
+  "elapsed_seconds": 26.109167500002513,
+  "exit_code": 0,
+  "stdout": "{\"rows\": 640, \"predictors\": [\"zone\", \"age_band\", \"previous_incidents\", \"infrastructure_score\", \"exposure\"], \"split\": {\"all\": {\"n\": 640, \"start\": \"2026-01-01\", \"end\": \"2026-12-27\", \"target\": {\"0\": 287, \"1\": 353}, \"protected_group\": {\"G1\": 396, \"G2\": 244}, \"group_target\": {\"G1\": {\"0\": 199, \"1\": 197}, \"G2\": {\"0\": 88, \"1\": 156}}}, \"train\": {\"n\": 480, \"start\": \"2026-01-01\", \"end\": \"2026-09-24\", \"target\": {\"0\": 219, \"1\": 261}, \"protected_group\": {\"G1\": 295, \"G2\": 185}, \"group_target\": {\"G1\": {\"0\": 147, \"1\": 148}, \"G2\": {\"0\": 72, \"1\": 113}}}, \"test\": {\"n\": 160, \"start\": \"2026-09-25\", \"end\": \"2026-12-27\", \"target\": {\"0\": 68, \"1\": 92}, \"protected_group\": {\"G1\": 101, \"G2\": 59}, \"group_target\": {\"G1\": {\"0\": 52, \"1\": 49}, \"G2\": {\"0\": 16, \"1\": 43}}}}}\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

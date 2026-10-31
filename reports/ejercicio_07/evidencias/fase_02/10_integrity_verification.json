@@ -1,0 +1,19 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "python",
+    "reports/ejercicio_07/evidencias/fase_02/verify_phase.py"
+  ],
+  "started_at_utc": "2026-10-31T17:40:48.260627+00:00",
+  "elapsed_seconds": 1.4555493000007118,
+  "exit_code": 0,
+  "stdout": "{\"status\": \"passed\", \"starting_commit\": \"86885b8\", \"previous_files_checked\": 64, \"authorized_changed_files\": [\"student_inputs/lab12_decision.yml\"], \"dataset_lock_LAB11_and_original_audit_unchanged\": true, \"original_source\": \"42_of_42_unchanged\", \"decision_fields_complete\": 6, \"decision_evidence_paths_exist\": true, \"required_tests_passed\": 2, \"initial_style_failure_preserved_and_corrected\": true, \"test_predictions\": 160, \"intersections\": 8, \"intersections_n_lt30\": 7, \"intervals_contain_point_estimates\": true, \"saved_model_matches_metadata\": true, \"tree_not_executed\": true, \"human_approval\": \"pending\"}\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

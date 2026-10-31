@@ -1,0 +1,258 @@
+{
+  "starting_commit": "86885b8",
+  "branch": "codex/ejercicio-07",
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/lab12_supporting_evidence.py",
+        "--profile-only"
+      ],
+      "started_at_utc": "2026-10-31T17:31:07.889466+00:00",
+      "elapsed_seconds": 26.109167500002513,
+      "exit_code": 0,
+      "stdout": "{\"rows\": 640, \"predictors\": [\"zone\", \"age_band\", \"previous_incidents\", \"infrastructure_score\", \"exposure\"], \"split\": {\"all\": {\"n\": 640, \"start\": \"2026-01-01\", \"end\": \"2026-12-27\", \"target\": {\"0\": 287, \"1\": 353}, \"protected_group\": {\"G1\": 396, \"G2\": 244}, \"group_target\": {\"G1\": {\"0\": 199, \"1\": 197}, \"G2\": {\"0\": 88, \"1\": 156}}}, \"train\": {\"n\": 480, \"start\": \"2026-01-01\", \"end\": \"2026-09-24\", \"target\": {\"0\": 219, \"1\": 261}, \"protected_group\": {\"G1\": 295, \"G2\": 185}, \"group_target\": {\"G1\": {\"0\": 147, \"1\": 148}, \"G2\": {\"0\": 72, \"1\": 113}}}, \"test\": {\"n\": 160, \"start\": \"2026-09-25\", \"end\": \"2026-12-27\", \"target\": {\"0\": 68, \"1\": 92}, \"protected_group\": {\"G1\": 101, \"G2\": 59}, \"group_target\": {\"G1\": {\"0\": 52, \"1\": 49}, \"G2\": {\"0\": 16, \"1\": 43}}}}}\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "01_dataset_profile"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/lab12_audit.py",
+        "--model",
+        "logistic"
+      ],
+      "started_at_utc": "2026-10-31T17:31:47.812118+00:00",
+      "elapsed_seconds": 5.568899899997632,
+      "exit_code": 0,
+      "stdout": "                 count  accuracy  selection_rate  recall  precision    fpr\nprotected_group                                                           \nG1               101.0     0.703           0.446   0.653      0.711  0.250\nG2                59.0     0.746           0.678   0.791      0.850  0.375\n{'training_seconds': 0.33563929999945685, 'model_kb': 3.5634765625}\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "02_logistic_audit"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/lab12_supporting_evidence.py",
+        "--model",
+        "logistic"
+      ],
+      "started_at_utc": "2026-10-31T17:31:56.681009+00:00",
+      "elapsed_seconds": 3.3775371000010637,
+      "exit_code": 0,
+      "stdout": "{\"rows\": 640, \"predictors\": [\"zone\", \"age_band\", \"previous_incidents\", \"infrastructure_score\", \"exposure\"], \"split\": {\"all\": {\"n\": 640, \"start\": \"2026-01-01\", \"end\": \"2026-12-27\", \"target\": {\"0\": 287, \"1\": 353}, \"protected_group\": {\"G1\": 396, \"G2\": 244}, \"group_target\": {\"G1\": {\"0\": 199, \"1\": 197}, \"G2\": {\"0\": 88, \"1\": 156}}}, \"train\": {\"n\": 480, \"start\": \"2026-01-01\", \"end\": \"2026-09-24\", \"target\": {\"0\": 219, \"1\": 261}, \"protected_group\": {\"G1\": 295, \"G2\": 185}, \"group_target\": {\"G1\": {\"0\": 147, \"1\": 148}, \"G2\": {\"0\": 72, \"1\": 113}}}, \"test\": {\"n\": 160, \"start\": \"2026-09-25\", \"end\": \"2026-12-27\", \"target\": {\"0\": 68, \"1\": 92}, \"protected_group\": {\"G1\": 101, \"G2\": 59}, \"group_target\": {\"G1\": {\"0\": 52, \"1\": 49}, \"G2\": {\"0\": 16, \"1\": 43}}}}}\n       level      group  count  positive_n  negative_n  tp  tn  fp  fn   recall      fpr\n      global        ALL    160          92          68  66  49  19  26 0.717391 0.279412\n       group         G1    101          49          52  32  39  13  17 0.653061 0.250000\n       group         G2     59          43          16  34  10   6   9 0.790698 0.375000\nintersection G1 | 18-29     18           4          14   3  12   2   1 0.750000 0.142857\nintersection G1 | 30-44     24          16           8   9   7   1   7 0.562500 0.125000\nintersection G1 | 45-59     35          17          18  10  11   7   7 0.588235 0.388889\nintersection   G1 | 60+     24          12          12  10   9   3   2 0.833333 0.250000\nintersection G2 | 18-29     11           8           3   7   3   0   1 0.875000 0.000000\nintersection G2 | 30-44     14          12           2   8   1   1   4 0.666667 0.500000\nintersection G2 | 45-59      8           6           2   6   2   0   0 1.000000 0.000000\nintersection   G2 | 60+     26          17           9  13   4   5   4 0.764706 0.555556\n{\"verified_primary_metrics\": true, \"model_sha256\": \"9fc217d3fed0cfb74093c95d40012c386c0e1172e71d0f30f594cd2da177eb2a\", \"gaps\": {\"group\": {\"accuracy\": {\"max_minus_min\": 0.04279241483470386, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.04279241483470386}, \"recall\": {\"max_minus_min\": 0.13763644992880875, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.13763644992880875}, \"fpr\": {\"max_minus_min\": 0.125, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.125}, \"selection_rate\": {\"max_minus_min\": 0.23242154723946967, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.23242154723946967}, \"precision\": {\"max_minus_min\": 0.13888888888888884, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.13888888888888884}, \"fnr\": {\"max_minus_min\": 0.13763644992880872, \"min_group\": \"G2\", \"max_group\": \"G1\", \"G2_minus_G1\": -0.13763644992880872}}, \"intersection\": {\"accuracy\": {\"max_minus_min\": 0.4, \"min_group\": \"G1 | 45-59\", \"max_group\": \"G2 | 45-59\"}, \"recall\": {\"max_minus_min\": 0.4375, \"min_group\": \"G1 | 30-44\", \"max_group\": \"G2 | 45-59\"}, \"fpr\": {\"max_minus_min\": 0.5555555555555556, \"min_group\": \"G2 | 18-29\", \"max_group\": \"G2 | 60+\"}, \"selection_rate\": {\"max_minus_min\": 0.4722222222222222, \"min_group\": \"G1 | 18-29\", \"max_group\": \"G2 | 45-59\"}, \"precision\": {\"max_minus_min\": 0.4117647058823529, \"min_group\": \"G1 | 45-59\", \"max_group\": \"G2 | 18-29\"}, \"fnr\": {\"max_minus_min\": 0.4375, \"min_group\": \"G2 | 45-59\", \"max_group\": \"G1 | 30-44\"}}}}\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "03_support_and_uncertainty"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "ruff",
+        "check",
+        "--fix",
+        "scripts/lab12_supporting_evidence.py",
+        "reports/ejercicio_07/evidencias/fase_02/record_command.py"
+      ],
+      "started_at_utc": "2026-10-31T17:33:00.156163+00:00",
+      "elapsed_seconds": 0.14710360000026412,
+      "exit_code": 1,
+      "stdout": "PLW1510 `subprocess.run` without explicit `check` argument\n  --> reports\\ejercicio_07\\evidencias\\fase_02\\record_command.py:32:14\n   |\n30 |     started = datetime.now(UTC).isoformat()\n31 |     tick = time.perf_counter()\n32 |     result = subprocess.run(command, cwd=root, env=environment, capture_output=True, text=True, encoding=\"utf-8\")\n   |              ^^^^^^^^^^^^^^\n33 |     record = {\n34 |         \"command\": command, \"started_at_utc\": started,\n   |\nhelp: Add explicit `check=False`\n\nFound 6 errors (5 fixed, 1 remaining).\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "04_code_style"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "-q",
+        "tests/test_fairness.py",
+        "tests/test_model.py"
+      ],
+      "started_at_utc": "2026-10-31T17:33:03.659982+00:00",
+      "elapsed_seconds": 4.862652499999967,
+      "exit_code": 0,
+      "stdout": "..                                                                       [100%]\n2 passed in 2.87s\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "05_required_tests"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "ruff",
+        "check",
+        "scripts/lab12_supporting_evidence.py",
+        "reports/ejercicio_07/evidencias/fase_02/record_command.py"
+      ],
+      "started_at_utc": "2026-10-31T17:34:51.545805+00:00",
+      "elapsed_seconds": 4.22653949999949,
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "06_style_final"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/lab12_supporting_evidence.py",
+        "--model",
+        "logistic"
+      ],
+      "started_at_utc": "2026-10-31T17:34:58.834107+00:00",
+      "elapsed_seconds": 5.654047500000161,
+      "exit_code": 0,
+      "stdout": "{\"rows\": 640, \"predictors\": [\"zone\", \"age_band\", \"previous_incidents\", \"infrastructure_score\", \"exposure\"], \"split\": {\"all\": {\"n\": 640, \"start\": \"2026-01-01\", \"end\": \"2026-12-27\", \"target\": {\"0\": 287, \"1\": 353}, \"protected_group\": {\"G1\": 396, \"G2\": 244}, \"group_target\": {\"G1\": {\"0\": 199, \"1\": 197}, \"G2\": {\"0\": 88, \"1\": 156}}}, \"train\": {\"n\": 480, \"start\": \"2026-01-01\", \"end\": \"2026-09-24\", \"target\": {\"0\": 219, \"1\": 261}, \"protected_group\": {\"G1\": 295, \"G2\": 185}, \"group_target\": {\"G1\": {\"0\": 147, \"1\": 148}, \"G2\": {\"0\": 72, \"1\": 113}}}, \"test\": {\"n\": 160, \"start\": \"2026-09-25\", \"end\": \"2026-12-27\", \"target\": {\"0\": 68, \"1\": 92}, \"protected_group\": {\"G1\": 101, \"G2\": 59}, \"group_target\": {\"G1\": {\"0\": 52, \"1\": 49}, \"G2\": {\"0\": 16, \"1\": 43}}}}}\n       level      group  count  positive_n  negative_n  tp  tn  fp  fn   recall      fpr\n      global        ALL    160          92          68  66  49  19  26 0.717391 0.279412\n       group         G1    101          49          52  32  39  13  17 0.653061 0.250000\n       group         G2     59          43          16  34  10   6   9 0.790698 0.375000\nintersection G1 | 18-29     18           4          14   3  12   2   1 0.750000 0.142857\nintersection G1 | 30-44     24          16           8   9   7   1   7 0.562500 0.125000\nintersection G1 | 45-59     35          17          18  10  11   7   7 0.588235 0.388889\nintersection   G1 | 60+     24          12          12  10   9   3   2 0.833333 0.250000\nintersection G2 | 18-29     11           8           3   7   3   0   1 0.875000 0.000000\nintersection G2 | 30-44     14          12           2   8   1   1   4 0.666667 0.500000\nintersection G2 | 45-59      8           6           2   6   2   0   0 1.000000 0.000000\nintersection   G2 | 60+     26          17           9  13   4   5   4 0.764706 0.555556\n{\"verified_primary_metrics\": true, \"model_sha256\": \"9fc217d3fed0cfb74093c95d40012c386c0e1172e71d0f30f594cd2da177eb2a\", \"gaps\": {\"group\": {\"accuracy\": {\"max_minus_min\": 0.04279241483470386, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.04279241483470386}, \"recall\": {\"max_minus_min\": 0.13763644992880875, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.13763644992880875}, \"fpr\": {\"max_minus_min\": 0.125, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.125}, \"selection_rate\": {\"max_minus_min\": 0.23242154723946967, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.23242154723946967}, \"precision\": {\"max_minus_min\": 0.13888888888888884, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.13888888888888884}, \"fnr\": {\"max_minus_min\": 0.13763644992880872, \"min_group\": \"G2\", \"max_group\": \"G1\", \"G2_minus_G1\": -0.13763644992880872}}, \"intersection\": {\"accuracy\": {\"max_minus_min\": 0.4, \"min_group\": \"G1 | 45-59\", \"max_group\": \"G2 | 45-59\"}, \"recall\": {\"max_minus_min\": 0.4375, \"min_group\": \"G1 | 30-44\", \"max_group\": \"G2 | 45-59\"}, \"fpr\": {\"max_minus_min\": 0.5555555555555556, \"min_group\": \"G2 | 18-29\", \"max_group\": \"G2 | 60+\"}, \"selection_rate\": {\"max_minus_min\": 0.4722222222222222, \"min_group\": \"G1 | 18-29\", \"max_group\": \"G2 | 45-59\"}, \"precision\": {\"max_minus_min\": 0.4117647058823529, \"min_group\": \"G1 | 45-59\", \"max_group\": \"G2 | 18-29\"}, \"fnr\": {\"max_minus_min\": 0.4375, \"min_group\": \"G2 | 45-59\", \"max_group\": \"G1 | 30-44\"}}}}\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "07_final_support_verification"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/validate_lab12_decision.py"
+      ],
+      "started_at_utc": "2026-10-31T17:35:06.908095+00:00",
+      "elapsed_seconds": 0.34796499999720254,
+      "exit_code": 0,
+      "stdout": "decision_status: documented\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "08_decision_yaml_validation"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/validate_lab12_decision.py"
+      ],
+      "started_at_utc": "2026-10-31T17:40:44.929527+00:00",
+      "elapsed_seconds": 0.24931849999848055,
+      "exit_code": 0,
+      "stdout": "decision_status: documented\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "09_final_decision_validation"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "reports/ejercicio_07/evidencias/fase_02/verify_phase.py"
+      ],
+      "started_at_utc": "2026-10-31T17:40:48.260627+00:00",
+      "elapsed_seconds": 1.4555493000007118,
+      "exit_code": 0,
+      "stdout": "{\"status\": \"passed\", \"starting_commit\": \"86885b8\", \"previous_files_checked\": 64, \"authorized_changed_files\": [\"student_inputs/lab12_decision.yml\"], \"dataset_lock_LAB11_and_original_audit_unchanged\": true, \"original_source\": \"42_of_42_unchanged\", \"decision_fields_complete\": 6, \"decision_evidence_paths_exist\": true, \"required_tests_passed\": 2, \"initial_style_failure_preserved_and_corrected\": true, \"test_predictions\": 160, \"intersections\": 8, \"intersections_n_lt30\": 7, \"intervals_contain_point_estimates\": true, \"saved_model_matches_metadata\": true, \"tree_not_executed\": true, \"human_approval\": \"pending\"}\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "10_integrity_verification"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "ruff",
+        "check",
+        "scripts/lab12_supporting_evidence.py",
+        "reports/ejercicio_07/evidencias/fase_02/record_command.py",
+        "reports/ejercicio_07/evidencias/fase_02/verify_phase.py"
+      ],
+      "started_at_utc": "2026-10-31T17:42:29.546666+00:00",
+      "elapsed_seconds": 0.07945110000218847,
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "11_final_evidence_style"
+    }
+  ],
+  "resolved_failures": [
+    {
+      "label": "04_code_style",
+      "resolved_by": [
+        "06_style_final",
+        "11_final_evidence_style"
+      ]
+    }
+  ],
+  "audited_models": [
+    "logistic"
+  ],
+  "tree_executed": false,
+  "required_pytest_tests_passed": 2,
+  "push_performed": false
+}
