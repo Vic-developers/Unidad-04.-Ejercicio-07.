@@ -1,0 +1,84 @@
+{
+  "root": "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07",
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/check_environment.py"
+      ],
+      "started_at_utc": "2026-10-31T17:18:09.809683+00:00",
+      "elapsed_seconds": 12.0628257999997,
+      "exit_code": 0,
+      "stdout": "{'python_project': 'ok', 'dataset_status': 'valid', 'rows': 640, 'columns': 9}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/lab11_impact.py"
+      ],
+      "started_at_utc": "2026-10-31T17:18:21.873308+00:00",
+      "elapsed_seconds": 1.3393894000000728,
+      "exit_code": 0,
+      "stdout": " id  priority                                     owner\nR01        12 Equipo de datos y modelos (rol propuesto)\nR03         9       Operador revisor de la demostración\nR05         9 Equipo de datos y modelos (rol propuesto)\nLAB11: 9 risks; 6 stakeholders; decision record preserved.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "-q",
+        "tests/test_impact.py",
+        "tests/test_privacy.py"
+      ],
+      "started_at_utc": "2026-10-31T17:18:23.214419+00:00",
+      "elapsed_seconds": 6.334351499997865,
+      "exit_code": 0,
+      "stdout": "...                                                                      [100%]\n3 passed in 0.77s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "-q",
+        "tests/test_lab11_script.py",
+        "tests/test_data.py"
+      ],
+      "started_at_utc": "2026-10-31T17:18:29.549069+00:00",
+      "elapsed_seconds": 2.519682800000737,
+      "exit_code": 0,
+      "stdout": ".....                                                                    [100%]\n5 passed in 1.05s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "ruff",
+        "check",
+        "scripts/lab11_impact.py",
+        "tests/test_lab11_script.py"
+      ],
+      "started_at_utc": "2026-10-31T17:18:32.070046+00:00",
+      "elapsed_seconds": 1.541487700000289,
+      "exit_code": 1,
+      "stdout": "I001 [*] Import block is un-sorted or un-formatted\n --> tests\\test_lab11_script.py:1:1\n  |\n1 | / import importlib.util\n2 | | import json\n3 | | from pathlib import Path\n4 | |\n5 | | import pandas as pd\n6 | | import pytest\n7 | | import yaml\n  | |___________^\nhelp: Organize imports\n  |\n8 |\n  -\n9 | spec = importlib.util.spec_from_file_location(\n  |\n\nUP012 [*] Unnecessary UTF-8 `encoding` argument to `encode`\n  --> tests\\test_lab11_script.py:49:16\n   |\n47 |     out.mkdir(parents=True)\n48 |     record = out / \"DECISION_RECORD.md\"\n49 |     original = \"# Revisión humana\\r\\n\\r\\nDecisión y observaciones a conservar.\\r\\n\".encode(\"utf-8\")\n   |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n50 |     record.write_bytes(original)\n   |\nhelp: Remove unnecessary `encoding` argument\n   |\n48 |     record = out / \"DECISION_RECORD.md\"\n   -     original = \"# Revisión humana\\r\\n\\r\\nDecisión y observaciones a conservar.\\r\\n\".encode(\"utf-8\")\n49 +     original = \"# Revisión humana\\r\\n\\r\\nDecisión y observaciones a conservar.\\r\\n\".encode()\n50 |     record.write_bytes(original)\n   |\n\nFound 2 errors.\n[*] 2 fixable with the `--fix` option.\n",
+      "stderr": ""
+    }
+  ],
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  },
+  "decision_record_sha256_before": "458f309dec5b41d1920f9041b8740b6decf63ce53113f76af3a92c26f10f9c04",
+  "models_trained": false
+}

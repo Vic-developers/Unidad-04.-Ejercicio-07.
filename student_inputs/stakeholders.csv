@@ -1,5 +1,7 @@
 stakeholder,benefit,harm,power,participation
-Affected person,REPLACE,REPLACE,low,REPLACE
-Operator,REPLACE,REPLACE,medium,REPLACE
-Institutional owner,REPLACE,REPLACE,high,REPLACE
-Data team,REPLACE,REPLACE,medium,REPLACE
+Grupos y casos sintéticos G1/G2 y franjas de edad,Aprender a comparar atención y errores entre grupos simulados,Interpretación estigmatizante si se atribuyen patrones sintéticos a colectivos reales,low,Propuesto: revisión de escenarios por el analista en LAB12; los casos sintéticos no son participantes humanos
+Operador revisor de la demostración,Comprender los límites de una priorización asistida y revisar errores,Sobrecarga por falsos positivos o confianza excesiva en la clasificación,medium,Propuesto: revisión manual de ejemplos y registro de discrepancias; no se ha efectuado un estudio con operadores
+Responsable académico (rol propuesto),Disponer de evidencia trazable para evaluar alcance y riesgos,Aprobar conclusiones sin evidencia o confundir una recomendación con despliegue autorizado,high,Propuesto: aprobar alcance y revisar registros por fase; designación nominal pendiente
+Equipo de datos y modelos (rol propuesto),Reproducir cálculos y detectar problemas del pipeline y del contrato de datos,Propagar errores de calidad o perder evidencia por cambios no trazados,medium,Realizado por asistencia técnica: inspección y pruebas documentadas; revisión humana independiente pendiente
+Persona evaluadora del ejercicio (rol propuesto),Revisar artefactos editables y verificar afirmaciones,Recibir un expediente que confunda propuestas con controles aplicados,medium,Propuesto: reproducir comandos y contrastar evidencia con consigna original; no se afirma revisión docente realizada
+Personas de una eventual adaptación real (fuera de alcance),Beneficio solo hipotético si una nueva evaluación demuestra revisión oportuna y justa,Errores desiguales o decisiones indebidas si se reutiliza la demo sobre personas,low,Pendiente de cualquier adaptación: consulta accesible y co-diseño de reclamaciones; no hay consultas ni personas evaluadas en esta entrega

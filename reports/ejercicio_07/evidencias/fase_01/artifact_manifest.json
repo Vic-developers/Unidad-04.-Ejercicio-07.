@@ -1,0 +1,302 @@
+{
+  "captured_at_utc": "2026-10-31T17:24:56.471489+00:00",
+  "algorithm": "SHA-256",
+  "scope": "Working-tree file bytes at the end of LAB11; excludes .gitkeep and this manifest. Git newline conversion can change byte hashes on checkout.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 105,
+      "sha256": "2db2d2fabf4c6f0093adb8d31298d23c702365e822c629e622ccd5d37a3e9ecf"
+    },
+    {
+      "path": ".python-version",
+      "bytes": 5,
+      "sha256": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 632,
+      "sha256": "c70645b4d166a45799bcdfc54d4dad1019e25184906b023a359ebaae05682f84"
+    },
+    {
+      "path": "app.py",
+      "bytes": 1071,
+      "sha256": "2105a3a9f6f125253cdd7a2f7fc927ccd7fa3fea8d2abce9918efcfb32f2d7ba"
+    },
+    {
+      "path": "configs/governance.yml",
+      "bytes": 414,
+      "sha256": "05037b0170ad7c4047d41b263dca1c21c298e06ba5a43d5eacf2eb3edb75b113"
+    },
+    {
+      "path": "data/territorial_risk_synthetic.csv",
+      "bytes": 34284,
+      "sha256": "2af1858fe874f3914b0f9bfe068fd876cb716186694a6ece9a16e8c929128a01"
+    },
+    {
+      "path": "docs/AI_USE_DECLARATION.md",
+      "bytes": 143,
+      "sha256": "b3bfa081add372a57af53d15be91102ec1e5cc462d57169bddcda182ef77c345"
+    },
+    {
+      "path": "docs/DATASET_CARD.md",
+      "bytes": 344,
+      "sha256": "a93637edaaa3f8be060636d1519126d039faf55be1baf4b0ad97ca3eb7a3252e"
+    },
+    {
+      "path": "docs/MODEL_CARD.md",
+      "bytes": 272,
+      "sha256": "b12d603e0df039e69563b80377995acddfc46644a94ecc17b15c43e5dc9ea9b8"
+    },
+    {
+      "path": "docs/RUNBOOK.md",
+      "bytes": 289,
+      "sha256": "bd8b24cc70ed3616fbb96508db4520dfad7110c662d5e8ad5e1445b66be1901d"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 631,
+      "sha256": "99f02ee8aadeca173ac1a1e59e47897c103cc2ca1f08b77ac2cd84dcccd67ad2"
+    },
+    {
+      "path": "reports/ejercicio_07/DIAGNOSTICO_INICIAL.md",
+      "bytes": 24720,
+      "sha256": "2116f8cfd0bbe71145087e9104484f38c70b22997a1fbb555d585c0cd0673334"
+    },
+    {
+      "path": "reports/ejercicio_07/FASE_01_LAB11.md",
+      "bytes": 12245,
+      "sha256": "58e7740d408b8a7e2a30b43a54dfac3744b8069da942c61ba061ada857bdac9c"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_00/acceso_y_entorno.json",
+      "bytes": 1336,
+      "sha256": "8893d878bc933f4338730f38166196fe327437517de572cb7808dd43a101f423"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_00/diagnostico_estatico.json",
+      "bytes": 12442,
+      "sha256": "d993c34def972a9a1c733100999a276312d542fc2caadfd2be147bd8153ac2ca"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_00/diagnostico_estatico.py",
+      "bytes": 5588,
+      "sha256": "d23e6560943c44dfeefef73b075bd244f08f6c65014e8a82f4f3fe4d9327de37"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_00/estado_git.txt",
+      "bytes": 1008,
+      "sha256": "6fc972dae744fa2edbe92141322c1bd3967e571fe9cf3f04c2546bcbaa5fc3e9"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_00/integridad_fuente.json",
+      "bytes": 487,
+      "sha256": "2a0c719b1cda6e12e7420c92888c2af3bf99be04995a2ea819b6e8d5da29d5db"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_01/artifact_verification.json",
+      "bytes": 1430,
+      "sha256": "57dec3b4abc39a2ec8424754447a2a4108abcf7e27f5d4903342773579c15741"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_01/environment.json",
+      "bytes": 1819,
+      "sha256": "72ff56644fdb47a03970185d4cecf876930b1301521de9c4485d0a283082ace2"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_01/estado_git.txt",
+      "bytes": 1540,
+      "sha256": "76398099f7a4b506bc1de2a2531d9d3c85ce624098e85153c85421137473b51d"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_01/execution_log.json",
+      "bytes": 8170,
+      "sha256": "6356f346a3a00257a6684df827a22e5cc0e3cc643f1fbe97570a94c63b9c2ec1"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_01/execution_log_attempt_01.json",
+      "bytes": 3874,
+      "sha256": "20b13a7ac4dc5e69708c9e4ba6b9db2b8ace04c5614998df80b054d5197ccd63"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_01/run_validation.py",
+      "bytes": 3436,
+      "sha256": "5e17ca31528cd60f608502f4058472d7190129725ef920658c1021538c7c6b8d"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_01/setup_log.json",
+      "bytes": 1959,
+      "sha256": "7b088b48e2517eddb15b88d4f3ec777962443a8cf641e45d188d4492d1e02fa6"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_01/verify_artifacts.py",
+      "bytes": 4721,
+      "sha256": "7658a9bd7b038ff3b3b0e819890b5556078cecda376f863ba4dc9e549b9cd623"
+    },
+    {
+      "path": "reports/lab11/DECISION_RECORD.md",
+      "bytes": 5543,
+      "sha256": "69a515427ca7cbaba697de2786b8e1215304e00fc2fb0559f24c0f5be521f4f7"
+    },
+    {
+      "path": "reports/lab11/IMPACT_ASSESSMENT.md",
+      "bytes": 16558,
+      "sha256": "e770e958d994b72401591f20a201190686bd75dc7dbf94252b41a20ee2305a83"
+    },
+    {
+      "path": "reports/lab11/risk_register_scored.csv",
+      "bytes": 5077,
+      "sha256": "ad6a2e554dc0af62ec4205609ebb8e3af18d816453c2ffcc2f41cd5ec3fb1820"
+    },
+    {
+      "path": "reports/lab11/rmf_summary.json",
+      "bytes": 1529,
+      "sha256": "de2bb417c2dd9f9e913ff034b9cbea088bb74cde914566681cf40e17064de88e"
+    },
+    {
+      "path": "reports/lab11/stakeholders.csv",
+      "bytes": 1945,
+      "sha256": "071a9027dc3ff62fc0759adebcccda83f5a19da71a98f5f316ce9bf3070c1327"
+    },
+    {
+      "path": "scripts/check_environment.py",
+      "bytes": 152,
+      "sha256": "17538c5905abd28664efda550d10236de7cb9135918ab8c45dbbde40dffabb83"
+    },
+    {
+      "path": "scripts/describe_dataset.py",
+      "bytes": 438,
+      "sha256": "f4bab95aeeb1c4c8c474add556aa18ffbdcdf9a1732614ab5ce0b15b8ad64f22"
+    },
+    {
+      "path": "scripts/lab11_impact.py",
+      "bytes": 3706,
+      "sha256": "06d49a845987685d44949fba0df5bd97a09a270c086eff7f029fa912f2576f4b"
+    },
+    {
+      "path": "scripts/lab12_audit.py",
+      "bytes": 1076,
+      "sha256": "25b9463b800c4dfda202811453e6b692003b32b5055a0ec0a065b7c418bfdb5a"
+    },
+    {
+      "path": "scripts/lab13_governance.py",
+      "bytes": 649,
+      "sha256": "325223926fb09d6d3536ccce51897e29ec43e9a32d4b96a89b8d10fe234fc5ce"
+    },
+    {
+      "path": "scripts/simulate_incident.py",
+      "bytes": 492,
+      "sha256": "6d0d47a9dea44e8c881f09ba304c75f96f510ed476f2d212e36d3798704ca238"
+    },
+    {
+      "path": "scripts/validate_lab12_decision.py",
+      "bytes": 285,
+      "sha256": "f552f44d2d9a4afbe917f3d072c3a39abf31d6f768b15a2796776ed7c831ace1"
+    },
+    {
+      "path": "src/inf8239_u04/__init__.py",
+      "bytes": 22,
+      "sha256": "20c8e430ededc2143396e553a3c67aac4ec483ef54efdfcb18a31cb162ca0646"
+    },
+    {
+      "path": "src/inf8239_u04/data.py",
+      "bytes": 1094,
+      "sha256": "aa267f996c8304abec0e4c0224e5481a25bed5747ee52c089c28d3d231e08354"
+    },
+    {
+      "path": "src/inf8239_u04/fairness.py",
+      "bytes": 860,
+      "sha256": "5663801032c3414a0f6c48e3484546ae15ed83a60cf4489e0e8e8a867d44b4f7"
+    },
+    {
+      "path": "src/inf8239_u04/governance.py",
+      "bytes": 1049,
+      "sha256": "c17706d2f9d8f196a3731e13c14200af899049aa60b72c99c970ddaa527fea97"
+    },
+    {
+      "path": "src/inf8239_u04/impact.py",
+      "bytes": 1079,
+      "sha256": "4e970e4ef346f10cb0602f2d1f753410d6a0f22a196e0256be7ae7bc7c6c07cf"
+    },
+    {
+      "path": "src/inf8239_u04/model.py",
+      "bytes": 1099,
+      "sha256": "6c18d68af664ae513221bcc18520970350d1aacc047cb6fd1e6d14da28dab9cc"
+    },
+    {
+      "path": "src/inf8239_u04/pipeline.py",
+      "bytes": 1020,
+      "sha256": "5e55fc6187c840e1b84d5cdf525ce1a82ab093533e9336e9786c4bfac87cdaec"
+    },
+    {
+      "path": "student_inputs/lab11_impact.yml",
+      "bytes": 3341,
+      "sha256": "c17bbf56ae15a0cf1c73d2b151516da7b01d5664eba108a86c186e7ca8f87d25"
+    },
+    {
+      "path": "student_inputs/lab12_decision.yml",
+      "bytes": 128,
+      "sha256": "a44151d600b34aece26d12c8a7f79037fb0e1f50168436c154e0895c32853bb5"
+    },
+    {
+      "path": "student_inputs/raci.csv",
+      "bytes": 341,
+      "sha256": "4ac4b977965ee5fb6b8d5ce828d55f1ab94b60b0610f282ac76f684f5f2a84df"
+    },
+    {
+      "path": "student_inputs/risk_register.csv",
+      "bytes": 5039,
+      "sha256": "afe5915e0b6a5a7a285f477e6d8a683f69b10d1b0f03215296251e55eeb4d74a"
+    },
+    {
+      "path": "student_inputs/stakeholders.csv",
+      "bytes": 1938,
+      "sha256": "12c043a529d354e379bc090eb696ad34c85765b6edaf2a21b4c30ac5e0f32d2b"
+    },
+    {
+      "path": "tests/test_app.py",
+      "bytes": 294,
+      "sha256": "9968363486d3fe2dcb56fa7bed12ec3328b8b54c068ed4e2f4fb92f04b42648e"
+    },
+    {
+      "path": "tests/test_data.py",
+      "bytes": 352,
+      "sha256": "cf18efd4e270e3dbe4d092992d7409473a5ae24a632db20a9bdeda9e38b060a1"
+    },
+    {
+      "path": "tests/test_fairness.py",
+      "bytes": 406,
+      "sha256": "012edb562c1d3f661677bad0157bbdd3ef891506a31fcde642ca77841601c8e7"
+    },
+    {
+      "path": "tests/test_governance.py",
+      "bytes": 526,
+      "sha256": "7874f1405314a894db49e2390fd1aaf67561e1490a155531e2242d067ec207e4"
+    },
+    {
+      "path": "tests/test_impact.py",
+      "bytes": 601,
+      "sha256": "bed3f1ab6d9d874c4d37f6f58284738b9543d2a41edcb4a599f64465a54b2ef3"
+    },
+    {
+      "path": "tests/test_lab11_script.py",
+      "bytes": 2905,
+      "sha256": "151306515fc063dcc19f7503551c876ebfcb5baa161d33b1f08360ef72ec2839"
+    },
+    {
+      "path": "tests/test_model.py",
+      "bytes": 267,
+      "sha256": "5de6406ab9f9bc098537c43848450eb1ffdcf2b9a48fdcf27b6a2b6b8305c062"
+    },
+    {
+      "path": "tests/test_privacy.py",
+      "bytes": 188,
+      "sha256": "3721bdbcf8a668ef638246e23a99433036d6240864da6315e7f1a7554fda0c75"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 99086,
+      "sha256": "9d645049178d308bb585a9d246211bea8dac5e2e2c6b2c7b57a298ec31db2042"
+    }
+  ]
+}

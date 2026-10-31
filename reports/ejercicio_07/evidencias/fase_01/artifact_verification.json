@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "impact_fields_complete": 9,
+  "stakeholders_complete_and_output_matches": 6,
+  "risks_complete_and_scores_verified": 9,
+  "ordinal_values_in_range": true,
+  "risk_owners_match_stakeholder_roles": true,
+  "rmf_functions": [
+    "GOVERN",
+    "MANAGE",
+    "MAP",
+    "MEASURE"
+  ],
+  "dataset_unchanged": true,
+  "uv_lock_unchanged": true,
+  "original_source_integrity": "42_of_42_unchanged",
+  "lab12_inputs_unchanged": true,
+  "lab12_outputs_absent": true,
+  "trained_model_files_absent": true,
+  "priorities": [
+    {
+      "id": "R01",
+      "priority": 12,
+      "residual": "high"
+    },
+    {
+      "id": "R03",
+      "priority": 9,
+      "residual": "medium"
+    },
+    {
+      "id": "R05",
+      "priority": 9,
+      "residual": "high"
+    },
+    {
+      "id": "R07",
+      "priority": 9,
+      "residual": "medium"
+    },
+    {
+      "id": "R02",
+      "priority": 8,
+      "residual": "high"
+    },
+    {
+      "id": "R04",
+      "priority": 8,
+      "residual": "medium"
+    },
+    {
+      "id": "R06",
+      "priority": 8,
+      "residual": "high"
+    },
+    {
+      "id": "R08",
+      "priority": 6,
+      "residual": "high"
+    },
+    {
+      "id": "R09",
+      "priority": 6,
+      "residual": "medium"
+    }
+  ],
+  "limitation": "Checks validate structure and arithmetic, not empirical risk calibration or fairness."
+}

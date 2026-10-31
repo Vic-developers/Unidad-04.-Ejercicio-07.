@@ -1,0 +1,157 @@
+{
+  "root": "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07",
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/check_environment.py"
+      ],
+      "started_at_utc": "2026-10-31T17:19:29.970826+00:00",
+      "elapsed_seconds": 1.1217686999989382,
+      "exit_code": 0,
+      "stdout": "{'python_project': 'ok', 'dataset_status': 'valid', 'rows': 640, 'columns': 9}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/lab11_impact.py"
+      ],
+      "started_at_utc": "2026-10-31T17:19:31.093267+00:00",
+      "elapsed_seconds": 1.1987539000001561,
+      "exit_code": 0,
+      "stdout": " id  priority                                     owner\nR01        12 Equipo de datos y modelos (rol propuesto)\nR03         9       Operador revisor de la demostración\nR05         9 Equipo de datos y modelos (rol propuesto)\nLAB11: 9 risks; 6 stakeholders; decision record preserved.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "-q",
+        "tests/test_impact.py",
+        "tests/test_privacy.py"
+      ],
+      "started_at_utc": "2026-10-31T17:19:32.293302+00:00",
+      "elapsed_seconds": 2.06200059999901,
+      "exit_code": 0,
+      "stdout": "...                                                                      [100%]\n3 passed in 0.77s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "-q",
+        "tests/test_lab11_script.py",
+        "tests/test_data.py"
+      ],
+      "started_at_utc": "2026-10-31T17:19:34.356381+00:00",
+      "elapsed_seconds": 2.1976990999974078,
+      "exit_code": 0,
+      "stdout": ".....                                                                    [100%]\n5 passed in 0.88s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "ruff",
+        "check",
+        "scripts/lab11_impact.py",
+        "tests/test_lab11_script.py"
+      ],
+      "started_at_utc": "2026-10-31T17:19:36.554136+00:00",
+      "elapsed_seconds": 0.08959789999789791,
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "reports/ejercicio_07/evidencias/fase_01/verify_artifacts.py"
+      ],
+      "started_at_utc": "2026-10-31T17:19:36.644677+00:00",
+      "elapsed_seconds": 1.2431268000000273,
+      "exit_code": 0,
+      "stdout": "{\"status\": \"passed\", \"impact_fields_complete\": 9, \"stakeholders_complete_and_output_matches\": 6, \"risks_complete_and_scores_verified\": 9, \"ordinal_values_in_range\": true, \"risk_owners_match_stakeholder_roles\": true, \"rmf_functions\": [\"GOVERN\", \"MANAGE\", \"MAP\", \"MEASURE\"], \"dataset_unchanged\": true, \"uv_lock_unchanged\": true, \"original_source_integrity\": \"42_of_42_unchanged\", \"lab12_inputs_unchanged\": true, \"lab12_outputs_absent\": true, \"trained_model_files_absent\": true, \"priorities\": [{\"id\": \"R01\", \"priority\": 12, \"residual\": \"high\"}, {\"id\": \"R03\", \"priority\": 9, \"residual\": \"medium\"}, {\"id\": \"R05\", \"priority\": 9, \"residual\": \"high\"}, {\"id\": \"R07\", \"priority\": 9, \"residual\": \"medium\"}, {\"id\": \"R02\", \"priority\": 8, \"residual\": \"high\"}, {\"id\": \"R04\", \"priority\": 8, \"residual\": \"medium\"}, {\"id\": \"R06\", \"priority\": 8, \"residual\": \"high\"}, {\"id\": \"R08\", \"priority\": 6, \"residual\": \"high\"}, {\"id\": \"R09\", \"priority\": 6, \"residual\": \"medium\"}], \"limitation\": \"Checks validate structure and arithmetic, not empirical risk calibration or fairness.\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "started_at_utc": "2026-10-31T17:19:37.889187+00:00",
+      "elapsed_seconds": 0.043784400000731694,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "warning: in the working copy of 'scripts/lab11_impact.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'student_inputs/lab11_impact.yml', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'student_inputs/risk_register.csv', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'student_inputs/stakeholders.csv', LF will be replaced by CRLF the next time Git touches it\n"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/lab11_impact.py"
+      ],
+      "started_at_utc": "2026-10-31T17:23:36.204878+00:00",
+      "elapsed_seconds": 1.3133082000022114,
+      "exit_code": 0,
+      "stdout": " id  priority                                     owner\nR01        12 Equipo de datos y modelos (rol propuesto)\nR03         9       Operador revisor de la demostración\nR05         9 Equipo de datos y modelos (rol propuesto)\nLAB11: 9 risks; 6 stakeholders; decision record preserved.\n",
+      "stderr": "",
+      "stage": "after_document_paragraph_formatting"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "reports/ejercicio_07/evidencias/fase_01/verify_artifacts.py"
+      ],
+      "started_at_utc": "2026-10-31T17:23:37.519531+00:00",
+      "elapsed_seconds": 1.2081582999999227,
+      "exit_code": 0,
+      "stdout": "{\"status\": \"passed\", \"impact_fields_complete\": 9, \"stakeholders_complete_and_output_matches\": 6, \"risks_complete_and_scores_verified\": 9, \"ordinal_values_in_range\": true, \"risk_owners_match_stakeholder_roles\": true, \"rmf_functions\": [\"GOVERN\", \"MANAGE\", \"MAP\", \"MEASURE\"], \"dataset_unchanged\": true, \"uv_lock_unchanged\": true, \"original_source_integrity\": \"42_of_42_unchanged\", \"lab12_inputs_unchanged\": true, \"lab12_outputs_absent\": true, \"trained_model_files_absent\": true, \"priorities\": [{\"id\": \"R01\", \"priority\": 12, \"residual\": \"high\"}, {\"id\": \"R03\", \"priority\": 9, \"residual\": \"medium\"}, {\"id\": \"R05\", \"priority\": 9, \"residual\": \"high\"}, {\"id\": \"R07\", \"priority\": 9, \"residual\": \"medium\"}, {\"id\": \"R02\", \"priority\": 8, \"residual\": \"high\"}, {\"id\": \"R04\", \"priority\": 8, \"residual\": \"medium\"}, {\"id\": \"R06\", \"priority\": 8, \"residual\": \"high\"}, {\"id\": \"R08\", \"priority\": 6, \"residual\": \"high\"}, {\"id\": \"R09\", \"priority\": 6, \"residual\": \"medium\"}], \"limitation\": \"Checks validate structure and arithmetic, not empirical risk calibration or fairness.\"}\n",
+      "stderr": "",
+      "stage": "after_document_paragraph_formatting"
+    }
+  ],
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  },
+  "decision_record_sha256_before": "69a515427ca7cbaba697de2786b8e1215304e00fc2fb0559f24c0f5be521f4f7",
+  "models_trained": false,
+  "decision_record_sha256_after": "69a515427ca7cbaba697de2786b8e1215304e00fc2fb0559f24c0f5be521f4f7",
+  "decision_record_unchanged": true,
+  "decision_record_checks": [
+    {
+      "stage": "validation_before_document_paragraph_formatting",
+      "command_index": 1,
+      "before": "458f309dec5b41d1920f9041b8740b6decf63ce53113f76af3a92c26f10f9c04",
+      "after": "458f309dec5b41d1920f9041b8740b6decf63ce53113f76af3a92c26f10f9c04",
+      "unchanged": true
+    },
+    {
+      "stage": "after_document_paragraph_formatting",
+      "command_index": 7,
+      "before": "69a515427ca7cbaba697de2786b8e1215304e00fc2fb0559f24c0f5be521f4f7",
+      "after": "69a515427ca7cbaba697de2786b8e1215304e00fc2fb0559f24c0f5be521f4f7",
+      "unchanged": true
+    }
+  ],
+  "followup_reason": "Paragraph formatting of new Markdown documents; recheck LAB11 and artifact integrity without rerunning passed tests.",
+  "decision_record_hash_scope": "Latest check; earlier check retained in decision_record_checks."
+}

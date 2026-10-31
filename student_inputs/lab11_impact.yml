@@ -1,9 +1,48 @@
-purpose: REPLACE
-assisted_decision: REPLACE
-users: REPLACE
-affected_population: REPLACE
-owner: REPLACE
-non_predictive_alternative: REPLACE
-out_of_scope_use: REPLACE
-withdrawal_condition: REPLACE
-appeal_mechanism: REPLACE
+# Alcance documentado para el ejercicio; no constituye autorización de despliegue.
+purpose: >-
+  Practicar la evaluación de impacto y la priorización de casos territoriales
+  sintéticos para revisión humana mediante Territorial Review DSS - Synthetic.
+  Los datos no representan personas, territorios ni tasas reales. La utilidad
+  perseguida es didáctica; no se acredita beneficio operacional real.
+assisted_decision: >-
+  Explorar qué casos sintéticos recibirían revisión humana prioritaria y examinar
+  los errores y diferencias entre grupos que podría producir esa priorización.
+  El código de auditoría evalúa clasificadores binarios; no implementa una cola
+  operacional ni autoriza intervenciones, elegibilidad o declaraciones de emergencia.
+users: >-
+  Roles previstos para la demostración: estudiante o analista de datos, revisor
+  humano de los resultados y persona evaluadora del ejercicio. Son roles
+  funcionales propuestos; no se acredita una operación institucional existente.
+affected_population: >-
+  En esta entrega solo existen 640 casos sintéticos con grupos G1/G2 y franjas
+  de edad simuladas. No hay personas reales sometidas a decisiones. Los daños
+  a personas descritos en el registro son escenarios condicionados a una
+  reutilización indebida o futura adaptación, no incidentes observados.
+owner: >-
+  Rol propuesto: responsable académico del ejercicio, pendiente de designación
+  nominal y aprobación por el usuario. Debe custodiar las evidencias y autorizar
+  cualquier cambio de alcance; no se atribuye responsabilidad a una institución real.
+non_predictive_alternative: >-
+  Revisar todos los casos sintéticos por orden de received_date sin puntuar ni
+  excluir casos por modelo. Esta alternativa propuesta requiere menos supuestos
+  y sirve como referencia para juzgar la necesidad de priorización. No se ha
+  implementado ni comparado experimentalmente una cola de revisión en esta fase.
+out_of_scope_use: >-
+  Prohibidos: intervención automática, decisión de elegibilidad y declaración de
+  emergencia según configs/governance.yml; además no extrapolar resultados a
+  poblaciones reales, perfilar personas o territorios, introducir identificadores
+  directos ni presentar datos sintéticos como estadísticas oficiales. La eventual
+  adaptación a datos reales requeriría una evaluación independiente y aprobación.
+withdrawal_condition: >-
+  Propuesta para la demostración: suspender el uso interpretativo de resultados
+  si aparecen identificadores directos, datos fuera del contrato, cambios no
+  trazados, pruebas fallidas, pérdida del carácter sintético o imposibilidad de
+  revisión humana; conservar evidencia y volver a revisión cronológica manual.
+  Si LAB12 detecta brechas o incertidumbre sin resolver, mantener REVIEW y revisar
+  antes de continuar. No se aprueban aquí tolerancias operacionales ni despliegue.
+appeal_mechanism: >-
+  Procedimiento propuesto, todavía sin canal técnico ni validación con personas:
+  solicitar al responsable académico la revisión de un case_id sintético y su
+  evidencia, registrar la objeción sin datos personales, disponer revisión por
+  otra persona y documentar corrección y respuesta. En una adaptación real habría
+  que acordar canal accesible, plazos, autoridad y protección de datos con afectados.

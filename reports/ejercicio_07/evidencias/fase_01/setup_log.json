@@ -1,0 +1,9 @@
+{
+  "command": "uv sync --frozen",
+  "initial_stdout": "Using CPython 3.12.13\nCreating virtual environment at: .venv\n   Building inf8239-u04-governance-dss @ file:///C:/Users/reyti/OneDrive/Documentos/ChatGPT/Tareas/Unidad-04.-Ejercicio-07\nDownloading plotly (9.5MiB)\n      Built inf8239-u04-governance-dss @ file:///C:/Users/reyti/OneDrive/Documentos/ChatGPT/Tareas/Unidad-04.-Ejercicio-07\n Downloaded plotly\nPrepared 4 packages in 5.56s\n",
+  "final_stdout": "Installed 55 packages in 4.85s\n + altair==6.3.0\n + anyio==4.15.1\n + attrs==26.1.0\n + certifi==2026.7.22\n + charset-normalizer==3.5.1\n + click==8.5.0\n + cloudpickle==3.1.2\n + colorama==0.4.6\n + coverage==7.16.1\n + fairlearn==0.12.0\n + h11==0.16.0\n + httptools==0.8.0\n + idna==3.20\n + inf8239-u04-governance-dss==0.1.0 (from file:///C:/Users/reyti/OneDrive/Documentos/ChatGPT/Tareas/Unidad-04.-Ejercicio-07)\n + iniconfig==2.3.0\n + itsdangerous==2.2.0\n + jinja2==3.1.6\n + joblib==1.6.0\n + jsonschema==4.26.0\n + jsonschema-specifications==2025.9.1\n + markupsafe==3.0.3\n + narwhals==2.26.0\n + numpy==2.5.3\n + packaging==26.3\n + pandas==2.3.3\n + pillow==12.3.0\n + plotly==6.9.0\n + pluggy==1.6.0\n + protobuf==7.36.2\n + pyarrow==25.0.1\n + pydeck==0.9.3\n + pygments==2.21.0\n + pytest==8.4.2\n + pytest-cov==6.3.0\n + python-dateutil==2.9.0.post0\n + python-multipart==0.0.32\n + pytz==2026.3.post1\n + pyyaml==6.0.3\n + referencing==0.37.0\n + requests==2.34.2\n + rpds-py==2026.6.3\n + ruff==0.16.8\n + scikit-learn==1.9.1\n + scipy==1.18.1\n + six==1.17.0\n + starlette==1.6.0\n + streamlit==1.64.0\n + threadpoolctl==3.7.0\n + toml==0.10.2\n + typing-extensions==4.16.0\n + tzdata==2026.4\n + urllib3==2.8.0\n + uvicorn==0.53.0\n + watchdog==6.0.0\n + websockets==16.1.1\n",
+  "exit_code": 0,
+  "lock_updated": false,
+  "python": "3.12.13",
+  "notes": "Instalacion en .venv del clon. El hash del lock se comprueba por separado en la verificacion de artefactos."
+}

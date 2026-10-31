@@ -1,0 +1,49 @@
+{
+  "GOVERN": {
+    "status": "documented_pending_human_approval",
+    "owner": "Rol propuesto: responsable académico del ejercicio, pendiente de designación nominal y aprobación por el usuario. Debe custodiar las evidencias y autorizar cualquier cambio de alcance; no se atribuye responsabilidad a una institución real.",
+    "evidence": [
+      "student_inputs/lab11_impact.yml",
+      "reports/lab11/DECISION_RECORD.md"
+    ]
+  },
+  "MAP": {
+    "status": "documented",
+    "risk_count": 9,
+    "stakeholder_count": 6,
+    "risk_ids": [
+      "R01",
+      "R03",
+      "R05",
+      "R07",
+      "R02",
+      "R04",
+      "R06",
+      "R08",
+      "R09"
+    ],
+    "evidence": [
+      "student_inputs/risk_register.csv",
+      "student_inputs/stakeholders.csv"
+    ]
+  },
+  "MEASURE": {
+    "risk_scoring": "likelihood_1_4 * impact_1_4",
+    "score_interpretation": "proposed_ordinal_ratings_not_observed_frequencies",
+    "model_audit_status": "not_evaluated_by_this_script_see_LAB12",
+    "evidence": [
+      "reports/lab11/risk_register_scored.csv"
+    ]
+  },
+  "MANAGE": {
+    "status": "controls_documented_see_traceability_for_implementation",
+    "traceability_document": "reports/lab11/IMPACT_ASSESSMENT.md",
+    "decision_record_policy": "preserve_existing_file",
+    "human_approval": "not_recorded_by_this_script",
+    "deployment_authorized": false,
+    "evidence": [
+      "reports/lab11/DECISION_RECORD.md",
+      "student_inputs/lab11_impact.yml"
+    ]
+  }
+}

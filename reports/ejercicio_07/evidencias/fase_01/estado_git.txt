@@ -1,0 +1,49 @@
+Estado previo a preparar el commit local de LAB11
+UTC: 2026-10-31T17:24:55.989949+00:00
+No se ha ejecutado push.
+
+COMMAND: git branch --show-current
+EXIT_CODE: 0
+STDOUT:
+codex/ejercicio-07
+STDERR:
+
+
+COMMAND: git remote -v
+EXIT_CODE: 0
+STDOUT:
+origin	https://github.com/Vic-developers/Unidad-04.-Ejercicio-07..git (fetch)
+origin	https://github.com/Vic-developers/Unidad-04.-Ejercicio-07..git (push)
+STDERR:
+
+
+COMMAND: git status --short --untracked-files=all
+EXIT_CODE: 0
+STDOUT:
+ M scripts/lab11_impact.py
+ M student_inputs/lab11_impact.yml
+ M student_inputs/risk_register.csv
+ M student_inputs/stakeholders.csv
+?? reports/ejercicio_07/FASE_01_LAB11.md
+?? reports/ejercicio_07/evidencias/fase_01/artifact_verification.json
+?? reports/ejercicio_07/evidencias/fase_01/environment.json
+?? reports/ejercicio_07/evidencias/fase_01/execution_log.json
+?? reports/ejercicio_07/evidencias/fase_01/execution_log_attempt_01.json
+?? reports/ejercicio_07/evidencias/fase_01/run_validation.py
+?? reports/ejercicio_07/evidencias/fase_01/setup_log.json
+?? reports/ejercicio_07/evidencias/fase_01/verify_artifacts.py
+?? reports/lab11/DECISION_RECORD.md
+?? reports/lab11/IMPACT_ASSESSMENT.md
+?? reports/lab11/risk_register_scored.csv
+?? reports/lab11/rmf_summary.json
+?? reports/lab11/stakeholders.csv
+?? tests/test_lab11_script.py
+STDERR:
+
+
+COMMAND: git log -2 --format=%h %s
+EXIT_CODE: 0
+STDOUT:
+6ad4c1a chore: import original Unit 04 project base
+e2d6249 docs: record initial Exercise 07 diagnosis
+STDERR:
