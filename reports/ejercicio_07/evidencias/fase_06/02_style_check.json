@@ -1,0 +1,20 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\ruff.exe",
+    "check",
+    "reports/ejercicio_07/evidencias/fase_06/build_decision_facts.py",
+    "reports/ejercicio_07/evidencias/fase_06/verify_decision.py",
+    "reports/ejercicio_07/evidencias/fase_06/record_command.py"
+  ],
+  "started_at_utc": "2026-10-31T18:55:38.047103+00:00",
+  "elapsed_seconds": 0.04353350000019418,
+  "exit_code": 0,
+  "stdout": "All checks passed!\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

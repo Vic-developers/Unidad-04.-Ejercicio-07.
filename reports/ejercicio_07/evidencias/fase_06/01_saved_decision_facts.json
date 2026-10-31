@@ -1,0 +1,18 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-B",
+    "reports\\ejercicio_07\\evidencias\\fase_06\\build_decision_facts.py"
+  ],
+  "started_at_utc": "2026-10-31T18:48:29.518916+00:00",
+  "elapsed_seconds": 0.24611899999945308,
+  "exit_code": 0,
+  "stdout": "{\"saved_models_checked\": [\"logistic\", \"tree\"], \"test_n\": 160, \"risk_baselines\": 9, \"sources\": 15, \"new_model_fits\": 0, \"new_predictions\": 0, \"mitigation_effect_measured\": false}\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

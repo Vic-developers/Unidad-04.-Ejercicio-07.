@@ -1,0 +1,9 @@
+Pre-commit working tree snapshot, captured 2026-10-31T18:57:01.350796+00:00
+Branch: codex/ejercicio-07
+Parent commit: 2103bdc3b7551bed8fbf47f66874bf6e59fc8760
+Push performed: false
+
+?? reports/ejercicio_07/ALTERNATIVAS_USO.csv
+?? reports/ejercicio_07/DECISION_FINAL.md
+?? reports/ejercicio_07/PLAN_MITIGACION.csv
+?? reports/ejercicio_07/evidencias/fase_06/

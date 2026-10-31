@@ -1,0 +1,640 @@
+{
+  "scope": "Reconstruction from saved outputs; no model fit, new predictions, mitigation experiment or human approval.",
+  "dataset": {
+    "n": 640,
+    "train_n": 480,
+    "test_n": 160,
+    "synthetic_scope": "documented_by_project_not_independently_verified",
+    "sha256": "2af1858fe874f3914b0f9bfe068fd876cb716186694a6ece9a16e8c929128a01"
+  },
+  "jurisdiction": "República Dominicana",
+  "models": {
+    "logistic": {
+      "global": {
+        "n": 160,
+        "positive_n": 92,
+        "negative_n": 68,
+        "selected_n": 85,
+        "tp": 66,
+        "tn": 49,
+        "fp": 19,
+        "fn": 26,
+        "accuracy": 0.71875,
+        "recall": 0.717391304347826,
+        "fpr": 0.27941176470588236,
+        "selection_rate": 0.53125,
+        "fnr": 0.2826086956521739,
+        "precision": 0.7764705882352941,
+        "f1": 0.7457627118644068
+      },
+      "by_group": {
+        "G1": {
+          "n": 101,
+          "positive_n": 49,
+          "negative_n": 52,
+          "selected_n": 45,
+          "tp": 32,
+          "tn": 39,
+          "fp": 13,
+          "fn": 17,
+          "accuracy": 0.7029702970297029,
+          "recall": 0.6530612244897959,
+          "fpr": 0.25,
+          "selection_rate": 0.44554455445544555,
+          "fnr": 0.3469387755102041,
+          "precision": 0.7111111111111111,
+          "f1": 0.6808510638297872
+        },
+        "G2": {
+          "n": 59,
+          "positive_n": 43,
+          "negative_n": 16,
+          "selected_n": 40,
+          "tp": 34,
+          "tn": 10,
+          "fp": 6,
+          "fn": 9,
+          "accuracy": 0.7457627118644068,
+          "recall": 0.7906976744186046,
+          "fpr": 0.375,
+          "selection_rate": 0.6779661016949152,
+          "fnr": 0.20930232558139536,
+          "precision": 0.85,
+          "f1": 0.8192771084337349
+        }
+      },
+      "by_intersection": {
+        "G1 | 18-29": {
+          "n": 18,
+          "positive_n": 4,
+          "negative_n": 14,
+          "selected_n": 5,
+          "tp": 3,
+          "tn": 12,
+          "fp": 2,
+          "fn": 1,
+          "accuracy": 0.8333333333333334,
+          "recall": 0.75,
+          "fpr": 0.14285714285714285,
+          "selection_rate": 0.2777777777777778,
+          "fnr": 0.25,
+          "precision": 0.6,
+          "f1": 0.6666666666666666
+        },
+        "G1 | 30-44": {
+          "n": 24,
+          "positive_n": 16,
+          "negative_n": 8,
+          "selected_n": 10,
+          "tp": 9,
+          "tn": 7,
+          "fp": 1,
+          "fn": 7,
+          "accuracy": 0.6666666666666666,
+          "recall": 0.5625,
+          "fpr": 0.125,
+          "selection_rate": 0.4166666666666667,
+          "fnr": 0.4375,
+          "precision": 0.9,
+          "f1": 0.6923076923076923
+        },
+        "G1 | 45-59": {
+          "n": 35,
+          "positive_n": 17,
+          "negative_n": 18,
+          "selected_n": 17,
+          "tp": 10,
+          "tn": 11,
+          "fp": 7,
+          "fn": 7,
+          "accuracy": 0.6,
+          "recall": 0.5882352941176471,
+          "fpr": 0.3888888888888889,
+          "selection_rate": 0.4857142857142857,
+          "fnr": 0.4117647058823529,
+          "precision": 0.5882352941176471,
+          "f1": 0.5882352941176471
+        },
+        "G1 | 60+": {
+          "n": 24,
+          "positive_n": 12,
+          "negative_n": 12,
+          "selected_n": 13,
+          "tp": 10,
+          "tn": 9,
+          "fp": 3,
+          "fn": 2,
+          "accuracy": 0.7916666666666666,
+          "recall": 0.8333333333333334,
+          "fpr": 0.25,
+          "selection_rate": 0.5416666666666666,
+          "fnr": 0.16666666666666666,
+          "precision": 0.7692307692307693,
+          "f1": 0.8
+        },
+        "G2 | 18-29": {
+          "n": 11,
+          "positive_n": 8,
+          "negative_n": 3,
+          "selected_n": 7,
+          "tp": 7,
+          "tn": 3,
+          "fp": 0,
+          "fn": 1,
+          "accuracy": 0.9090909090909091,
+          "recall": 0.875,
+          "fpr": 0.0,
+          "selection_rate": 0.6363636363636364,
+          "fnr": 0.125,
+          "precision": 1.0,
+          "f1": 0.9333333333333333
+        },
+        "G2 | 30-44": {
+          "n": 14,
+          "positive_n": 12,
+          "negative_n": 2,
+          "selected_n": 9,
+          "tp": 8,
+          "tn": 1,
+          "fp": 1,
+          "fn": 4,
+          "accuracy": 0.6428571428571429,
+          "recall": 0.6666666666666666,
+          "fpr": 0.5,
+          "selection_rate": 0.6428571428571429,
+          "fnr": 0.3333333333333333,
+          "precision": 0.8888888888888888,
+          "f1": 0.7619047619047619
+        },
+        "G2 | 45-59": {
+          "n": 8,
+          "positive_n": 6,
+          "negative_n": 2,
+          "selected_n": 6,
+          "tp": 6,
+          "tn": 2,
+          "fp": 0,
+          "fn": 0,
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "fpr": 0.0,
+          "selection_rate": 0.75,
+          "fnr": 0.0,
+          "precision": 1.0,
+          "f1": 1.0
+        },
+        "G2 | 60+": {
+          "n": 26,
+          "positive_n": 17,
+          "negative_n": 9,
+          "selected_n": 18,
+          "tp": 13,
+          "tn": 4,
+          "fp": 5,
+          "fn": 4,
+          "accuracy": 0.6538461538461539,
+          "recall": 0.7647058823529411,
+          "fpr": 0.5555555555555556,
+          "selection_rate": 0.6923076923076923,
+          "fnr": 0.23529411764705882,
+          "precision": 0.7222222222222222,
+          "f1": 0.7428571428571429
+        }
+      },
+      "gaps": {
+        "group": {
+          "recall": 0.13763644992880875,
+          "fpr": 0.125,
+          "selection_rate": 0.23242154723946967
+        },
+        "intersection": {
+          "recall": 0.4375,
+          "fpr": 0.5555555555555556,
+          "selection_rate": 0.4722222222222222
+        }
+      },
+      "intersection_count": 8,
+      "intersections_with_n_lt30": 7,
+      "intersection_n_min": 8,
+      "intersection_n_max": 35,
+      "model_bytes": 3649,
+      "model_sha256": "9fc217d3fed0cfb74093c95d40012c386c0e1172e71d0f30f594cd2da177eb2a",
+      "features": [
+        "zone",
+        "age_band",
+        "previous_incidents",
+        "infrastructure_score",
+        "exposure"
+      ],
+      "fit_benchmark_existing": {
+        "repeats": 10,
+        "median_seconds": 0.0057575499995436985,
+        "q25_seconds": 0.005336475000149221,
+        "q75_seconds": 0.0061876999998276005,
+        "min_seconds": 0.005095900000014808,
+        "max_seconds": 0.007308099997317186
+      }
+    },
+    "tree": {
+      "global": {
+        "n": 160,
+        "positive_n": 92,
+        "negative_n": 68,
+        "selected_n": 87,
+        "tp": 66,
+        "tn": 47,
+        "fp": 21,
+        "fn": 26,
+        "accuracy": 0.70625,
+        "recall": 0.717391304347826,
+        "fpr": 0.3088235294117647,
+        "selection_rate": 0.54375,
+        "fnr": 0.2826086956521739,
+        "precision": 0.7586206896551724,
+        "f1": 0.7374301675977654
+      },
+      "by_group": {
+        "G1": {
+          "n": 101,
+          "positive_n": 49,
+          "negative_n": 52,
+          "selected_n": 45,
+          "tp": 31,
+          "tn": 38,
+          "fp": 14,
+          "fn": 18,
+          "accuracy": 0.6831683168316832,
+          "recall": 0.6326530612244898,
+          "fpr": 0.2692307692307692,
+          "selection_rate": 0.44554455445544555,
+          "fnr": 0.3673469387755102,
+          "precision": 0.6888888888888889,
+          "f1": 0.6595744680851063
+        },
+        "G2": {
+          "n": 59,
+          "positive_n": 43,
+          "negative_n": 16,
+          "selected_n": 42,
+          "tp": 35,
+          "tn": 9,
+          "fp": 7,
+          "fn": 8,
+          "accuracy": 0.7457627118644068,
+          "recall": 0.813953488372093,
+          "fpr": 0.4375,
+          "selection_rate": 0.711864406779661,
+          "fnr": 0.18604651162790697,
+          "precision": 0.8333333333333334,
+          "f1": 0.8235294117647058
+        }
+      },
+      "by_intersection": {
+        "G1 | 18-29": {
+          "n": 18,
+          "positive_n": 4,
+          "negative_n": 14,
+          "selected_n": 6,
+          "tp": 3,
+          "tn": 11,
+          "fp": 3,
+          "fn": 1,
+          "accuracy": 0.7777777777777778,
+          "recall": 0.75,
+          "fpr": 0.21428571428571427,
+          "selection_rate": 0.3333333333333333,
+          "fnr": 0.25,
+          "precision": 0.5,
+          "f1": 0.6
+        },
+        "G1 | 30-44": {
+          "n": 24,
+          "positive_n": 16,
+          "negative_n": 8,
+          "selected_n": 13,
+          "tp": 10,
+          "tn": 5,
+          "fp": 3,
+          "fn": 6,
+          "accuracy": 0.625,
+          "recall": 0.625,
+          "fpr": 0.375,
+          "selection_rate": 0.5416666666666666,
+          "fnr": 0.375,
+          "precision": 0.7692307692307693,
+          "f1": 0.6896551724137931
+        },
+        "G1 | 45-59": {
+          "n": 35,
+          "positive_n": 17,
+          "negative_n": 18,
+          "selected_n": 16,
+          "tp": 11,
+          "tn": 13,
+          "fp": 5,
+          "fn": 6,
+          "accuracy": 0.6857142857142857,
+          "recall": 0.6470588235294118,
+          "fpr": 0.2777777777777778,
+          "selection_rate": 0.45714285714285713,
+          "fnr": 0.35294117647058826,
+          "precision": 0.6875,
+          "f1": 0.6666666666666666
+        },
+        "G1 | 60+": {
+          "n": 24,
+          "positive_n": 12,
+          "negative_n": 12,
+          "selected_n": 10,
+          "tp": 7,
+          "tn": 9,
+          "fp": 3,
+          "fn": 5,
+          "accuracy": 0.6666666666666666,
+          "recall": 0.5833333333333334,
+          "fpr": 0.25,
+          "selection_rate": 0.4166666666666667,
+          "fnr": 0.4166666666666667,
+          "precision": 0.7,
+          "f1": 0.6363636363636364
+        },
+        "G2 | 18-29": {
+          "n": 11,
+          "positive_n": 8,
+          "negative_n": 3,
+          "selected_n": 8,
+          "tp": 8,
+          "tn": 3,
+          "fp": 0,
+          "fn": 0,
+          "accuracy": 1.0,
+          "recall": 1.0,
+          "fpr": 0.0,
+          "selection_rate": 0.7272727272727273,
+          "fnr": 0.0,
+          "precision": 1.0,
+          "f1": 1.0
+        },
+        "G2 | 30-44": {
+          "n": 14,
+          "positive_n": 12,
+          "negative_n": 2,
+          "selected_n": 12,
+          "tp": 10,
+          "tn": 0,
+          "fp": 2,
+          "fn": 2,
+          "accuracy": 0.7142857142857143,
+          "recall": 0.8333333333333334,
+          "fpr": 1.0,
+          "selection_rate": 0.8571428571428571,
+          "fnr": 0.16666666666666666,
+          "precision": 0.8333333333333334,
+          "f1": 0.8333333333333334
+        },
+        "G2 | 45-59": {
+          "n": 8,
+          "positive_n": 6,
+          "negative_n": 2,
+          "selected_n": 4,
+          "tp": 4,
+          "tn": 2,
+          "fp": 0,
+          "fn": 2,
+          "accuracy": 0.75,
+          "recall": 0.6666666666666666,
+          "fpr": 0.0,
+          "selection_rate": 0.5,
+          "fnr": 0.3333333333333333,
+          "precision": 1.0,
+          "f1": 0.8
+        },
+        "G2 | 60+": {
+          "n": 26,
+          "positive_n": 17,
+          "negative_n": 9,
+          "selected_n": 18,
+          "tp": 13,
+          "tn": 4,
+          "fp": 5,
+          "fn": 4,
+          "accuracy": 0.6538461538461539,
+          "recall": 0.7647058823529411,
+          "fpr": 0.5555555555555556,
+          "selection_rate": 0.6923076923076923,
+          "fnr": 0.23529411764705882,
+          "precision": 0.7222222222222222,
+          "f1": 0.7428571428571429
+        }
+      },
+      "gaps": {
+        "group": {
+          "recall": 0.1813004271476032,
+          "fpr": 0.16826923076923078,
+          "selection_rate": 0.26631985232421546
+        },
+        "intersection": {
+          "recall": 0.41666666666666663,
+          "fpr": 1.0,
+          "selection_rate": 0.5238095238095237
+        }
+      },
+      "intersection_count": 8,
+      "intersections_with_n_lt30": 7,
+      "intersection_n_min": 8,
+      "intersection_n_max": 35,
+      "model_bytes": 8059,
+      "model_sha256": "e778bdfdbd0c2f02f14ac869046cab6dad79f54e6aac1c7c44e3a925fc611a87",
+      "features": [
+        "zone",
+        "age_band",
+        "previous_incidents",
+        "infrastructure_score",
+        "exposure"
+      ],
+      "fit_benchmark_existing": {
+        "repeats": 10,
+        "median_seconds": 0.0054659500001434935,
+        "q25_seconds": 0.0051733250002143905,
+        "q75_seconds": 0.005698324999684701,
+        "min_seconds": 0.004801999999472173,
+        "max_seconds": 0.0061047999988659285
+      }
+    }
+  },
+  "paired_test": {
+    "same_predictions": 130,
+    "different_predictions": 30,
+    "both_correct": 99,
+    "only_logistic_correct": 16,
+    "only_tree_correct": 14,
+    "both_wrong": 31
+  },
+  "complexity_existing": {
+    "raw_features": 5,
+    "transformed_features": 11,
+    "train_rows": 480,
+    "logistic": {
+      "coefficient_count": 11,
+      "intercept_count": 1,
+      "iterations": [
+        9
+      ],
+      "learned_array_buffer_bytes": 96
+    },
+    "tree": {
+      "depth": 5,
+      "nodes": 51,
+      "leaves": 26,
+      "learned_array_buffer_bytes": 4080
+    },
+    "buffer_scope": "Estimator coefficient or node/value arrays only; not total RAM or peak training memory.",
+    "paired_test": {
+      "same_predictions": 130,
+      "different_predictions": 30,
+      "both_correct": 99,
+      "only_logistic_correct": 16,
+      "only_tree_correct": 14,
+      "both_wrong": 31
+    }
+  },
+  "experimental_gates_not_approved": {
+    "min_recall": 0.68,
+    "max_recall_gap": 0.16,
+    "max_fpr_gap": 0.16,
+    "max_latency_ms": 500,
+    "max_model_kb": 1024
+  },
+  "risk_baselines": [
+    {
+      "id": "R01",
+      "likelihood_1_4": "3",
+      "impact_1_4": "4",
+      "owner": "Equipo de datos y modelos (rol propuesto)",
+      "residual": "high"
+    },
+    {
+      "id": "R02",
+      "likelihood_1_4": "2",
+      "impact_1_4": "4",
+      "owner": "Operador revisor de la demostración",
+      "residual": "high"
+    },
+    {
+      "id": "R03",
+      "likelihood_1_4": "3",
+      "impact_1_4": "3",
+      "owner": "Operador revisor de la demostración",
+      "residual": "medium"
+    },
+    {
+      "id": "R04",
+      "likelihood_1_4": "2",
+      "impact_1_4": "4",
+      "owner": "Equipo de datos y modelos (rol propuesto)",
+      "residual": "medium"
+    },
+    {
+      "id": "R05",
+      "likelihood_1_4": "3",
+      "impact_1_4": "3",
+      "owner": "Equipo de datos y modelos (rol propuesto)",
+      "residual": "high"
+    },
+    {
+      "id": "R06",
+      "likelihood_1_4": "2",
+      "impact_1_4": "4",
+      "owner": "Responsable académico (rol propuesto)",
+      "residual": "high"
+    },
+    {
+      "id": "R07",
+      "likelihood_1_4": "3",
+      "impact_1_4": "3",
+      "owner": "Equipo de datos y modelos (rol propuesto)",
+      "residual": "medium"
+    },
+    {
+      "id": "R08",
+      "likelihood_1_4": "2",
+      "impact_1_4": "3",
+      "owner": "Responsable académico (rol propuesto)",
+      "residual": "high"
+    },
+    {
+      "id": "R09",
+      "likelihood_1_4": "2",
+      "impact_1_4": "3",
+      "owner": "Equipo de datos y modelos (rol propuesto)",
+      "residual": "medium"
+    }
+  ],
+  "risk_acceptance": "pending_user_approval",
+  "test_already_inspected": true,
+  "new_model_fits": 0,
+  "new_predictions": 0,
+  "mitigation_effect_measured": false,
+  "source_files": [
+    {
+      "path": "configs/governance.yml",
+      "sha256": "05037b0170ad7c4047d41b263dca1c21c298e06ba5a43d5eacf2eb3edb75b113"
+    },
+    {
+      "path": "data/territorial_risk_synthetic.csv",
+      "sha256": "2af1858fe874f3914b0f9bfe068fd876cb716186694a6ece9a16e8c929128a01"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_05/legal_context.json",
+      "sha256": "d4a10c077ac9fa9be3eb3960dada9e2328d1fcf75c92ef08f5c150497dd37a79"
+    },
+    {
+      "path": "reports/lab12/comparison/complexity_and_interpretability.json",
+      "sha256": "5fdc0b32a47b4474729effc36b0e8310d803baf99c347eb6c27ff39cd2af4062"
+    },
+    {
+      "path": "reports/lab12/comparison/fit_benchmark_summary.csv",
+      "sha256": "346f38fd595defa37ec54dba75f7b58a07ba0008907618e9ccff42112efb1e9b"
+    },
+    {
+      "path": "reports/lab12/comparison/model_comparison.csv",
+      "sha256": "896951ca928e67d6d142e95292b098a49bc5bea58ca164799bf6a9219c2a5d5b"
+    },
+    {
+      "path": "reports/lab12/logistic/gap_analysis.json",
+      "sha256": "87443f46e49f5e0871227d626c6c2e5ba68c7bced1bf7cf1019749f6aa734889"
+    },
+    {
+      "path": "reports/lab12/logistic/global_metrics.json",
+      "sha256": "1babdc7735f824064938b710238433a941a727f44756170e67b675b55cf37134"
+    },
+    {
+      "path": "reports/lab12/logistic/model_metadata.json",
+      "sha256": "f3a7ad491c609f2e0b09aae02e8990702a801e7027a5fe906678cfab6a4dfea5"
+    },
+    {
+      "path": "reports/lab12/logistic/test_predictions.csv",
+      "sha256": "df76ec8451824d9e6d83dff57f42cba2491951afc783fb34ba268f7832c653f8"
+    },
+    {
+      "path": "reports/lab12/tree/gap_analysis.json",
+      "sha256": "9466c1e1fb8a7e26d25681a2141eb439f35643f06cb1991dd1c2341991e26f3f"
+    },
+    {
+      "path": "reports/lab12/tree/global_metrics.json",
+      "sha256": "85b890d2b22dba8f16bac23d55bf4f81856d7d9ab42ed07a56c66cee56a131d2"
+    },
+    {
+      "path": "reports/lab12/tree/model_metadata.json",
+      "sha256": "605e7e1a2d7ae117ed3830e646d643c7450499f898411a21f804dc280e9351ec"
+    },
+    {
+      "path": "reports/lab12/tree/test_predictions.csv",
+      "sha256": "fb34decf6f44aca4778ccaf4ef5456aa9914546d3d55ac8b182a31a86da6093f"
+    },
+    {
+      "path": "student_inputs/risk_register.csv",
+      "sha256": "afe5915e0b6a5a7a285f477e6d8a683f69b10d1b0f03215296251e55eeb4d74a"
+    }
+  ]
+}
