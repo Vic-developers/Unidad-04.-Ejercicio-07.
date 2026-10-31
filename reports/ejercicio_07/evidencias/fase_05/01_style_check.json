@@ -1,0 +1,20 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\ruff.exe",
+    "check",
+    "--fix",
+    "reports/ejercicio_07/evidencias/fase_05/verify_draft.py",
+    "reports/ejercicio_07/evidencias/fase_05/record_command.py"
+  ],
+  "started_at_utc": "2026-10-31T18:29:37.167235+00:00",
+  "elapsed_seconds": 0.05403719999958412,
+  "exit_code": 0,
+  "stdout": "Found 1 error (1 fixed, 0 remaining).\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

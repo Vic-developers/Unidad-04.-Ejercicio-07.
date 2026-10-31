@@ -1,0 +1,13 @@
+{
+  "status": "pending_user_confirmation",
+  "documented_current_scope": "Demostración académica con datos sintéticos, conforme a README, DATASET_CARD y formulario de impacto.",
+  "jurisdiction": null,
+  "user_confirmed_future_scope": null,
+  "user_question_issued": true,
+  "question": "¿Qué país o jurisdicción corresponde al supuesto de uso y seguirá siendo exclusivamente académico con datos sintéticos?",
+  "legal_obligations_determined": false,
+  "binding_sources_selected": [],
+  "phase_status": "partial",
+  "phase6_authorized": false,
+  "reason": "La parte 5.1 del texto adjunto exige identificar la jurisdicción y solicitarla si no se puede determinar. No se infiere de timezone, idioma o etiquetas del dataset."
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-B",
+    "reports\\ejercicio_07\\evidencias\\fase_05\\verify_draft.py"
+  ],
+  "started_at_utc": "2026-10-31T18:29:38.277180+00:00",
+  "elapsed_seconds": 0.25027679999766406,
+  "exit_code": 0,
+  "stdout": "{\"validation_status\": \"passed\", \"phase5_status\": \"partial_pending_user_context\", \"starting_commit\": \"002aede052044f65a347b292f3480237412055a7\", \"previous_files_unchanged\": 144, \"official_source_records\": 5, \"ethical_topics\": 9, \"risk_ids_covered\": [\"R01\", \"R02\", \"R03\", \"R04\", \"R05\", \"R06\", \"R07\", \"R08\", \"R09\"], \"evidence_path_references_checked\": 24, \"citation_urls_match_source_register\": true, \"binding_legal_applicability_determined\": false, \"required_input\": [\"jurisdiction\", \"confirmation_of_scope\"], \"new_model_fits\": 0, \"new_pytest_executions\": 0, \"phase6_started\": false, \"human_approval\": \"pending\", \"limitation\": \"Checks validate draft structure and local evidence; they do not determine legal applicability or certify compliance.\"}\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}
