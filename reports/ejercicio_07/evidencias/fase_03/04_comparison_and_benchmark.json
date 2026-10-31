@@ -1,0 +1,21 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "python",
+    "scripts/lab12_compare_models.py",
+    "--repeats",
+    "10"
+  ],
+  "started_at_utc": "2026-10-31T17:48:58.471589+00:00",
+  "elapsed_seconds": 3.131611699998757,
+  "exit_code": 0,
+  "stdout": "   model  accuracy   recall      fpr  selection_rate  precision       f1      fnr  tp  tn  fp  fn  group_recall_gap  group_fpr_gap  group_selection_rate_gap  intersection_recall_gap  intersection_fpr_gap  intersection_selection_rate_gap  original_fit_seconds  model_bytes\nlogistic   0.71875 0.717391 0.279412         0.53125   0.776471 0.745763 0.282609  66  49  19  26          0.137636       0.125000                  0.232422                 0.437500              0.555556                         0.472222              0.335639         3649\n    tree   0.70625 0.717391 0.308824         0.54375   0.758621 0.737430 0.282609  66  47  21  26          0.181300       0.168269                  0.266320                 0.416667              1.000000                         0.523810              0.049832         8059\n{\"benchmark\": [{\"model\": \"logistic\", \"repeats\": 10, \"median_seconds\": 0.0057575499995436985, \"q25_seconds\": 0.005336475000149221, \"q75_seconds\": 0.0061876999998276005, \"min_seconds\": 0.005095900000014808, \"max_seconds\": 0.007308099997317186}, {\"model\": \"tree\", \"repeats\": 10, \"median_seconds\": 0.0054659500001434935, \"q25_seconds\": 0.0051733250002143905, \"q75_seconds\": 0.005698324999684701, \"min_seconds\": 0.004801999999472173, \"max_seconds\": 0.0061047999988659285}], \"complexity\": {\"raw_features\": 5, \"transformed_features\": 11, \"train_rows\": 480, \"logistic\": {\"coefficient_count\": 11, \"intercept_count\": 1, \"iterations\": [9], \"learned_array_buffer_bytes\": 96}, \"tree\": {\"depth\": 5, \"nodes\": 51, \"leaves\": 26, \"learned_array_buffer_bytes\": 4080}, \"buffer_scope\": \"Estimator coefficient or node/value arrays only; not total RAM or peak training memory.\", \"paired_test\": {\"same_predictions\": 130, \"different_predictions\": 30, \"both_correct\": 99, \"only_logistic_correct\": 16, \"only_tree_correct\": 14, \"both_wrong\": 31}}}\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

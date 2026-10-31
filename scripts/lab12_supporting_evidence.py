@@ -187,8 +187,15 @@ def audit_support(root, train, test, kind):
         "python": sys.version,
         "packages": {name: importlib.metadata.version(name) for name in ["scikit-learn", "fairlearn", "pandas", "numpy", "scipy", "joblib"]},
         "features": list(model.feature_names_in_), "transformed_feature_count": int(model[-1].n_features_in_),
-        "estimator_parameters": {name: model[-1].get_params()[name] for name in ["class_weight", "random_state", "max_iter", "solver", "C", "tol"]},
-        "iterations": model[-1].n_iter_.tolist(),
+        "estimator_parameters": {
+            name: model[-1].get_params()[name]
+            for name in (
+                ["class_weight", "random_state", "max_iter", "solver", "C", "tol"]
+                if kind == "logistic"
+                else ["class_weight", "random_state", "max_depth", "min_samples_split", "min_samples_leaf", "criterion"]
+            )
+        },
+        "iterations": model[-1].n_iter_.tolist() if kind == "logistic" else None,
         "train_n": len(train), "test_n": len(test),
         "fitted_scaler_matches_training_only": True,
         "encoder_categories_match_training_only": True,
@@ -198,6 +205,12 @@ def audit_support(root, train, test, kind):
         "support_flags": "Descriptive warnings only: n<30, positive_n<10 or negative_n<10; not fairness acceptance thresholds.",
         "uncertainty_limitations": "Conditional binomial intervals; no model-training uncertainty, simultaneous gap inference or external population validity established.",
     }
+    if kind == "tree":
+        metadata["tree_structure"] = {
+            "actual_depth": int(model[-1].get_depth()),
+            "node_count": int(model[-1].tree_.node_count),
+            "leaf_count": int(model[-1].get_n_leaves()),
+        }
     write_json(out / "model_metadata.json", metadata)
     print(details[["level", "group", "count", "positive_n", "negative_n", "tp", "tn", "fp", "fn", "recall", "fpr"]].to_string(index=False))
     print(json.dumps({"verified_primary_metrics": True, "model_sha256": metadata["model_sha256"], "gaps": gaps}, ensure_ascii=False))
@@ -206,7 +219,7 @@ def audit_support(root, train, test, kind):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--profile-only", action="store_true")
-    parser.add_argument("--model", choices=["logistic"], default="logistic")
+    parser.add_argument("--model", choices=["logistic", "tree"], default="logistic")
     args = parser.parse_args()
     root = Path.cwd()
     _, train, test = profile(root)

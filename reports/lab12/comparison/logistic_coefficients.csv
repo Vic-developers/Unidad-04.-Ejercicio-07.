@@ -1,0 +1,12 @@
+feature,coefficient_log_odds
+cat__zone_Este,-0.25529988264962944
+cat__zone_Norte,-0.23001706632646216
+cat__zone_Oeste,0.04227206677590844
+cat__zone_Sur,0.5131772023989696
+cat__age_band_18-29,-0.11479723593032923
+cat__age_band_30-44,-0.18017409636969478
+cat__age_band_45-59,0.13608854365469358
+cat__age_band_60+,0.22901510884411677
+num__previous_incidents,1.5078611010599623
+num__infrastructure_score,-0.7041705947990419
+num__exposure,1.146072761520601

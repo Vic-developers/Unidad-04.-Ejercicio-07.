@@ -1,0 +1,21 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "python",
+    "scripts/lab12_supporting_evidence.py",
+    "--model",
+    "tree"
+  ],
+  "started_at_utc": "2026-10-31T17:47:10.413700+00:00",
+  "elapsed_seconds": 2.8626667999997153,
+  "exit_code": 1,
+  "stdout": "{\"rows\": 640, \"predictors\": [\"zone\", \"age_band\", \"previous_incidents\", \"infrastructure_score\", \"exposure\"], \"split\": {\"all\": {\"n\": 640, \"start\": \"2026-01-01\", \"end\": \"2026-12-27\", \"target\": {\"0\": 287, \"1\": 353}, \"protected_group\": {\"G1\": 396, \"G2\": 244}, \"group_target\": {\"G1\": {\"0\": 199, \"1\": 197}, \"G2\": {\"0\": 88, \"1\": 156}}}, \"train\": {\"n\": 480, \"start\": \"2026-01-01\", \"end\": \"2026-09-24\", \"target\": {\"0\": 219, \"1\": 261}, \"protected_group\": {\"G1\": 295, \"G2\": 185}, \"group_target\": {\"G1\": {\"0\": 147, \"1\": 148}, \"G2\": {\"0\": 72, \"1\": 113}}}, \"test\": {\"n\": 160, \"start\": \"2026-09-25\", \"end\": \"2026-12-27\", \"target\": {\"0\": 68, \"1\": 92}, \"protected_group\": {\"G1\": 101, \"G2\": 59}, \"group_target\": {\"G1\": {\"0\": 52, \"1\": 49}, \"G2\": {\"0\": 16, \"1\": 43}}}}}\n",
+  "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\scripts\\lab12_supporting_evidence.py\", line 231, in <module>\n    main()\n  File \"C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\scripts\\lab12_supporting_evidence.py\", line 227, in main\n    audit_support(root, train, test, args.model)\n  File \"C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\scripts\\lab12_supporting_evidence.py\", line 214, in audit_support\n    write_json(out / \"model_metadata.json\", metadata)\n  File \"C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\scripts\\lab12_supporting_evidence.py\", line 24, in write_json\n    path.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + \"\\n\", encoding=\"utf-8\")\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\reyti\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Lib\\json\\__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n          ^^^^^^^^^^^\n  File \"C:\\Users\\reyti\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Lib\\json\\encoder.py\", line 202, in encode\n    chunks = list(chunks)\n             ^^^^^^^^^^^^\n  File \"C:\\Users\\reyti\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Lib\\json\\encoder.py\", line 432, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"C:\\Users\\reyti\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Lib\\json\\encoder.py\", line 406, in _iterencode_dict\n    yield from chunks\n  File \"C:\\Users\\reyti\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Lib\\json\\encoder.py\", line 406, in _iterencode_dict\n    yield from chunks\n  File \"C:\\Users\\reyti\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Lib\\json\\encoder.py\", line 439, in _iterencode\n    o = _default(o)\n        ^^^^^^^^^^^\n  File \"C:\\Users\\reyti\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Lib\\json\\encoder.py\", line 180, in default\n    raise TypeError(f'Object of type {o.__class__.__name__} '\nTypeError: Object of type int64 is not JSON serializable\n",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "starting_commit": "abf229bd0bbfa38fd877a8b5281a865b58b7ad37",
+  "branch": "codex/ejercicio-07",
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/lab12_audit.py",
+        "--model",
+        "tree"
+      ],
+      "started_at_utc": "2026-10-31T17:46:32.370797+00:00",
+      "elapsed_seconds": 3.141664899998432,
+      "exit_code": 0,
+      "stdout": "                 count  accuracy  selection_rate  recall  precision    fpr\nprotected_group                                                           \nG1               101.0     0.683           0.446   0.633      0.689  0.269\nG2                59.0     0.746           0.712   0.814      0.833  0.438\n{'training_seconds': 0.04983200000060606, 'model_kb': 7.8701171875}\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "01_tree_audit"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/lab12_supporting_evidence.py",
+        "--model",
+        "tree"
+      ],
+      "started_at_utc": "2026-10-31T17:47:10.413700+00:00",
+      "elapsed_seconds": 2.8626667999997153,
+      "exit_code": 1,
+      "stdout": "{\"rows\": 640, \"predictors\": [\"zone\", \"age_band\", \"previous_incidents\", \"infrastructure_score\", \"exposure\"], \"split\": {\"all\": {\"n\": 640, \"start\": \"2026-01-01\", \"end\": \"2026-12-27\", \"target\": {\"0\": 287, \"1\": 353}, \"protected_group\": {\"G1\": 396, \"G2\": 244}, \"group_target\": {\"G1\": {\"0\": 199, \"1\": 197}, \"G2\": {\"0\": 88, \"1\": 156}}}, \"train\": {\"n\": 480, \"start\": \"2026-01-01\", \"end\": \"2026-09-24\", \"target\": {\"0\": 219, \"1\": 261}, \"protected_group\": {\"G1\": 295, \"G2\": 185}, \"group_target\": {\"G1\": {\"0\": 147, \"1\": 148}, \"G2\": {\"0\": 72, \"1\": 113}}}, \"test\": {\"n\": 160, \"start\": \"2026-09-25\", \"end\": \"2026-12-27\", \"target\": {\"0\": 68, \"1\": 92}, \"protected_group\": {\"G1\": 101, \"G2\": 59}, \"group_target\": {\"G1\": {\"0\": 52, \"1\": 49}, \"G2\": {\"0\": 16, \"1\": 43}}}}}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\scripts\\lab12_supporting_evidence.py\", line 231, in <module>\n    main()\n  File \"C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\scripts\\lab12_supporting_evidence.py\", line 227, in main\n    audit_support(root, train, test, args.model)\n  File \"C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\scripts\\lab12_supporting_evidence.py\", line 214, in audit_support\n    write_json(out / \"model_metadata.json\", metadata)\n  File \"C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\Unidad-04.-Ejercicio-07\\scripts\\lab12_supporting_evidence.py\", line 24, in write_json\n    path.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + \"\\n\", encoding=\"utf-8\")\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\reyti\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Lib\\json\\__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n          ^^^^^^^^^^^\n  File \"C:\\Users\\reyti\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Lib\\json\\encoder.py\", line 202, in encode\n    chunks = list(chunks)\n             ^^^^^^^^^^^^\n  File \"C:\\Users\\reyti\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Lib\\json\\encoder.py\", line 432, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"C:\\Users\\reyti\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Lib\\json\\encoder.py\", line 406, in _iterencode_dict\n    yield from chunks\n  File \"C:\\Users\\reyti\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Lib\\json\\encoder.py\", line 406, in _iterencode_dict\n    yield from chunks\n  File \"C:\\Users\\reyti\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Lib\\json\\encoder.py\", line 439, in _iterencode\n    o = _default(o)\n        ^^^^^^^^^^^\n  File \"C:\\Users\\reyti\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Lib\\json\\encoder.py\", line 180, in default\n    raise TypeError(f'Object of type {o.__class__.__name__} '\nTypeError: Object of type int64 is not JSON serializable\n",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "02_tree_support"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/lab12_supporting_evidence.py",
+        "--model",
+        "tree"
+      ],
+      "started_at_utc": "2026-10-31T17:48:52.631882+00:00",
+      "elapsed_seconds": 2.8918776999998954,
+      "exit_code": 0,
+      "stdout": "{\"rows\": 640, \"predictors\": [\"zone\", \"age_band\", \"previous_incidents\", \"infrastructure_score\", \"exposure\"], \"split\": {\"all\": {\"n\": 640, \"start\": \"2026-01-01\", \"end\": \"2026-12-27\", \"target\": {\"0\": 287, \"1\": 353}, \"protected_group\": {\"G1\": 396, \"G2\": 244}, \"group_target\": {\"G1\": {\"0\": 199, \"1\": 197}, \"G2\": {\"0\": 88, \"1\": 156}}}, \"train\": {\"n\": 480, \"start\": \"2026-01-01\", \"end\": \"2026-09-24\", \"target\": {\"0\": 219, \"1\": 261}, \"protected_group\": {\"G1\": 295, \"G2\": 185}, \"group_target\": {\"G1\": {\"0\": 147, \"1\": 148}, \"G2\": {\"0\": 72, \"1\": 113}}}, \"test\": {\"n\": 160, \"start\": \"2026-09-25\", \"end\": \"2026-12-27\", \"target\": {\"0\": 68, \"1\": 92}, \"protected_group\": {\"G1\": 101, \"G2\": 59}, \"group_target\": {\"G1\": {\"0\": 52, \"1\": 49}, \"G2\": {\"0\": 16, \"1\": 43}}}}}\n       level      group  count  positive_n  negative_n  tp  tn  fp  fn   recall      fpr\n      global        ALL    160          92          68  66  47  21  26 0.717391 0.308824\n       group         G1    101          49          52  31  38  14  18 0.632653 0.269231\n       group         G2     59          43          16  35   9   7   8 0.813953 0.437500\nintersection G1 | 18-29     18           4          14   3  11   3   1 0.750000 0.214286\nintersection G1 | 30-44     24          16           8  10   5   3   6 0.625000 0.375000\nintersection G1 | 45-59     35          17          18  11  13   5   6 0.647059 0.277778\nintersection   G1 | 60+     24          12          12   7   9   3   5 0.583333 0.250000\nintersection G2 | 18-29     11           8           3   8   3   0   0 1.000000 0.000000\nintersection G2 | 30-44     14          12           2  10   0   2   2 0.833333 1.000000\nintersection G2 | 45-59      8           6           2   4   2   0   2 0.666667 0.000000\nintersection   G2 | 60+     26          17           9  13   4   5   4 0.764706 0.555556\n{\"verified_primary_metrics\": true, \"model_sha256\": \"e778bdfdbd0c2f02f14ac869046cab6dad79f54e6aac1c7c44e3a925fc611a87\", \"gaps\": {\"group\": {\"accuracy\": {\"max_minus_min\": 0.06259439503272357, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.06259439503272357}, \"recall\": {\"max_minus_min\": 0.1813004271476032, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.1813004271476032}, \"fpr\": {\"max_minus_min\": 0.16826923076923078, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.16826923076923078}, \"selection_rate\": {\"max_minus_min\": 0.26631985232421546, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.26631985232421546}, \"precision\": {\"max_minus_min\": 0.1444444444444445, \"min_group\": \"G1\", \"max_group\": \"G2\", \"G2_minus_G1\": 0.1444444444444445}, \"fnr\": {\"max_minus_min\": 0.18130042714760325, \"min_group\": \"G2\", \"max_group\": \"G1\", \"G2_minus_G1\": -0.18130042714760325}}, \"intersection\": {\"accuracy\": {\"max_minus_min\": 0.375, \"min_group\": \"G1 | 30-44\", \"max_group\": \"G2 | 18-29\"}, \"recall\": {\"max_minus_min\": 0.41666666666666663, \"min_group\": \"G1 | 60+\", \"max_group\": \"G2 | 18-29\"}, \"fpr\": {\"max_minus_min\": 1.0, \"min_group\": \"G2 | 18-29\", \"max_group\": \"G2 | 30-44\"}, \"selection_rate\": {\"max_minus_min\": 0.5238095238095237, \"min_group\": \"G1 | 18-29\", \"max_group\": \"G2 | 30-44\"}, \"precision\": {\"max_minus_min\": 0.5, \"min_group\": \"G1 | 18-29\", \"max_group\": \"G2 | 18-29\"}, \"fnr\": {\"max_minus_min\": 0.4166666666666667, \"min_group\": \"G2 | 18-29\", \"max_group\": \"G1 | 60+\"}}}}\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "03_tree_support_final"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "scripts/lab12_compare_models.py",
+        "--repeats",
+        "10"
+      ],
+      "started_at_utc": "2026-10-31T17:48:58.471589+00:00",
+      "elapsed_seconds": 3.131611699998757,
+      "exit_code": 0,
+      "stdout": "   model  accuracy   recall      fpr  selection_rate  precision       f1      fnr  tp  tn  fp  fn  group_recall_gap  group_fpr_gap  group_selection_rate_gap  intersection_recall_gap  intersection_fpr_gap  intersection_selection_rate_gap  original_fit_seconds  model_bytes\nlogistic   0.71875 0.717391 0.279412         0.53125   0.776471 0.745763 0.282609  66  49  19  26          0.137636       0.125000                  0.232422                 0.437500              0.555556                         0.472222              0.335639         3649\n    tree   0.70625 0.717391 0.308824         0.54375   0.758621 0.737430 0.282609  66  47  21  26          0.181300       0.168269                  0.266320                 0.416667              1.000000                         0.523810              0.049832         8059\n{\"benchmark\": [{\"model\": \"logistic\", \"repeats\": 10, \"median_seconds\": 0.0057575499995436985, \"q25_seconds\": 0.005336475000149221, \"q75_seconds\": 0.0061876999998276005, \"min_seconds\": 0.005095900000014808, \"max_seconds\": 0.007308099997317186}, {\"model\": \"tree\", \"repeats\": 10, \"median_seconds\": 0.0054659500001434935, \"q25_seconds\": 0.0051733250002143905, \"q75_seconds\": 0.005698324999684701, \"min_seconds\": 0.004801999999472173, \"max_seconds\": 0.0061047999988659285}], \"complexity\": {\"raw_features\": 5, \"transformed_features\": 11, \"train_rows\": 480, \"logistic\": {\"coefficient_count\": 11, \"intercept_count\": 1, \"iterations\": [9], \"learned_array_buffer_bytes\": 96}, \"tree\": {\"depth\": 5, \"nodes\": 51, \"leaves\": 26, \"learned_array_buffer_bytes\": 4080}, \"buffer_scope\": \"Estimator coefficient or node/value arrays only; not total RAM or peak training memory.\", \"paired_test\": {\"same_predictions\": 130, \"different_predictions\": 30, \"both_correct\": 99, \"only_logistic_correct\": 16, \"only_tree_correct\": 14, \"both_wrong\": 31}}}\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "04_comparison_and_benchmark"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "ruff",
+        "check",
+        "--fix",
+        "scripts/lab12_supporting_evidence.py",
+        "scripts/lab12_compare_models.py",
+        "tests/test_model.py",
+        "tests/test_fairness.py",
+        "reports/ejercicio_07/evidencias/fase_03/record_command.py"
+      ],
+      "started_at_utc": "2026-10-31T17:51:09.316673+00:00",
+      "elapsed_seconds": 0.1081793999983347,
+      "exit_code": 0,
+      "stdout": "Found 1 error (1 fixed, 0 remaining).\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "05_code_style"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "-q",
+        "tests/test_fairness.py",
+        "tests/test_model.py"
+      ],
+      "started_at_utc": "2026-10-31T17:51:11.813980+00:00",
+      "elapsed_seconds": 3.8409534999991592,
+      "exit_code": 0,
+      "stdout": "....                                                                     [100%]\n4 passed in 2.28s\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "06_both_models_tests"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "ruff",
+        "check",
+        "scripts/lab12_supporting_evidence.py",
+        "scripts/lab12_compare_models.py",
+        "tests/test_model.py",
+        "tests/test_fairness.py",
+        "reports/ejercicio_07/evidencias/fase_03/record_command.py",
+        "reports/ejercicio_07/evidencias/fase_03/verify_phase.py"
+      ],
+      "started_at_utc": "2026-10-31T17:57:27.464171+00:00",
+      "elapsed_seconds": 0.07951279999906546,
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "07_style_final"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "reports/ejercicio_07/evidencias/fase_03/verify_phase.py"
+      ],
+      "started_at_utc": "2026-10-31T17:57:30.477162+00:00",
+      "elapsed_seconds": 1.467595699999947,
+      "exit_code": 0,
+      "stdout": "{\"status\": \"passed\", \"starting_commit\": \"abf229bd0bbfa38fd877a8b5281a865b58b7ad37\", \"previous_files_checked\": 94, \"authorized_changed_files\": [\"scripts/lab12_supporting_evidence.py\", \"tests/test_fairness.py\", \"tests/test_model.py\"], \"previous_logistic_model_and_outputs_preserved\": true, \"dataset_lock_LAB11_and_decision_yaml_preserved\": true, \"same_test_ids_and_support\": true, \"test_cases\": 160, \"required_tests_passed\": 4, \"benchmark_trials\": 20, \"balanced_model_order\": true, \"benchmark_models_not_saved_over_canonical_models\": true, \"both_model_hashes_match_metadata\": true, \"metadata_export_failure_preserved_and_corrected\": true, \"energy_and_carbon_not_measured\": true, \"human_approval\": \"pending\"}\n",
+      "stderr": "",
+      "environment_overrides": {
+        "UV_FROZEN": "1",
+        "UV_OFFLINE": "1",
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "label": "08_integrity_verification"
+    }
+  ],
+  "resolved_failures": [
+    {
+      "label": "02_tree_support",
+      "resolved_by": "03_tree_support_final",
+      "reason": "Convert NumPy depth/leaf counts to native int for JSON"
+    }
+  ],
+  "both_models_tests_passed": 4,
+  "benchmark_measured_fits": 20,
+  "benchmark_warmup_fits": 2,
+  "canonical_logistic_model_preserved": true,
+  "push_performed": false
+}

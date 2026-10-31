@@ -1,0 +1,71 @@
+{
+  "started_at_utc": "2026-10-31T17:49:01.115373+00:00",
+  "warmup_fits_per_model": 1,
+  "measured_fits_per_model": 10,
+  "total_fit_calls": 22,
+  "order": "alternating logistic/tree and tree/logistic",
+  "timer": "time.perf_counter around pipeline.fit only",
+  "controlled_native_thread_limit": 1,
+  "observed_threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "version": "0.3.34.106.0"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "vcomp",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "version": "0.3.31.dev"
+    }
+  ],
+  "same_train_test_ids_and_predictors": true,
+  "all_trial_predictions_match_canonical_models": true,
+  "canonical_models_overwritten": false,
+  "machine": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "logical_cpu_count": 12
+  },
+  "python": "3.12.13 (main, Jun 11 2026, 04:05:29) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1",
+    "threadpoolctl": "3.7.0"
+  },
+  "summary": [
+    {
+      "model": "logistic",
+      "repeats": 10,
+      "median_seconds": 0.0057575499995436985,
+      "q25_seconds": 0.005336475000149221,
+      "q75_seconds": 0.0061876999998276005,
+      "min_seconds": 0.005095900000014808,
+      "max_seconds": 0.007308099997317186
+    },
+    {
+      "model": "tree",
+      "repeats": 10,
+      "median_seconds": 0.0054659500001434935,
+      "q25_seconds": 0.0051733250002143905,
+      "q75_seconds": 0.005698324999684701,
+      "min_seconds": 0.004801999999472173,
+      "max_seconds": 0.0061047999988659285
+    }
+  ],
+  "energy_measured": false,
+  "carbon_measured": false,
+  "peak_ram_measured": false,
+  "limitation": "Small local paired benchmark; timing does not measure energy, emissions, total lifecycle cost or universal model speed."
+}

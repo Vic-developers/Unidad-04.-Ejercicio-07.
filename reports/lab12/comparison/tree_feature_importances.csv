@@ -1,0 +1,12 @@
+feature,impurity_based_importance
+cat__zone_Este,0.0
+cat__zone_Norte,0.015252824068093768
+cat__zone_Oeste,0.0
+cat__zone_Sur,0.0
+cat__age_band_18-29,0.016109256249483853
+cat__age_band_30-44,0.02022650642929451
+cat__age_band_45-59,0.01820007725600996
+cat__age_band_60+,0.017368953309676763
+num__previous_incidents,0.498750279511685
+num__infrastructure_score,0.14163111611233833
+num__exposure,0.27246098706341776

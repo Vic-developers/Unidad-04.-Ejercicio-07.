@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "starting_commit": "abf229bd0bbfa38fd877a8b5281a865b58b7ad37",
+  "previous_files_checked": 94,
+  "authorized_changed_files": [
+    "scripts/lab12_supporting_evidence.py",
+    "tests/test_fairness.py",
+    "tests/test_model.py"
+  ],
+  "previous_logistic_model_and_outputs_preserved": true,
+  "dataset_lock_LAB11_and_decision_yaml_preserved": true,
+  "same_test_ids_and_support": true,
+  "test_cases": 160,
+  "required_tests_passed": 4,
+  "benchmark_trials": 20,
+  "balanced_model_order": true,
+  "benchmark_models_not_saved_over_canonical_models": true,
+  "both_model_hashes_match_metadata": true,
+  "metadata_export_failure_preserved_and_corrected": true,
+  "energy_and_carbon_not_measured": true,
+  "human_approval": "pending"
+}

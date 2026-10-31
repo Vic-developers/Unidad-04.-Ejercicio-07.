@@ -1,4 +1,12 @@
-from inf8239_u04.data import load_data,features,temporal_split
+import pytest
+
+from inf8239_u04.data import features, load_data, temporal_split
 from inf8239_u04.model import build_model
-def test_predictions_are_binary():
-    tr,te=temporal_split(load_data()); p=build_model().fit(features(tr),tr.target).predict(features(te)); assert set(p)<={0,1}
+
+
+@pytest.mark.parametrize("kind", ["logistic", "tree"])
+def test_predictions_are_binary(kind):
+    train, test = temporal_split(load_data())
+    model = build_model(kind).fit(features(train), train.target)
+    prediction = model.predict(features(test))
+    assert set(prediction) <= {0, 1}

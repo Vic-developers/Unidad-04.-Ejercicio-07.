@@ -1,0 +1,25 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "ruff",
+    "check",
+    "scripts/lab12_supporting_evidence.py",
+    "scripts/lab12_compare_models.py",
+    "tests/test_model.py",
+    "tests/test_fairness.py",
+    "reports/ejercicio_07/evidencias/fase_03/record_command.py",
+    "reports/ejercicio_07/evidencias/fase_03/verify_phase.py"
+  ],
+  "started_at_utc": "2026-10-31T17:57:27.464171+00:00",
+  "elapsed_seconds": 0.07951279999906546,
+  "exit_code": 0,
+  "stdout": "All checks passed!\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "raw_features": 5,
+  "transformed_features": 11,
+  "train_rows": 480,
+  "logistic": {
+    "coefficient_count": 11,
+    "intercept_count": 1,
+    "iterations": [
+      9
+    ],
+    "learned_array_buffer_bytes": 96
+  },
+  "tree": {
+    "depth": 5,
+    "nodes": 51,
+    "leaves": 26,
+    "learned_array_buffer_bytes": 4080
+  },
+  "buffer_scope": "Estimator coefficient or node/value arrays only; not total RAM or peak training memory.",
+  "paired_test": {
+    "same_predictions": 130,
+    "different_predictions": 30,
+    "both_correct": 99,
+    "only_logistic_correct": 16,
+    "only_tree_correct": 14,
+    "both_wrong": 31
+  }
+}

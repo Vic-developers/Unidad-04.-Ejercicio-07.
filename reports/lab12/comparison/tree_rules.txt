@@ -1,0 +1,79 @@
+Numeric num__ features are standardized; cat__ features are one-hot indicators.
+These rules are predictive associations on synthetic data, not causal explanations.
+
+|--- num__previous_incidents <= -0.4316
+|   |--- num__exposure <= 0.9372
+|   |   |--- num__infrastructure_score <= -0.5620
+|   |   |   |--- cat__zone_Norte <= 0.5000
+|   |   |   |   |--- cat__age_band_45-59 <= 0.5000
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- cat__age_band_45-59 >  0.5000
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- cat__zone_Norte >  0.5000
+|   |   |   |   |--- num__exposure <= 0.2441
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- num__exposure >  0.2441
+|   |   |   |   |   |--- class: 1
+|   |   |--- num__infrastructure_score >  -0.5620
+|   |   |   |--- num__exposure <= -0.3770
+|   |   |   |   |--- num__infrastructure_score <= 0.2026
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- num__infrastructure_score >  0.2026
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- num__exposure >  -0.3770
+|   |   |   |   |--- num__exposure <= -0.3652
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- num__exposure >  -0.3652
+|   |   |   |   |   |--- class: 0
+|   |--- num__exposure >  0.9372
+|   |   |--- num__infrastructure_score <= -0.2548
+|   |   |   |--- class: 1
+|   |   |--- num__infrastructure_score >  -0.2548
+|   |   |   |--- cat__age_band_60+ <= 0.5000
+|   |   |   |   |--- class: 1
+|   |   |   |--- cat__age_band_60+ >  0.5000
+|   |   |   |   |--- class: 0
+|--- num__previous_incidents >  -0.4316
+|   |--- num__exposure <= -0.5358
+|   |   |--- num__previous_incidents <= 0.7455
+|   |   |   |--- num__infrastructure_score <= -0.8683
+|   |   |   |   |--- cat__age_band_30-44 <= 0.5000
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- cat__age_band_30-44 >  0.5000
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- num__infrastructure_score >  -0.8683
+|   |   |   |   |--- num__exposure <= -1.0422
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- num__exposure >  -1.0422
+|   |   |   |   |   |--- class: 0
+|   |   |--- num__previous_incidents >  0.7455
+|   |   |   |--- num__exposure <= -0.6223
+|   |   |   |   |--- cat__age_band_18-29 <= 0.5000
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- cat__age_band_18-29 >  0.5000
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- num__exposure >  -0.6223
+|   |   |   |   |--- num__infrastructure_score <= 0.4037
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- num__infrastructure_score >  0.4037
+|   |   |   |   |   |--- class: 0
+|   |--- num__exposure >  -0.5358
+|   |   |--- num__infrastructure_score <= 0.9163
+|   |   |   |--- num__previous_incidents <= 0.7455
+|   |   |   |   |--- num__exposure <= 0.5922
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- num__exposure >  0.5922
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- num__previous_incidents >  0.7455
+|   |   |   |   |--- num__exposure <= -0.1070
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- num__exposure >  -0.1070
+|   |   |   |   |   |--- class: 1
+|   |   |--- num__infrastructure_score >  0.9163
+|   |   |   |--- num__infrastructure_score <= 1.8246
+|   |   |   |   |--- num__previous_incidents <= 1.9225
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- num__previous_incidents >  1.9225
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- num__infrastructure_score >  1.8246
+|   |   |   |   |--- class: 1

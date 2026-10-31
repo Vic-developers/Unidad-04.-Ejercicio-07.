@@ -1,0 +1,65 @@
+Estado previo al commit local de Fase 3
+UTC: 2026-10-31T17:59:14.637712+00:00
+No se ha ejecutado push.
+
+COMMAND: git branch --show-current
+EXIT_CODE: 0
+STDOUT:
+codex/ejercicio-07
+STDERR:
+
+
+COMMAND: git remote -v
+EXIT_CODE: 0
+STDOUT:
+origin	https://github.com/Vic-developers/Unidad-04.-Ejercicio-07..git (fetch)
+origin	https://github.com/Vic-developers/Unidad-04.-Ejercicio-07..git (push)
+STDERR:
+
+
+COMMAND: git status --short --untracked-files=all
+EXIT_CODE: 0
+STDOUT:
+ M scripts/lab12_supporting_evidence.py
+ M tests/test_fairness.py
+ M tests/test_model.py
+?? reports/ejercicio_07/COMPARACION_MODELOS.md
+?? reports/ejercicio_07/evidencias/fase_03/01_tree_audit.json
+?? reports/ejercicio_07/evidencias/fase_03/02_tree_support.json
+?? reports/ejercicio_07/evidencias/fase_03/03_tree_support_final.json
+?? reports/ejercicio_07/evidencias/fase_03/04_comparison_and_benchmark.json
+?? reports/ejercicio_07/evidencias/fase_03/05_code_style.json
+?? reports/ejercicio_07/evidencias/fase_03/06_both_models_tests.json
+?? reports/ejercicio_07/evidencias/fase_03/07_style_final.json
+?? reports/ejercicio_07/evidencias/fase_03/08_integrity_verification.json
+?? reports/ejercicio_07/evidencias/fase_03/execution_log.json
+?? reports/ejercicio_07/evidencias/fase_03/initial_state.json
+?? reports/ejercicio_07/evidencias/fase_03/integrity_verification.json
+?? reports/ejercicio_07/evidencias/fase_03/record_command.py
+?? reports/ejercicio_07/evidencias/fase_03/verify_phase.py
+?? reports/lab12/comparison/complexity_and_interpretability.json
+?? reports/lab12/comparison/fit_benchmark_metadata.json
+?? reports/lab12/comparison/fit_benchmark_summary.csv
+?? reports/lab12/comparison/fit_benchmark_trials.csv
+?? reports/lab12/comparison/group_and_intersection_comparison.csv
+?? reports/lab12/comparison/logistic_coefficients.csv
+?? reports/lab12/comparison/model_comparison.csv
+?? reports/lab12/comparison/paired_predictions.csv
+?? reports/lab12/comparison/tree_feature_importances.csv
+?? reports/lab12/comparison/tree_rules.txt
+?? reports/lab12/tree/audit_support.csv
+?? reports/lab12/tree/fairness_by_group.csv
+?? reports/lab12/tree/fairness_intersectional.csv
+?? reports/lab12/tree/gap_analysis.json
+?? reports/lab12/tree/global_metrics.json
+?? reports/lab12/tree/model_metadata.json
+?? reports/lab12/tree/test_predictions.csv
+?? scripts/lab12_compare_models.py
+STDERR:
+
+
+COMMAND: git log -1 --format=%h %s
+EXIT_CODE: 0
+STDOUT:
+abf229b feat: complete LAB12 logistic fairness audit
+STDERR:
