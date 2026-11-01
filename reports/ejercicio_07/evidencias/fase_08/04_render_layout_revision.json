@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1026-487-0_26.1026.487.0_x64__3k8sg7r9htsxt\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+    "-r",
+    "150",
+    "-png",
+    "reports/ejercicio_07/Ejercicio_07_Evaluacion_Impacto_Auditoria_Equidad.pdf",
+    "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page"
+  ],
+  "started_at_utc": "2026-10-31T23:57:42.271249+00:00",
+  "elapsed_seconds": 4.568599600002926,
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

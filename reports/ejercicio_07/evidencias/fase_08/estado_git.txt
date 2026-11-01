@@ -1,0 +1,32 @@
+Pre-commit snapshot captured 2026-11-01T00:07:21.994646+00:00
+Branch: codex/ejercicio-07
+Parent commit: 8b7b6cdcdf631a316a7c77638b3f9514a136984b
+Push performed: false
+
+A  reports/ejercicio_07/.gitattributes
+A  reports/ejercicio_07/Ejercicio_07_Evaluacion_Impacto_Auditoria_Equidad.md
+A  reports/ejercicio_07/Ejercicio_07_Evaluacion_Impacto_Auditoria_Equidad.pdf
+A  reports/ejercicio_07/FASE_08_SINTESIS.md
+A  reports/ejercicio_07/evidencias/fase_08/.gitignore
+A  reports/ejercicio_07/evidencias/fase_08/01_build_synthesis.json
+A  reports/ejercicio_07/evidencias/fase_08/02_render_pdf.json
+A  reports/ejercicio_07/evidencias/fase_08/03_build_layout_revision.json
+A  reports/ejercicio_07/evidencias/fase_08/04_render_layout_revision.json
+A  reports/ejercicio_07/evidencias/fase_08/05_document_verification.json
+A  reports/ejercicio_07/evidencias/fase_08/06_style_check.json
+A  reports/ejercicio_07/evidencias/fase_08/07_final_document_verification.json
+A  reports/ejercicio_07/evidencias/fase_08/artifact_manifest.json
+A  reports/ejercicio_07/evidencias/fase_08/authoring_environment.json
+A  reports/ejercicio_07/evidencias/fase_08/build_report.py
+A  reports/ejercicio_07/evidencias/fase_08/estado_git.txt
+AM reports/ejercicio_07/evidencias/fase_08/execution_log.json
+A  reports/ejercicio_07/evidencias/fase_08/initial_state.json
+A  reports/ejercicio_07/evidencias/fase_08/record_command.py
+A  reports/ejercicio_07/evidencias/fase_08/synthesis_content.json
+A  reports/ejercicio_07/evidencias/fase_08/verification.json
+A  reports/ejercicio_07/evidencias/fase_08/verify_report.py
+A  reports/ejercicio_07/evidencias/fase_08/visual_review.json
+A  reports/ejercicio_07/figuras/equidad_por_grupo.svg
+A  reports/ejercicio_07/figuras/resultados_globales.svg
+?? reports/ejercicio_07/evidencias/fase_08/08_git_binary_check.json
+?? reports/ejercicio_07/evidencias/fase_08/git_binary_note.json

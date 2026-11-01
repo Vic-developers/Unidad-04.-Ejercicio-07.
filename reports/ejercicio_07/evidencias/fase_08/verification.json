@@ -1,0 +1,126 @@
+{
+  "validation_status": "passed",
+  "phase8_status": "completed_pdf_editable_synthesis_verified",
+  "previous_files_unchanged": 264,
+  "sections": 28,
+  "pdf_pages": 16,
+  "tables": 15,
+  "figures": 2,
+  "paragraphs_checked_against_pdf_and_markdown": 69,
+  "table_cells_checked_against_pdf": 345,
+  "table_fragments_checked": 17,
+  "official_reference_urls": 11,
+  "external_pdf_urls_verified": 12,
+  "outline_destinations_verified": 27,
+  "page_geometry_overflows": 0,
+  "all_pages_visually_reviewed": true,
+  "independent_human_review": false,
+  "primary_metric_table_matches_saved_facts": true,
+  "risk_baselines_preserved": true,
+  "new_model_fits": 0,
+  "new_pytest_executions": 0,
+  "phase9_started": false,
+  "human_recommendation_approval": "pending",
+  "real_deployment_authorized": false,
+  "pdf_sha256": "ff5f27af474268ad05c491ebc09e3a66d5cfafcab406543a7cc04e4d7b9a7974",
+  "markdown_sha256": "b6a6bf2afc5c70c9a900f0ef54f521bb06b44f72da41ac0752d5fd4b852151c7",
+  "page_facts": [
+    {
+      "page": 1,
+      "characters": 331,
+      "recognized_table_fragments": 0,
+      "footer_verified": true
+    },
+    {
+      "page": 2,
+      "characters": 705,
+      "recognized_table_fragments": 0,
+      "footer_verified": true
+    },
+    {
+      "page": 3,
+      "characters": 2855,
+      "recognized_table_fragments": 1,
+      "footer_verified": true
+    },
+    {
+      "page": 4,
+      "characters": 2510,
+      "recognized_table_fragments": 1,
+      "footer_verified": true
+    },
+    {
+      "page": 5,
+      "characters": 2005,
+      "recognized_table_fragments": 2,
+      "footer_verified": true
+    },
+    {
+      "page": 6,
+      "characters": 1843,
+      "recognized_table_fragments": 2,
+      "footer_verified": true
+    },
+    {
+      "page": 7,
+      "characters": 693,
+      "recognized_table_fragments": 1,
+      "footer_verified": true
+    },
+    {
+      "page": 8,
+      "characters": 1546,
+      "recognized_table_fragments": 1,
+      "footer_verified": true
+    },
+    {
+      "page": 9,
+      "characters": 2061,
+      "recognized_table_fragments": 2,
+      "footer_verified": true
+    },
+    {
+      "page": 10,
+      "characters": 2669,
+      "recognized_table_fragments": 1,
+      "footer_verified": true
+    },
+    {
+      "page": 11,
+      "characters": 2361,
+      "recognized_table_fragments": 1,
+      "footer_verified": true
+    },
+    {
+      "page": 12,
+      "characters": 2390,
+      "recognized_table_fragments": 2,
+      "footer_verified": true
+    },
+    {
+      "page": 13,
+      "characters": 2475,
+      "recognized_table_fragments": 1,
+      "footer_verified": true
+    },
+    {
+      "page": 14,
+      "characters": 2760,
+      "recognized_table_fragments": 1,
+      "footer_verified": true
+    },
+    {
+      "page": 15,
+      "characters": 3909,
+      "recognized_table_fragments": 0,
+      "footer_verified": true
+    },
+    {
+      "page": 16,
+      "characters": 1669,
+      "recognized_table_fragments": 1,
+      "footer_verified": true
+    }
+  ],
+  "limitation": "Document checks and assistant visual review; no independent human review, rubric grading or approval of operational use."
+}

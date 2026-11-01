@@ -1,0 +1,25 @@
+{
+  "artifact_operation": "create",
+  "pdf_output_count": 1,
+  "operation_start_marker_invocations": 1,
+  "operation_start_marker_exit_code": 0,
+  "marker_script": "C:/Users/reyti/.codex/plugins/cache/openai-primary-runtime/pdf/26.1026.10807/skills/pdf/container_tools/mark_artifact_operation_started.mjs",
+  "authoring_runtime": "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1026-487-0_26.1026.487.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+  "authoring_python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "reportlab": "4.4.9",
+    "pypdf": "6.10.0",
+    "pdfplumber": "0.11.9",
+    "Pillow": "12.3.0"
+  },
+  "renderer": "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1026-487-0_26.1026.487.0_x64__3k8sg7r9htsxt\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+  "editable_format": "Markdown",
+  "editable_and_pdf_share_content_schema": true,
+  "docx_authored": false,
+  "template_picker_available": false,
+  "pdf_render_dpi": 150,
+  "visual_review_record": "visual_review.json",
+  "original_outputs_preserved": true,
+  "new_model_fits": 0,
+  "new_pytest_executions": 0
+}

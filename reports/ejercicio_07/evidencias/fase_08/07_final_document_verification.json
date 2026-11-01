@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1026-487-0_26.1026.487.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+    "-B",
+    "reports\\ejercicio_07\\evidencias\\fase_08\\verify_report.py"
+  ],
+  "started_at_utc": "2026-11-01T00:04:40.621774+00:00",
+  "elapsed_seconds": 2.5155684999990626,
+  "exit_code": 0,
+  "stdout": "{\"validation_status\": \"passed\", \"phase8_status\": \"completed_pdf_editable_synthesis_verified\", \"previous_files_unchanged\": 264, \"sections\": 28, \"pdf_pages\": 16, \"tables\": 15, \"figures\": 2, \"paragraphs_checked_against_pdf_and_markdown\": 69, \"table_cells_checked_against_pdf\": 345, \"table_fragments_checked\": 17, \"official_reference_urls\": 11, \"external_pdf_urls_verified\": 12, \"outline_destinations_verified\": 27, \"page_geometry_overflows\": 0, \"all_pages_visually_reviewed\": true, \"independent_human_review\": false, \"primary_metric_table_matches_saved_facts\": true, \"risk_baselines_preserved\": true, \"new_model_fits\": 0, \"new_pytest_executions\": 0, \"phase9_started\": false, \"human_recommendation_approval\": \"pending\", \"real_deployment_authorized\": false, \"pdf_sha256\": \"ff5f27af474268ad05c491ebc09e3a66d5cfafcab406543a7cc04e4d7b9a7974\", \"markdown_sha256\": \"b6a6bf2afc5c70c9a900f0ef54f521bb06b44f72da41ac0752d5fd4b852151c7\", \"limitation\": \"Document checks and assistant visual review; no independent human review, rubric grading or approval of operational use.\"}\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

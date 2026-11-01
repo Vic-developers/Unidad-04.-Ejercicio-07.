@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1026-487-0_26.1026.487.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+    "-B",
+    "reports\\ejercicio_07\\evidencias\\fase_08\\build_report.py"
+  ],
+  "started_at_utc": "2026-10-31T23:56:44.709964+00:00",
+  "elapsed_seconds": 1.3580842000010307,
+  "exit_code": 0,
+  "stdout": "{\"sections\": 28, \"figures\": 2, \"tables\": 15, \"outputs\": [{\"path\": \"reports/ejercicio_07/Ejercicio_07_Evaluacion_Impacto_Auditoria_Equidad.pdf\", \"bytes\": 136389, \"sha256\": \"ff5f27af474268ad05c491ebc09e3a66d5cfafcab406543a7cc04e4d7b9a7974\"}, {\"path\": \"reports/ejercicio_07/Ejercicio_07_Evaluacion_Impacto_Auditoria_Equidad.md\", \"bytes\": 35727, \"sha256\": \"b6a6bf2afc5c70c9a900f0ef54f521bb06b44f72da41ac0752d5fd4b852151c7\"}], \"new_model_fits\": 0}\n",
+  "stderr": "",
+  "environment_overrides": {
+    "UV_FROZEN": "1",
+    "UV_OFFLINE": "1",
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

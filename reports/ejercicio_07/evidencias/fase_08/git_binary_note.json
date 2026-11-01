@@ -1,0 +1,9 @@
+{
+  "source": "Observed initial Git check and byte comparison",
+  "initial_whitespace_check_exit_code": 2,
+  "cause": "PDF was classified as text and its internal trailing spaces were reported",
+  "resolution": "Scoped *.pdf binary attribute; only the PDF refreshed in the index",
+  "final_check": "08_git_binary_check.json",
+  "pdf_index_matches_reviewed_working_bytes": true,
+  "pdf_sha256": "ff5f27af474268ad05c491ebc09e3a66d5cfafcab406543a7cc04e4d7b9a7974"
+}

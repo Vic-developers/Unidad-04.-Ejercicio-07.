@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="480" height="244" preserveAspectRatio="xMinYMin meet" viewBox="0 0 480 244" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="480" height="244"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-244)" style="clip-path: url(#clip)">
+		<g transform="">
+			<path d="M 43,42 L 455,42 Z" style="stroke: rgb(85%,85%,85%); stroke-linecap: butt; stroke-width: 0.5;"/>
+			<text x="28.99462890625" y="39.0" style="font-family: Arial; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,78) scale(1,-1)">0</text>
+			<path d="M 43,83.5 L 455,83.5 Z" style="stroke: rgb(85%,85%,85%); stroke-linecap: butt; stroke-width: 0.5;"/>
+			<text x="23.9892578125" y="80.5" style="font-family: Arial; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,161) scale(1,-1)">20</text>
+			<path d="M 43,125 L 455,125 Z" style="stroke: rgb(85%,85%,85%); stroke-linecap: butt; stroke-width: 0.5;"/>
+			<text x="23.9892578125" y="122.0" style="font-family: Arial; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,244) scale(1,-1)">40</text>
+			<path d="M 43,166.5 L 455,166.5 Z" style="stroke: rgb(85%,85%,85%); stroke-linecap: butt; stroke-width: 0.5;"/>
+			<text x="23.9892578125" y="163.5" style="font-family: Arial; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,327) scale(1,-1)">60</text>
+			<path d="M 43,208 L 455,208 Z" style="stroke: rgb(85%,85%,85%); stroke-linecap: butt; stroke-width: 0.5;"/>
+			<text x="23.9892578125" y="205.0" style="font-family: Arial; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,410) scale(1,-1)">80</text>
+			<rect x="75.5" y="42" width="17.0" height="136.95" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,29%,44%); fill-rule: evenodd;"/>
+			<text x="78.4384765625" y="183.95" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,367) scale(1,-1)">66</text>
+			<rect x="97.5" y="42" width="17.0" height="136.95" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(15%,49%,50%); fill-rule: evenodd;"/>
+			<text x="100.4384765625" y="183.95" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,367) scale(1,-1)">66</text>
+			<text x="88.11083984375" y="25" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,50) scale(1,-1)">TP</text>
+			<rect x="178.5" y="42" width="17.0" height="101.67500000000001" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,29%,44%); fill-rule: evenodd;"/>
+			<text x="181.4384765625" y="148.675" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,297) scale(1,-1)">49</text>
+			<rect x="200.5" y="42" width="17.0" height="97.525" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(15%,49%,50%); fill-rule: evenodd;"/>
+			<text x="203.4384765625" y="144.525" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,289) scale(1,-1)">47</text>
+			<text x="190.8349609375" y="25" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,50) scale(1,-1)">TN</text>
+			<rect x="281.5" y="42" width="17.0" height="39.425" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,29%,44%); fill-rule: evenodd;"/>
+			<text x="284.4384765625" y="86.425" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,172) scale(1,-1)">19</text>
+			<rect x="303.5" y="42" width="17.0" height="43.575" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(15%,49%,50%); fill-rule: evenodd;"/>
+			<text x="306.4384765625" y="90.575" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,181) scale(1,-1)">21</text>
+			<text x="294.11083984375" y="25" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,50) scale(1,-1)">FP</text>
+			<rect x="384.5" y="42" width="17.0" height="53.95" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,29%,44%); fill-rule: evenodd;"/>
+			<text x="387.4384765625" y="100.95" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,201) scale(1,-1)">26</text>
+			<rect x="406.5" y="42" width="17.0" height="53.95" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(15%,49%,50%); fill-rule: evenodd;"/>
+			<text x="409.4384765625" y="100.95" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,201) scale(1,-1)">26</text>
+			<text x="396.8349609375" y="25" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,50) scale(1,-1)">FN</text>
+			<text x="43" y="226" style="font-family: Arial; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,452) scale(1,-1)">Casos en el test sintético n = 160</text>
+			<rect x="280" y="222" width="9" height="9" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,29%,44%); fill-rule: evenodd;"/>
+			<text x="294" y="223" style="font-family: Arial; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,446) scale(1,-1)">Logística</text>
+			<rect x="376" y="222" width="9" height="9" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(15%,49%,50%); fill-rule: evenodd;"/>
+			<text x="390" y="223" style="font-family: Arial; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,446) scale(1,-1)">Árbol</text>
+		</g>
+	</g>
+</svg>

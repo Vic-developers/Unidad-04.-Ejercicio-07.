@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "reviewer": "Codex assistant visual inspection of rendered pages",
+  "independent_human_review": false,
+  "reviewed_at_utc": "2026-11-01T00:00:55.402621+00:00",
+  "pdf_sha256": "ff5f27af474268ad05c491ebc09e3a66d5cfafcab406543a7cc04e4d7b9a7974",
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "render_dpi": 150,
+  "rendered_pages": [
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-01.png",
+      "sha256": "16e57ff09fdd75163ee0d7684e2a12c12d4292845c50fcce12e8ff54a52d86ca"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-02.png",
+      "sha256": "57d47a4dd53738eec8bd2a3c436d554a6db59f66977c18fcd6a04a91eec6e005"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-03.png",
+      "sha256": "252530660c9a39ce0ef02cbe8fd90977c73c93449e863682b49fa85fde402962"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-04.png",
+      "sha256": "d804cb49457a774dd37f65ddbe9c224022acd19d9387681af0b576cb656e982f"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-05.png",
+      "sha256": "b79f5ae62586daee07b7135fce215e9fedf94f45b38ec86152ce1c7864e56d2a"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-06.png",
+      "sha256": "622c781444c30120a83851a22457641254fd35e69d085be7496ace8514c2260b"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-07.png",
+      "sha256": "ff293b07f6adaf12bd3963e2ba2e21705f460813ea93183b93df1585240752cd"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-08.png",
+      "sha256": "03632b780416a13855da89b14b89a2578c5bbdb3ef8a0e54907861b4f745ea1a"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-09.png",
+      "sha256": "2fce194261bd71a13d06f7bbdafbc4c0f61ee40b58304c6c36d0dc5ec81b2ad5"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-10.png",
+      "sha256": "84f74e3615739fd02f9d09b5d7b21133b862672abd05aece53b52234e2f5662e"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-11.png",
+      "sha256": "704ef52acafdb6e49a21e087ea69e837553b7483e2b83f129492e78bd7b7a3ab"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-12.png",
+      "sha256": "dccb7ae1e5d7ab98570620bcc39e88a9ae3727e093f786c31827866ccef8c3fc"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-13.png",
+      "sha256": "b803959d9668b539fe9e5d2e44b4a510b42bb388343439179e3ffd4154d2e998"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-14.png",
+      "sha256": "fe55e96ed6007431b49592df1be7b5e0f27e7dc5fcf79ebbc78da19a5b8af8b3"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-15.png",
+      "sha256": "6ba2d3c8958f8bca5cfe1b56276b21050160946126e5b4ce7fc217904371fca4"
+    },
+    {
+      "path": "reports/ejercicio_07/evidencias/fase_08/.runtime/render_02/page-16.png",
+      "sha256": "254a9d750bf6f95261484894e8f0c6042f5a4dd1b506f1419d2e604220571087"
+    }
+  ],
+  "observations": "All final page images inspected at full rendered resolution; no visible clipping, overlapping text, missing glyphs or broken tables. IDs and power column widths corrected; repeated headers preserved.",
+  "initial_revision": "17-page initial layout retained in .runtime/render_01. A suspected contents/footer issue was ruled out by extracted coordinates; width and table flow issues were corrected."
+}

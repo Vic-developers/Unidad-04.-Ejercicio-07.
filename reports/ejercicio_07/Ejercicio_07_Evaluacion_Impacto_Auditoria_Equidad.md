@@ -1,0 +1,391 @@
+# 01 Portada
+
+Evaluación de impacto y auditoría de equidad
+
+INF8239 Ciencia de Datos II
+
+Unidad 04 Ejercicio 07
+
+Territorial Review DSS - Synthetic
+
+República Dominicana
+
+31 de octubre de 2026
+
+Recomendación técnica: limitar al ámbito académico con datos sintéticos
+
+Aprobación de la recomendación y aceptación del riesgo pendientes
+
+# 02 Introducción
+
+La recomendación es mantener Territorial Review DSS como demostración académica y conservar REVIEW para la revisión de sus resultados. Los modelos permiten estudiar errores y disparidades descriptivas; la evidencia disponible no sustenta despliegue real ni decisiones sobre personas. Esta síntesis integra la evaluación de impacto de LAB11 con la auditoría de equidad de LAB12 y la evidencia de reproducción local. [E01-E09]
+
+En el test de 160 casos sintéticos, ambos modelos detectan 66 de 92 positivos y omiten 26. La logística produce 19 falsos positivos y el árbol 21. Las diferencias entre grupos y los soportes interseccionales pequeños requieren interpretar el daño y la incertidumbre antes de aceptar una política. Las medidas de mitigación y sus responsables son propuestas pendientes.
+
+# 03 Objetivo del ejercicio
+
+Construir un expediente trazable que conecte finalidad, interesados, proporcionalidad, riesgos, controles y métricas. Se evalúan utilidad y equidad global, por grupos e intersecciones; se comparan dos modelos y una alternativa no predictiva; se distinguen normas jurídicas, marcos orientativos y recomendaciones éticas; y se formula una recomendación sustentada en evidencias editables.
+
+La calidad del ejercicio se juzga por la correspondencia entre afirmaciones y artefactos, no por obtener una bandera GO o una puntuación de equidad aislada. Las pruebas verifican comportamientos concretos de software y reproducción; no sustituyen evaluación institucional o humana. [E06, E08, E09]
+
+# 04 Descripción del sistema
+
+El proyecto implementa clasificación binaria, métricas, scripts de auditoría y una interfaz demostrativa Streamlit. Su finalidad declarada es explorar qué casos sintéticos recibirían revisión humana prioritaria. El código no implementa una cola institucional de atención ni acredita decisiones efectivas sobre personas.
+
+Se utilizan zone, age_band, previous_incidents, infrastructure_score y exposure. Las categorías se codifican con one-hot encoding y las variables numéricas se estandarizan. case_id, received_date, protected_group y target quedan fuera de los predictores. La exclusión directa de protected_group no elimina posibles efectos asociados a edad o zona. [E03-E05]
+
+# 05 Finalidad e interesados
+
+La utilidad perseguida es didáctica. En el dataset solo hay 640 casos sintéticos; no existen personas reales sometidas a decisiones en esta evaluación. Los seis roles e interesados se describen con beneficios y daños potenciales, poder y mecanismos de participación. Ningún rol propuesto equivale a autoridad institucional asignada. [E01, E02]
+
+Tabla 1 Interesados y participación
+
+| Interesado | Interés y daño potencial | Poder | Participación y estado |
+| --- | --- | --- | --- |
+| Casos G1/G2 y edades simuladas | Aprender a comparar errores; riesgo de atribuir patrones ficticios a colectivos | Bajo | Revisión de escenarios propuesta; no participantes humanos |
+| Operador revisor previsto | Comprender resultados; posible carga o confianza excesiva | Medio | Ensayo y revisión manual propuestos |
+| Responsable académico propuesto | Custodiar y revisar alcance; riesgo de aprobar sin evidencia | Alto | Designación nominal pendiente |
+| Equipo de datos y modelos propuesto | Reproducir y detectar fallos; riesgo de propagarlos | Medio | Asistencia técnica realizada; revisión independiente pendiente |
+| Persona evaluadora propuesta | Contrastar evidencias; riesgo de confundir controles y propuestas | Medio | No se acredita revisión docente |
+| Personas de una eventual adaptación | Beneficio hipotético; posibles errores desiguales y usos indebidos | Bajo | Fuera de alcance; consulta futura necesaria |
+
+# 06 Evaluación de proporcionalidad
+
+Hay una justificación académica para comparar predicción y errores. No se demostró que una priorización predictiva sea necesaria o mejor que revisar todos los casos por received_date. La alternativa cronológica reduce la dependencia de puntuaciones, pero su carga, demora y eficacia tampoco se midieron.
+
+No se asignan recall o FPR a una cola manual no implementada ni se presume que toda revisión humana sea correcta. Antes de proponer uso operativo habría que justificar la finalidad y la disponibilidad de predictores, evaluar capacidad y consecuencias y acordar criterios con los interesados. [E01, E06, E08]
+
+# 07 Evaluación de impacto
+
+LAB11 identificó nueve escenarios relevantes. LAB12 concreta R01-R03 mediante diferencias de error y selección; aporta evidencia de coherencia técnica para R05 y trazabilidad para R07/R09. No verifica eficacia de supervisión, consulta o reclamación R06/R08, ni privacidad integral de nuevas fuentes R04.
+
+Los controles comprobados incluyen rechazo de nombres de columnas identificadoras, validación del contrato, separación temporal, transformaciones aprendidas en entrenamiento, preservación del registro LAB11 y trazabilidad local de comandos y hashes. La operación humana, el canal de apelación, la custodia independiente y las barreras institucionales permanecen propuestos. [E02, E04, E06, E09]
+
+# 08 Registro de riesgos
+
+Las valoraciones de probabilidad L e impacto I, en escalas de 1 a 4, son juicios ordinales propuestos. Su producto ordena la discusión y no estima una frecuencia observada ni un riesgo aceptado. Los daños a personas son condicionales a una reutilización fuera del alcance sintético. El registro completo conserva afectados, control, responsable funcional, evidencia y residual. [E01, E02]
+
+Tabla 2 Riesgos y valoración inicial propuesta
+
+| ID | Escenario | L | I | L x I | Residual |
+| --- | --- | --- | --- | --- | --- |
+| R01 | Diferencias de error y selección entre grupos e intersecciones | 3 | 4 | 12 | Alto |
+| R02 | Omisión de positivos si se usa la clasificación para excluir revisión | 2 | 4 | 8 | Alto |
+| R03 | Falsos positivos y desplazamiento de casos con capacidad limitada | 3 | 3 | 9 | Medio |
+| R04 | Identificadores o información personal en entradas sustitutas | 2 | 4 | 8 | Medio |
+| R05 | Etiqueta y procedencia incompletas y disponibilidad temporal dudosa | 3 | 3 | 9 | Alto |
+| R06 | Reutilización indebida o confusión de GO con autorización | 2 | 4 | 8 | Alto |
+| R07 | Pérdida de decisiones o dificultad para reconstruir resultados | 3 | 3 | 9 | Medio |
+| R08 | Objeción sin canal o autoridad revisora efectiva | 2 | 3 | 6 | Alto |
+| R09 | Alteración de entradas o evidencias sin custodia confiable | 2 | 3 | 6 | Medio |
+
+R01 tiene producto 12; R03/R05/R07, 9; R02/R04/R06, 8; R08/R09, 6. Persisten residuales altos en R01/R02/R05/R06/R08 y medios en los demás. No se ha medido una reducción por las mitigaciones propuestas; el residual posterior no se reestima.
+
+# 09 Aplicación de NIST AI RMF
+
+Se utiliza AI RMF 1.0 como referencia voluntaria para organizar la gestión. El mapeo del proyecto no equivale a certificación, obligación jurídica automática o aceptación de riesgos. [F01, F02]
+
+Tabla 3 Funciones y evidencia del proyecto
+
+| Función | Aplicación | Evidencia y vacío |
+| --- | --- | --- |
+| GOVERN | Finalidad, roles, límites y registros | Documentados; autoridad nominal y aceptación pendientes |
+| MAP | Seis interesados y nueve escenarios | Contexto sintético; beneficios y daños reales sin validar |
+| MEASURE | Auditorías de dos modelos y soportes | Medición realizada; sin validación externa o causal |
+| MANAGE | Controles técnicos y propuestas de respuesta | Preservación y trazabilidad comprobadas; eficacia operativa pendiente |
+
+# 10 Descripción del dataset
+
+El CSV contiene 640 filas y nueve columnas, con IDs únicos, sin faltantes observados y valores numéricos finitos. Hay 324 fechas únicas. La carga ordena las fechas porque el archivo original no está ordenado. El control de coherencia no prueba validez de la etiqueta, anonimización o procedencia completa.
+
+Tabla 4 Corte temporal y composición
+
+| Partición | n | Fechas sintéticas | Positivos | Negativos |
+| --- | --- | --- | --- | --- |
+| Entrenamiento | 480 | 01-01-2026 a 24-09-2026 | 261 | 219 |
+| Prueba | 160 | 25-09-2026 a 27-12-2026 | 92 | 68 |
+| Total | 640 | 01-01-2026 a 27-12-2026 | 353 | 287 |
+
+G1 tiene 396 casos y G2 244 en el archivo completo; en prueba son 101 y 59. Las franjas son 18-29, 30-44, 45-59 y 60+. No representan personas, territorios o estadísticas dominicanas. Las fechas posteriores al 31-10-2026 pertenecen a la simulación. Faltan la evidencia completa del generador y su semilla y una definición operacional de target. [E01, E04]
+
+# 11 Metodología de auditoría
+
+Se entrenan regresión logística y árbol sobre los mismos 480 casos y cinco predictores y se evalúan sobre el mismo test de 160. Ambos usan class_weight balanced y random_state 42. La logística fija max_iter 1200; el árbol max_depth 5. Los metadatos confirman que escalador y categorías se aprendieron solo con entrenamiento.
+
+Se reconstruyen TP, TN, FP y FN y se calculan accuracy, recall, FPR, selección, precisión, F1 y FNR. Recall es TP dividido entre TP más FN; FPR es FP dividido entre FP más TN. Las brechas son máximo menos mínimo de cada tasa entre estratos. Se auditan protected_group e intersecciones con age_band.
+
+Los intervalos Wilson del 95% son individuales y condicionales a las predicciones. No incluyen incertidumbre del entrenamiento, ajuste por comparaciones múltiples ni inferencia causal o simultánea de brechas. El test ya fue examinado; una selección futura de cambios necesita validación de desarrollo y un nuevo test final no usado para seleccionar. [E03-E05, E08]
+
+# 12 Resultados globales
+
+Tabla 5 Resultados en los mismos 160 casos
+
+| Métrica | Logística | Árbol |
+| --- | --- | --- |
+| Accuracy | 71.88% | 70.63% |
+| Recall | 71.74% | 71.74% |
+| FPR | 27.94% | 30.88% |
+| Selección | 53.13% | 54.38% |
+| Precisión | 77.65% | 75.86% |
+| F1 | 74.58% | 73.74% |
+| FNR | 28.26% | 28.26% |
+| TP / TN / FP / FN | 66 / 49 / 19 / 26 | 66 / 47 / 21 / 26 |
+
+![Figura 1 Conteos de clasificación sobre el test sintético](figuras/resultados_globales.svg)
+
+TP y FN suman 92 positivos; TN y FP suman 68 negativos. Fuente E03-E05.
+
+Ambos modelos omiten 26 de 92 positivos. La logística marca 85 casos y el árbol 87. Esa selección no es una carga humana medida: el código no evalúa una cola ni tiempos de atención.
+
+# 13 Resultados por grupos
+
+Tabla 6 Soporte y tasas por grupo
+
+| Modelo y grupo | n | P / N | Recall | FP / N y FPR | Selección |
+| --- | --- | --- | --- | --- | --- |
+| Logística G1 | 101 | 49 / 52 | 65.31% | 13/52 25.00% | 44.55% |
+| Logística G2 | 59 | 43 / 16 | 79.07% | 6/16 37.50% | 67.80% |
+| Árbol G1 | 101 | 49 / 52 | 63.27% | 14/52 26.92% | 44.55% |
+| Árbol G2 | 59 | 43 / 16 | 81.40% | 7/16 43.75% | 71.19% |
+
+![Figura 2 Recall y FPR por grupo con incertidumbre](figuras/equidad_por_grupo.svg)
+
+Denominadores positivos para recall y negativos para FPR. Las barras negras son IC Wilson individuales del 95%. Fuente E04.
+
+G1 tiene menor recall y mayor FNR; G2 tiene mayor FPR. Con logística son 17 FN de 49 positivos en G1 y 9 de 43 en G2. Los 6 FP de G2 son menos que los 13 de G1, pero su FPR es mayor por tener solo 16 negativos frente a 52. Ningún grupo es el peor en todas las dimensiones.
+
+# 14 Resultados interseccionales
+
+L/A significa logística/árbol. P/N identifica positivos y negativos del mismo estrato. Los ocho soportes van de 8 a 35 casos y siete son menores que 30. Las tasas extremas necesitan leerse con esos denominadores. [E04, E05]
+
+Tabla 7 Intersecciones entre grupo y edad simulada
+
+| Estrato | n (P/N) | Recall L / A | FPR L / A | Selección L / A |
+| --- | --- | --- | --- | --- |
+| G1 18-29 | 18 (4/14) | 75.00% / 75.00% | 14.29% / 21.43% | 27.78% / 33.33% |
+| G1 30-44 | 24 (16/8) | 56.25% / 62.50% | 12.50% / 37.50% | 41.67% / 54.17% |
+| G1 45-59 | 35 (17/18) | 58.82% / 64.71% | 38.89% / 27.78% | 48.57% / 45.71% |
+| G1 60+ | 24 (12/12) | 83.33% / 58.33% | 25.00% / 25.00% | 54.17% / 41.67% |
+| G2 18-29 | 11 (8/3) | 87.50% / 100.00% | 0.00% / 0.00% | 63.64% / 72.73% |
+| G2 30-44 | 14 (12/2) | 66.67% / 83.33% | 50.00% / 100.00% | 64.29% / 85.71% |
+| G2 45-59 | 8 (6/2) | 100.00% / 66.67% | 0.00% / 0.00% | 75.00% / 50.00% |
+| G2 60+ | 26 (17/9) | 76.47% / 76.47% | 55.56% / 55.56% | 69.23% / 69.23% |
+
+El árbol mejora recall y FPR en G1 45-59, pero reduce recall en G1 60+ de 83.33% a 58.33%. En G2 30-44 eleva recall y cambia FPR de 1/2 a 2/2. Ese 100% de FPR se basa en dos negativos; su IC Wilson abarca aproximadamente 34.24%-100%. Un recall 6/6 en logística G2 45-59 tampoco garantiza una tasa estable.
+
+# 15 Comparación de modelos
+
+La ventaja de accuracy de la logística equivale a dos casos correctos de 160. Los modelos coinciden en 130 predicciones y discrepan en 30: 16 son correctas solo con logística y 14 solo con árbol. Igual recall agregado no significa omitir los mismos casos. La preferencia logística es técnica y provisional; no demuestra dominancia general.
+
+Tabla 8 Complejidad y recursos locales
+
+| Aspecto | Logística | Árbol |
+| --- | --- | --- |
+| Modelo serializado | 3649 bytes | 8059 bytes |
+| Estructura | 11 coeficientes y un intercepto | Profundidad 5 nodos 51 hojas 26 |
+| Iteraciones observadas | 9 | No aplica el contador logístico |
+| Arrays seleccionados | 96 bytes | 4080 bytes |
+| Mediana de ajuste controlado | 5.75755 ms | 5.46595 ms |
+| Ajustes medidos del benchmark | 10 | 10 |
+
+El benchmark alternó el orden, incluyó un calentamiento por modelo y limitó bibliotecas nativas a un hilo: 22 ajustes totales. Los rangos se solapan. Los tiempos originales de auditoría, tomados en momentos distintos, no son esa comparación controlada. Los bytes de arrays no representan RAM total; no se midieron electricidad ni emisiones. Las explicaciones de coeficientes y reglas usan variables transformadas, sin demostrar causalidad ni comprensión humana. [E05]
+
+# 16 Interpretación de brechas
+
+Tabla 9 Brechas absolutas en puntos porcentuales
+
+| Comparación | Logística | Árbol |
+| --- | --- | --- |
+| Recall G1/G2 | 13.76 pp | 18.13 pp |
+| FPR G1/G2 | 12.50 pp | 16.83 pp |
+| Recall interseccional | 43.75 pp | 41.67 pp |
+| FPR interseccional | 55.56 pp | 100.00 pp |
+
+La logística presenta menores brechas G1/G2 en recall y FPR. El árbol reduce ligeramente la brecha interseccional de recall, pero aumenta la de FPR. Una mejora aislada no demuestra mejora general. La prevalencia sintética del test difiere entre G1 49/101 y G2 43/59, por lo que selección, error y consecuencias deben analizarse conjuntamente.
+
+Los benchmarks de configuración, recall mínimo 0.68 y brechas máximas 0.16, no son límites legales ni tolerancias éticas aprobadas. Satisfacer esas comparaciones puntuales no prueba equidad ni autoriza GO. Los intervalos condicionales y el test pequeño impiden afirmar discriminación causal o ausencia de daño. [E04, E06, E08, E10]
+
+# 17 Marco legal aplicable
+
+La jurisdicción confirmada es República Dominicana. La Constitución proclamada el 27-10-2024 aporta sujeción constitucional, igualdad, privacidad y hábeas data en los arts. 6, 39, 44.2 y 70. La ficha oficial consultada muestra la Ley 172-13 como vigente. [L01-L03]
+
+Se revisaron ámbito y definiciones, principios, derechos y deberes del responsable y datos especialmente protegidos. La matriz legal distingue cada condición de aplicación. En el CSV declarado sintético no se acreditan titulares identificados o identificables; ello no convierte toda actividad académica en exenta. Una nueva fuente, cuenta o registro personal requiere inventario y análisis propios.
+
+Si se incorporaran datos personales habría que determinar fundamento pertinente, información, calidad/finalidad, seguridad/confidencialidad y atención de derechos. Las etiquetas G1/G2 no se equiparan a categorías jurídicas reales. Un filtro de cuatro nombres de columnas no demuestra anonimización ni cumplimiento integral. Las obligaciones crediticias específicas de la ley no se trasladan automáticamente a este prototipo. [L02, E07]
+
+Los antecedentes legislativos de IA y datos registrados el 24-03-2026 no acreditan promulgación o su estado posterior. La referencia al Decreto 714-26 es sectorial y condicional: no se acredita inversión estatal y su publicación en Gaceta Oficial no quedó verificada. Se priorizó el PDF normativo frente a diferencias de una noticia institucional. No se declara ausencia exhaustiva de regulación ni un vínculo para aplicar automáticamente normas europeas. [L04-L06]
+
+# 18 Marcos voluntarios
+
+Tabla 10 Naturaleza de las referencias
+
+| Referencia | Naturaleza | Aporte al ejercicio |
+| --- | --- | --- |
+| NIST AI RMF 1.0 | Marco voluntario | Organiza contexto medición y respuesta |
+| OCDE OECD LEGAL 0449 | Recomendación no vinculante | Derechos equidad transparencia robustez responsabilidad |
+| UNESCO ética de IA 2021 | Recomendación internacional | Proporcionalidad participación supervisión y privacidad |
+
+La recomendación OCDE, adoptada en 2019 y revisada hasta mayo de 2024 en la copia consultada, orienta la evaluación. UNESCO distingue sus recomendaciones de las convenciones vinculantes y de los compromisos procedimentales estatales. La utilización de estos principios no los convierte en leyes dominicanas aplicables automáticamente ni acredita certificación. [F01-F05]
+
+# 19 Recomendaciones éticas
+
+Las nueve recomendaciones se vinculan con los nueve riesgos en el CSV editable. Su estado es propuesto y pendiente de aprobación; no se atribuyen decisiones éticas personales al usuario. [E07, E08]
+
+ET01 Transparencia. Comunicar finalidad sintética límites y estado de revisión en toda presentación.
+
+ET02 Explicabilidad. Explicar factores y errores sin confundir asociación y causalidad y comprobar comprensión.
+
+ET03 Equidad. Acordar daños y criterios en contexto y considerar soportes e incertidumbre antes de aceptar tolerancias.
+
+ET04 Supervisión humana. Definir competencia capacidad y autoridad para revisar corregir y suspender.
+
+ET05 Protección de datos. Revisar necesidad procedencia acceso y conservación ante nueva información.
+
+ET06 Responsabilidad. Designar responsable custodiar versiones y declarar asistencia de IA y límites de verificación.
+
+ET07 Participación. Incorporar participación accesible si se plantea una adaptación con personas.
+
+ET08 Gestión de errores. Registrar señales correcciones y condiciones de retirada conservando evidencia pertinente.
+
+ET09 Reclamación. Proponer canal accesible privado y revisión por otra persona con plazos y autoridad acordados.
+
+# 20 Medidas de mitigación
+
+El plan completo identifica acción, responsable funcional propuesto, prioridad, evidencia esperada, indicador y condición de cumplimiento para cada riesgo. Las prioridades alta/media ordenan la revisión; no recalculan probabilidades ni aceptan riesgos. Los roles no tienen designación nominal. [E08]
+
+Tabla 11 Plan propuesto y evidencia esperada
+
+| Medida y prioridad | Acción y rol propuestos | Evidencia e indicador | Condición propuesta |
+| --- | --- | --- | --- |
+| M01 R01 Alta | Datos/modelos Justificar edad y zona y comparar ablaciones o umbrales | Informe de variables y tasas por estrato con soporte | Desarrollo sin seleccionar sobre el test actual y revisión de criterios |
+| M02 R02 Alta | Operador Diseñar revisión completa de referencia sin excluir por score | Traza de cobertura descartes y demora | Ensayo sin descartes automáticos y capacidad/autoridad verificadas |
+| M03 R03 Alta | Operador Comparar capacidad y desplazamientos con supuestos explícitos | Curvas de carga espera y FP por grupo | Política revisada antes de aceptar priorización |
+| M04 R04 Alta | Datos/modelos Revisar procedencia contenido accesos y conservación | Registro de revisión sin contenido personal | Revisión ampliada antes de admitir nuevas fuentes |
+| M05 R05 Alta | Datos/modelos Acreditar etiqueta generador y disponibilidad temporal | Ficha y protocolo con supuestos verificables | Resolver supuestos operativos o mantener explícitos los vacíos |
+| M06 R06 Alta | Responsable académico Definir autoridad y revisión de alcance | Registro de autorizaciones y revisión de interfaz | Cambio de finalidad evaluado y autorizado sin equiparar GO a aprobación |
+| M07 R07 Media | Datos/modelos Verificar pruebas y reproducción aislada | Comandos versiones hashes y discrepancias | Salidas reales y diferencias explicadas sin atribuir revisión independiente |
+| M08 R08 Alta | Responsable académico Proponer canal y otra persona revisora | Solicitud y respuesta sintéticas y evaluación de acceso | Autoridad asignada y plazo acordado antes de afirmar eficacia |
+| M09 R09 Alta | Datos/modelos Proponer custodia confiable y revisión de cambios | Referencia de confianza y diferencias revisadas | Cambios explicados sin presentar un hash como firma o control de acceso |
+
+Ya se verificaron controles técnicos, auditorías y reproducción local. No se ejecutaron ensayos de mitigación predictiva, de capacidad, de participación o de reclamación. La reproducción de Fase 7 aporta evidencia a M07 sin demostrar revisión humana independiente. Los residuales originales se conservan y su aceptabilidad sigue pendiente.
+
+# 21 Trade offs
+
+Tabla 12 Compromisos que requieren revisión conjunta
+
+| Dimensión | Compromiso |
+| --- | --- |
+| Rendimiento | Mismo recall global con dos FP menos en logística; una política distinta puede mover ambos errores |
+| Equidad | Menores brechas G1/G2 no implican mejora de todas las intersecciones |
+| Interpretabilidad | Coeficientes compactos o rutas de árbol no garantizan comprensión ni justifican variables |
+| Privacidad | Menos información puede cambiar predicción y auditoría; necesidad y fundamento requieren revisión |
+| Seguridad | Hashes y filtros no equivalen a autenticación control de acceso o prevención |
+| Complejidad | Cinco variables y once columnas transformadas requieren mantenimiento y explicación |
+| Cómputo | Menor tamaño o tiempo local no acredita ahorro energético ni coste humano |
+| Supervisión | Revisión completa puede aumentar carga; autoridad capacidad y eficacia necesitan evidencia |
+
+No se fija una ponderación de FN y FP o un nivel aceptable de brecha en nombre del usuario. Una modificación debe mostrar tanto mejoras como deterioros y respetar el conjunto de restricciones. La validación de futuros cambios usaría desarrollo dentro de entrenamiento y un nuevo test final; más datos sintéticos no bastan para acreditar uso real. [E05, E08]
+
+# 22 Decisión final
+
+Se recomienda LIMITAR el sistema a demostración y auditoría académicas con datos sintéticos. La recomendación y la aceptación del riesgo permanecen pendientes de aprobación. Se mantiene REVIEW como estado documental y la preferencia provisional por logística como referencia experimental; el árbol se conserva para comparar. [E08]
+
+Tabla 13 Cuatro alternativas de uso
+
+| Alternativa | Ventaja y desventaja | Condición | Valoración técnica |
+| --- | --- | --- | --- |
+| Desplegar | Beneficio operacional no demostrado; errores y gobernanza insuficientes | Nueva evaluación integral y aprobaciones propias | No recomendado con esta evidencia |
+| Modificar | Permite estudiar sensibilidad; puede sobreajustar o trasladar daño | Protocolo y test final independiente | Opción experimental futura |
+| Limitar | Conserva aprendizaje; persiste riesgo de extrapolación | Alcance sintético límites y revisión pendiente | Recomendación para el alcance actual |
+| No utilizar | Evita dependencia predictiva; revisión manual también requiere capacidad | Alternativa cronológica y retirada ante incumplimientos | Alternativa para decisiones y fallos |
+
+Limitar el uso actual puede combinarse con futuras modificaciones experimentales y la alternativa de revisión completa. La continuación del expediente no aprueba despliegue real. Ante datos personales no previstos, pérdida de carácter sintético, cambio de finalidad, fallos pertinentes o discrepancias de integridad, se propone suspender el uso de resultados afectados y revisar la causa, conservando evidencia sin difundir información personal.
+
+# 23 Limitaciones
+
+La muestra es exclusivamente sintética y el test solo tiene 160 casos. La etiqueta, generador y disponibilidad temporal de predictores no cuentan con documentación suficiente para una aplicación real. Las métricas y sus intervalos son descriptivos y condicionales; el holdout ya se inspeccionó y no permite seleccionar cambios y seguir tratándolo como evaluación final independiente.
+
+No se midieron eficacia de una cola, costes de errores, comprensión humana, participación de afectados, apelación, custodia independiente, seguridad integral, RAM máxima, electricidad o emisiones. Las pruebas no acreditan legalidad o equidad ni implementan las mitigaciones propuestas. La reproducción usa la misma máquina y entorno instalado. No hay revisión independiente o aceptación humana registrada. [E01-E09]
+
+# 24 Pruebas y reproducibilidad
+
+Tabla 14 Resultados finales de pruebas únicas
+
+| Grupo | Pruebas | Resultado |
+| --- | --- | --- |
+| LAB11 impacto y privacidad | 3 | Aprobadas |
+| LAB12 logística y árbol | 4 | Aprobadas |
+| Datos preservación y gobernanza | 7 | Aprobadas |
+| Streamlit AppTest | 1 | Aprobada con conexión local permitida |
+| Total único final | 15 | Sin fallos errores u omitidas finales |
+
+Se comprobaron 55 distribuciones y once requisitos directos/de desarrollo contra el lock, sin discrepancias, y 46 archivos Python sin errores de sintaxis. Ruff aprobó el código revisado. La copia aislada contiene 42 archivos de código/entradas y conserva outputs separados; se verificó el origen de los módulos importados.
+
+LAB11 reprodujo tres salidas byte a byte y preservó el registro de decisión. Dos ajustes nuevos de auditoría reprodujeron las 160 predicciones y probabilidades por modelo, métricas, tablas de soporte y hashes de los modelos en esta máquina. Los tiempos variaron y se guardaron aparte. También se entrenaron modelos dentro de las pruebas; no se instrumentó el total de llamadas a fit.
+
+Se conservan los intentos fallidos: caché temporal de uv, sintaxis original del simulador, ejecución complementaria inconclusa, bloqueo de socket local de AppTest y estilo. La caché del workspace y un reintento de AppTest fuera del aislamiento de red predeterminado resolvieron las restricciones. El simulador se corrigió sin ejecutarlo. La plantilla copiada para reproducción precede a un ajuste final equivalente del alias UTC; el código ejecutado y los tests permanecen idénticos. Los comandos exactos, JUnit, hashes y límites están en TEST_REPORT y evidencias de Fase 7. [E09]
+
+# 25 Declaración de uso de IA
+
+Se utilizó Codex para inspeccionar materiales, proponer y modificar código, ejecutar herramientas, consultar fuentes institucionales y redactar análisis y documentos. PowerShell, Python, uv, Git, pytest y Ruff aportaron ejecuciones registradas; pandas, scikit-learn, Fairlearn, SciPy y joblib se usaron en la evaluación. No se conserva una versión exacta del servicio generativo o sus parámetros.
+
+La solicitud directa aportó repositorio y materiales; el texto adjunto sirvió como referencia del plan acordado. Los mensajes de continuación autorizaron trabajo por fases y Republica Dominicana confirmó jurisdicción. No equivalen a revisión humana de todos los cálculos, aceptación de riesgos o aprobación institucional. Las correcciones técnicas fueron del asistente y no se declaran como humanas.
+
+AI_USAGE_DECLARATION y PROMPTS_RELEVANTES identifican asistencia, límites, verificaciones y correcciones. La copia íntegra del prompt se preserva con su hash. El autor que presente la entrega debe revisar su contenido y su política académica pertinente; esta declaración no acredita que esa revisión final se haya realizado. [E09]
+
+# 26 Conclusiones
+
+La integración muestra por qué unas métricas agregadas aceptables para benchmarks experimentales no bastan para decidir uso. Ambos modelos omiten 26 positivos; la logística tiene menos FP y menores brechas G1/G2, pero existen efectos distintos en intersecciones y mucha incertidumbre. La calidad y el contexto de decisión siguen siendo determinantes.
+
+La evidencia de pruebas y reproducción fortalece la trazabilidad del ejercicio. Los controles organizativos, la necesidad de priorizar y la aceptabilidad de errores no se derivan de ella. La recomendación sustentada es limitar el sistema al ámbito académico sintético, conservar revisión y alternativas y evaluar cualquier adaptación real como un nuevo caso. La aprobación humana permanece pendiente.
+
+# 27 Referencias
+
+Fuentes institucionales consultadas el 31 de octubre de 2026. Los identificadores coinciden con el registro de fuentes y permiten distinguir naturaleza y alcance. Las citas del cuerpo remiten a estas entradas y al catálogo local de evidencias.
+
+[F01] NIST. AI Risk Management Framework. AI RMF 1.0, 26-01-2023; la página informa revisión en curso. Ubicación: Overview of the AI RMF y aviso de revisión. Consulta: 31-10-2026. [Fuente oficial](https://www.nist.gov/itl/ai-risk-management-framework).
+
+[F02] NIST AIRC. AI RMF Core. AI RMF 1.0 (2023), sección 5. Ubicación: Secciones 5.1–5.4. Consulta: 31-10-2026. [Fuente oficial](https://airc.nist.gov/airmf-resources/airmf/5-sec-core/).
+
+[F03] OECD. Recommendation of the Council on Artificial Intelligence, OECD/LEGAL/0449. Adoptada 22-05-2019; revisiones 08-11-2023 y 03-05-2024; copia oficial consultada con copyright 2026. Ubicación: PDF: Background Information; sección 1, principios 1.1–1.5; última página OECD Legal Instruments. Consulta: 31-10-2026. [Fuente oficial](https://legalinstruments.oecd.org/api/print?ids=648).
+
+[F04] UNESCO. Recommendation on the Ethics of Artificial Intelligence. Adoptada en noviembre de 2021; síntesis institucional de principios. Ubicación: Core values y Core principles: A human rights approach to AI. Consulta: 31-10-2026. [Fuente oficial](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics).
+
+[F05] UNESCO, Legal Affairs. UNESCO’s standard-setting. An Overview. Actualización indicada: 19-06-2024. Ubicación: UNESCO’s standard-setting instruments, Recommendations. Consulta: 31-10-2026. [Fuente oficial](https://www.unesco.org/en/legal-affairs/standard-setting/overview?hub=66535).
+
+[L01] Asamblea Nacional; copia del Tribunal Constitucional dominicano. Constitución de la República Dominicana 2024. Proclamación: 27-10-2024; edición institucional enlazada por el Tribunal Constitucional. Ubicación: Arts. 6, 39, 44.2, 70 y disposición final; páginas impresas 6, 19–20, 23–24, 42 y 134. Consulta: 31-10-2026. [Fuente oficial](https://tribunalsitestorage.blob.core.windows.net/media/61583/constitucion-6-x-9-de-lujo-web-portad-nea.pdf).
+
+[L02] Congreso Nacional; copia de la Superintendencia de Bancos. Ley 172-13 sobre protección integral de datos personales. Gaceta Oficial 10737, 15-12-2013. Ubicación: Arts. 1–6, 7–10, 13–17, 75–76; páginas PDF 2–7, 10–13 y 27–28. Consulta: 31-10-2026. [Fuente oficial](https://sb.gob.do/media/4i1ploou/ley17213.pdf).
+
+[L03] Superintendencia de Bancos de la República Dominicana. Ficha oficial de la Ley No. 172-13 Protección de los Datos. Publicación indicada: 15-12-2013; estatus mostrado al consultar: Vigente. Ubicación: Ficha de Regulación/Leyes: estatus y descarga. Consulta: 31-10-2026. [Fuente oficial](https://www.sb.gob.do/regulacion/leyes/ley-no-172-13-proteccion-de-los-datos/).
+
+[L04] Cámara de Diputados, Secretaría General. Orden del día conocido por el pleno, sesión 00008 del 24-03-2026. 24-03-2026; antecedente legislativo, sin atribuirle estado posterior. Ubicación: Puntos 10.59 y 10.68; páginas impresas 23 y 25. Consulta: 31-10-2026. [Fuente oficial](https://camaradediputados.gob.do/download/1936/2026-plo-ordenes-del-dia-conocidos-por-el-pleno/27776/sesion-08-del-martes-24-de-marzo-de-2026.pdf).
+
+[L05] Poder Ejecutivo; copia del Ministerio de Administración Pública. Decreto 714-26, infraestructura digital del Estado. Dado el 09-10-2026; art. 15 condiciona vigencia a publicación en Gaceta Oficial, fecha no verificada aquí. Ubicación: Arts. 3, 9–13 y 15; páginas PDF 6 y 10–13. Consulta: 31-10-2026. [Fuente oficial](https://map.gob.do/transparencia/download/105/decretos/22808/decreto-714-26-reglamento-de-coordinacion-e-interes-estrategico-de-la-infraestructura-digital-del-estado.pdf).
+
+[L06] Ministerio de Administración Pública. Gobierno emite por decreto reglamento de coordinación e interés estratégico de la infraestructura digital del Estado. 12-10-2026. Ubicación: Cuerpo de noticia, lista de novedades y enlace final al PDF. Consulta: 31-10-2026. [Fuente oficial](https://map.gob.do/2026/10/12/gobierno-emite-por-decreto-reglamento-de-coordinacion-e-interes-estrategico-de-la-infraestructura-digital-del-estado/).
+
+## Catálogo de evidencias editables
+
+Los nombres sin raíz en E06-E09 se ubican en reports/ejercicio_07. En E01, los CSV se ubican en student_inputs. E04 utiliza los archivos de cada carpeta de modelo y los archivos comunes de reports/lab12. Los registros conservan rutas exactas y hashes.
+
+Tabla 15 Catálogo local
+
+| ID | Archivo o directorio | Contenido |
+| --- | --- | --- |
+| E01 | student_inputs/lab11_impact.yml; stakeholders.csv; risk_register.csv | Finalidad roles y escenarios |
+| E02 | reports/lab11/ | Evaluación registro puntuación y controles |
+| E03 | reports/lab12/logistic/ y reports/lab12/tree/ | Métricas predicciones y metadatos |
+| E04 | audit_support.csv; dataset_profile.json; temporal_split.csv | Denominadores intervalos y corte |
+| E05 | reports/lab12/comparison/ | Comparación estructura y benchmark |
+| E06 | EVALUACION_INTEGRADA.md; MATRIZ_TRAZABILIDAD.csv | Relación riesgos resultados y controles |
+| E07 | MARCO_LEGAL_VOLUNTARIO_ETICO.md; MATRIZ_APLICABILIDAD_LEGAL.csv; RECOMENDACIONES_ETICAS.csv | Marco normativo y propuestas éticas |
+| E08 | DECISION_FINAL.md; PLAN_MITIGACION.csv; ALTERNATIVAS_USO.csv | Plan compromisos y recomendación |
+| E09 | TEST_REPORT.md; AI_USAGE_DECLARATION.md; PROMPTS_RELEVANTES.md; evidencias/fase_07/ | Pruebas reproducción IA y procedencia |
+| E10 | configs/governance.yml | Benchmarks experimentales y usos prohibidos |
+
+# 28 Enlace al repositorio
+
+[Repositorio] Vic-developers Unidad 04 Ejercicio 07 [Fuente oficial](https://github.com/Vic-developers/Unidad-04.-Ejercicio-07..git).
+
+En esta sesión no se ejecutó push. El enlace identifica el remoto indicado por el usuario y no acredita que los archivos actuales estén publicados allí. Los artefactos editables y evidencias se entregan en la copia local. La continuación entre fases y la finalización de este expediente no constituyen autorización de despliegue.
