@@ -1,0 +1,15 @@
+{
+  "label": "04_streamlit_version",
+  "command": [
+    "C:\\Users\\reyti\\.local\\bin\\uv.EXE",
+    "run",
+    "--frozen",
+    "streamlit",
+    "--version"
+  ],
+  "cwd": "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\_verificacion_ejercicio_07_publicacion_20261031\\proyecto",
+  "exit_code": 0,
+  "elapsed_seconds": 3.3953608000010718,
+  "stdout": "Streamlit, version 1.64.0\n",
+  "stderr": ""
+}

@@ -33,7 +33,7 @@ uv run --frozen python scripts/check_environment.py
 uv run --frozen pytest -q
 ```
 
-La comprobación del dataset debe indicar `dataset_status: valid`, **640 filas y 9 columnas**. La suite contiene **15 pruebas**, incluida una prueba de arranque de la aplicación con AppTest. Las evidencias de la ejecución académica están en [TEST_REPORT.md](reports/ejercicio_07/TEST_REPORT.md).
+La comprobación del dataset debe indicar `dataset_status: valid`, **640 filas y 9 columnas**. La suite contiene **15 pruebas**, incluida una prueba de arranque de la aplicación con AppTest. Las evidencias de la ejecución académica están en [TEST_REPORT.md](reports/ejercicio_07/TEST_REPORT.md). La [verificación para la publicación](docs/VERIFICACION_EJECUCION.md) documenta además una instalación nueva en otra carpeta, las 15 pruebas aprobadas y el arranque HTTP de Streamlit en la misma máquina Windows.
 
 ## 4. Iniciar la aplicación
 

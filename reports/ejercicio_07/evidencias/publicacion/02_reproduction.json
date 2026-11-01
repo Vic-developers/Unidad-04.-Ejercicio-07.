@@ -1,0 +1,18 @@
+{
+  "label": "02_reproduction",
+  "command": [
+    "C:\\Users\\reyti\\.local\\bin\\uv.EXE",
+    "run",
+    "--frozen",
+    "python",
+    "-B",
+    "reports/ejercicio_07/evidencias/fase_07/reproduce.py",
+    "--run-id",
+    "publicacion_01"
+  ],
+  "cwd": "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\_verificacion_ejercicio_07_publicacion_20261031\\proyecto",
+  "exit_code": 0,
+  "elapsed_seconds": 94.07139040000038,
+  "stdout": "{\"command\": \"01_import_origin\", \"exit_code\": 0, \"elapsed_seconds\": 35.60587879999366}\n{\"command\": \"02_lab11_tests\", \"exit_code\": 0, \"elapsed_seconds\": 6.265647899999749}\n{\"command\": \"03_lab12_tests\", \"exit_code\": 0, \"elapsed_seconds\": 7.15734220000013}\n{\"command\": \"04a_non_ui_tests\", \"exit_code\": 0, \"elapsed_seconds\": 2.925753200004692}\n{\"command\": \"04c_app_test_loopback\", \"exit_code\": 0, \"elapsed_seconds\": 20.915853700003936}\n{\"command\": \"05_lab11_reproduction\", \"exit_code\": 0, \"elapsed_seconds\": 1.0439129000005778}\n{\"command\": \"06_logistic_audit\", \"exit_code\": 0, \"elapsed_seconds\": 4.746034299998428}\n{\"command\": \"07_logistic_support\", \"exit_code\": 0, \"elapsed_seconds\": 4.627935600001365}\n{\"command\": \"08_tree_audit\", \"exit_code\": 0, \"elapsed_seconds\": 4.752939699996205}\n{\"command\": \"09_tree_support\", \"exit_code\": 0, \"elapsed_seconds\": 4.634986400000344}\n{\"status\": \"passed\", \"unique_tests_executed\": 15, \"lab11_outputs_equal\": true, \"models\": {\"logistic\": {\"all_binary_predictions_equal\": true, \"max_probability_absolute_difference\": 0.0, \"model_binary_hash_equal\": true}, \"tree\": {\"all_binary_predictions_equal\": true, \"max_probability_absolute_difference\": 0.0, \"model_binary_hash_equal\": true}}, \"reproduced_audit_fits\": 2}\n",
+  "stderr": ""
+}

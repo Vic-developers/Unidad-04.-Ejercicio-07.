@@ -1,0 +1,22 @@
+{
+  "command": [
+    "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\_verificacion_ejercicio_07_publicacion_20261031\\proyecto\\.venv\\Scripts\\python.exe",
+    "-m",
+    "streamlit",
+    "run",
+    "app.py",
+    "--server.address",
+    "127.0.0.1",
+    "--server.port",
+    "18501",
+    "--server.headless",
+    "true",
+    "--browser.gatherUsageStats",
+    "false"
+  ],
+  "health": {
+    "status": 200,
+    "body": "ok"
+  },
+  "server_stopped_after_check": true
+}

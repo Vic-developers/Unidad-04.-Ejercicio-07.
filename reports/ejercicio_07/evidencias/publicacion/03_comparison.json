@@ -1,0 +1,15 @@
+{
+  "label": "03_comparison",
+  "command": [
+    "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\_verificacion_ejercicio_07_publicacion_20261031\\proyecto\\.venv\\Scripts\\python.exe",
+    "-B",
+    "scripts/lab12_compare_models.py",
+    "--repeats",
+    "10"
+  ],
+  "cwd": "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\_verificacion_ejercicio_07_publicacion_20261031\\proyecto\\reports\\ejercicio_07\\evidencias\\fase_07\\.runtime\\reproduction_publicacion_01",
+  "exit_code": 0,
+  "elapsed_seconds": 5.390038999998069,
+  "stdout": "   model  accuracy   recall      fpr  selection_rate  precision       f1      fnr  tp  tn  fp  fn  group_recall_gap  group_fpr_gap  group_selection_rate_gap  intersection_recall_gap  intersection_fpr_gap  intersection_selection_rate_gap  original_fit_seconds  model_bytes\nlogistic   0.71875 0.717391 0.279412         0.53125   0.776471 0.745763 0.282609  66  49  19  26          0.137636       0.125000                  0.232422                 0.437500              0.555556                         0.472222              0.105127         3649\n    tree   0.70625 0.717391 0.308824         0.54375   0.758621 0.737430 0.282609  66  47  21  26          0.181300       0.168269                  0.266320                 0.416667              1.000000                         0.523810              0.087177         8059\n{\"benchmark\": [{\"model\": \"logistic\", \"repeats\": 10, \"median_seconds\": 0.008740099998249207, \"q25_seconds\": 0.006766474998585181, \"q75_seconds\": 0.010470074998011114, \"min_seconds\": 0.005846300002303906, \"max_seconds\": 0.011785199996666051}, {\"model\": \"tree\", \"repeats\": 10, \"median_seconds\": 0.0072504499985370785, \"q25_seconds\": 0.006148099999336409, \"q75_seconds\": 0.009572600003593834, \"min_seconds\": 0.0046061000030022115, \"max_seconds\": 0.011327699998219032}], \"complexity\": {\"raw_features\": 5, \"transformed_features\": 11, \"train_rows\": 480, \"logistic\": {\"coefficient_count\": 11, \"intercept_count\": 1, \"iterations\": [9], \"learned_array_buffer_bytes\": 96}, \"tree\": {\"depth\": 5, \"nodes\": 51, \"leaves\": 26, \"learned_array_buffer_bytes\": 4080}, \"buffer_scope\": \"Estimator coefficient or node/value arrays only; not total RAM or peak training memory.\", \"paired_test\": {\"same_predictions\": 130, \"different_predictions\": 30, \"both_correct\": 99, \"only_logistic_correct\": 16, \"only_tree_correct\": 14, \"both_wrong\": 31}}}\n",
+  "stderr": ""
+}

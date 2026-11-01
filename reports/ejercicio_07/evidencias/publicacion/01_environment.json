@@ -1,0 +1,15 @@
+{
+  "label": "01_environment",
+  "command": [
+    "C:\\Users\\reyti\\.local\\bin\\uv.EXE",
+    "run",
+    "--frozen",
+    "python",
+    "scripts/check_environment.py"
+  ],
+  "cwd": "C:\\Users\\reyti\\OneDrive\\Documentos\\ChatGPT\\Tareas\\_verificacion_ejercicio_07_publicacion_20261031\\proyecto",
+  "exit_code": 0,
+  "elapsed_seconds": 11.81497429999581,
+  "stdout": "{'python_project': 'ok', 'dataset_status': 'valid', 'rows': 640, 'columns': 9}\n",
+  "stderr": ""
+}

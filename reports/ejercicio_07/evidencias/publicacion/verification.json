@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "source_commit": "d5765920794aedd24d5ca1295a3640f3229d5f55",
+  "fresh_local_clone": true,
+  "new_virtual_environment": true,
+  "python_version": "3.12.13 (main, Jun 11 2026, 04:05:29) [MSC v.1944 64 bit (AMD64)]",
+  "same_machine": true,
+  "dependency_distributions_installed": 55,
+  "unique_tests_passed": 15,
+  "reproduction": {
+    "status": "passed",
+    "isolation": "separate_source_inputs_and_output_directories_same_interpreter_and_machine",
+    "copied_source_files": 42,
+    "module_origin_checked": true,
+    "test_groups": [
+      {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "label": "02_lab11_tests",
+        "junit": "reports/ejercicio_07/evidencias/fase_07/reproduction_publicacion_01/02_lab11_tests.xml"
+      },
+      {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "label": "03_lab12_tests",
+        "junit": "reports/ejercicio_07/evidencias/fase_07/reproduction_publicacion_01/03_lab12_tests.xml"
+      },
+      {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "label": "04a_non_ui_tests",
+        "junit": "reports/ejercicio_07/evidencias/fase_07/reproduction_publicacion_01/04a_non_ui_tests.xml"
+      },
+      {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "label": "04c_app_test_loopback",
+        "junit": "reports/ejercicio_07/evidencias/fase_07/reproduction_publicacion_01/04c_app_test_loopback.xml"
+      }
+    ],
+    "unique_tests_executed": 15,
+    "lab11_byte_equal_outputs": {
+      "reports/lab11/risk_register_scored.csv": true,
+      "reports/lab11/stakeholders.csv": true,
+      "reports/lab11/rmf_summary.json": true
+    },
+    "lab11_decision_preserved": true,
+    "models": {
+      "logistic": {
+        "prediction_rows": 160,
+        "all_binary_predictions_equal": true,
+        "max_probability_absolute_difference": 0.0,
+        "probability_absolute_tolerance": 1e-12,
+        "primary_metrics_and_gaps_equal": true,
+        "byte_equal_support_files": {
+          "fairness_by_group.csv": true,
+          "fairness_intersectional.csv": true,
+          "audit_support.csv": true,
+          "gap_analysis.json": true
+        },
+        "original_model_sha256": "9fc217d3fed0cfb74093c95d40012c386c0e1172e71d0f30f594cd2da177eb2a",
+        "reproduced_model_sha256": "9fc217d3fed0cfb74093c95d40012c386c0e1172e71d0f30f594cd2da177eb2a",
+        "model_binary_hash_equal": true,
+        "original_training_seconds": 0.33563929999945685,
+        "reproduced_training_seconds": 0.10512729999754811,
+        "local_ignored_model": "reports/ejercicio_07/evidencias/fase_07/.runtime/reproduction_publicacion_01/models/logistic.joblib"
+      },
+      "tree": {
+        "prediction_rows": 160,
+        "all_binary_predictions_equal": true,
+        "max_probability_absolute_difference": 0.0,
+        "probability_absolute_tolerance": 1e-12,
+        "primary_metrics_and_gaps_equal": true,
+        "byte_equal_support_files": {
+          "fairness_by_group.csv": true,
+          "fairness_intersectional.csv": true,
+          "audit_support.csv": true,
+          "gap_analysis.json": true
+        },
+        "original_model_sha256": "e778bdfdbd0c2f02f14ac869046cab6dad79f54e6aac1c7c44e3a925fc611a87",
+        "reproduced_model_sha256": "e778bdfdbd0c2f02f14ac869046cab6dad79f54e6aac1c7c44e3a925fc611a87",
+        "model_binary_hash_equal": true,
+        "original_training_seconds": 0.04983200000060606,
+        "reproduced_training_seconds": 0.087177099994733,
+        "local_ignored_model": "reports/ejercicio_07/evidencias/fase_07/.runtime/reproduction_publicacion_01/models/tree.joblib"
+      }
+    },
+    "dataset_profile_and_temporal_split_byte_equal": true,
+    "reproduced_audit_fits": 2,
+    "fits_inside_tests_instrumented": false,
+    "app_test_runs_pipeline_and_technical_gate_in_isolation": true,
+    "operational_approval_given": false,
+    "lab13_cli_executed": false,
+    "incident_template_executed": false,
+    "independent_machine_or_human_replication": false,
+    "new_environment_installed": false,
+    "canonical_outputs_overwritten": false,
+    "benchmark_repeated": false,
+    "limitations": "Same installed runtime and dataset; validates local reproduction, not external validity, human supervision, operational fairness or time/byte identity on other machines."
+  },
+  "comparison_repeats_per_model": 10,
+  "streamlit_health": {
+    "status": 200,
+    "body": "ok"
+  },
+  "command_records": [
+    "01_environment",
+    "02_reproduction",
+    "03_comparison",
+    "04_streamlit_version"
+  ],
+  "reference_repository_outputs_modified": false
+}
