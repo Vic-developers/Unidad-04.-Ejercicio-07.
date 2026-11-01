@@ -43,6 +43,7 @@ def main():
     runtime = (evidence / ".runtime").resolve()
     work = (runtime / f"reproduction_{args.run_id or '01'}").resolve()
     assert work.is_relative_to(root.resolve()) and work.is_relative_to(runtime)
+    runtime.mkdir(parents=True, exist_ok=True)
     work.mkdir(exist_ok=args.resume_existing)
     out = evidence / (f"reproduction_{args.run_id}" if args.run_id else "reproduction")
     out.mkdir(exist_ok=args.resume_existing)
